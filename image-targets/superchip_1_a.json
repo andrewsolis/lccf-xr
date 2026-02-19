@@ -1,0 +1,18 @@
+{
+  "imagePath": "image-targets/superchip_1_a_target.png",
+  "name": "superchip_1_a",
+  "type": "PLANAR",
+  "properties": {
+    "top": 58,
+    "left": 0,
+    "width": 1412,
+    "height": 1882,
+    "isRotated": false,
+    "originalWidth": 1412,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1759322835164,
+  "updated": 1759322835164
+}

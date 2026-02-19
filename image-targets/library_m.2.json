@@ -1,0 +1,18 @@
+{
+  "imagePath": "image-targets/library_m.2_target.png",
+  "name": "library_m.2",
+  "type": "PLANAR",
+  "properties": {
+    "top": 334,
+    "left": 0,
+    "width": 998,
+    "height": 1330,
+    "isRotated": true,
+    "originalWidth": 998,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1761108229463,
+  "updated": 1761108229463
+}

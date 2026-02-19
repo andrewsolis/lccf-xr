@@ -1,0 +1,18 @@
+{
+  "imagePath": "image-targets/mdot2_2_target.jpeg",
+  "name": "mdot2_2",
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 0,
+    "width": 1500,
+    "height": 2000,
+    "isRotated": false,
+    "originalWidth": 1500,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1759323213833,
+  "updated": 1759323213833
+}

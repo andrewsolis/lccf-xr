@@ -1,0 +1,18 @@
+{
+  "imagePath": "image-targets/heatsink_coolingsystem_target.png",
+  "name": "heatsink_coolingsystem",
+  "type": "PLANAR",
+  "properties": {
+    "top": 256,
+    "left": 0,
+    "width": 894,
+    "height": 1192,
+    "isRotated": true,
+    "originalWidth": 894,
+    "originalHeight": 1704
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1761108027743,
+  "updated": 1761108027743
+}

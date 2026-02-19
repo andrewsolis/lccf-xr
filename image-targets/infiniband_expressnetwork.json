@@ -1,0 +1,18 @@
+{
+  "imagePath": "image-targets/infiniband_expressnetwork_target.png",
+  "name": "infiniband_expressnetwork",
+  "type": "PLANAR",
+  "properties": {
+    "top": 346,
+    "left": 0,
+    "width": 980,
+    "height": 1306,
+    "isRotated": true,
+    "originalWidth": 980,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1761541680089,
+  "updated": 1761541680089
+}

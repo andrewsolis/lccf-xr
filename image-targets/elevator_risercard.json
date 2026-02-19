@@ -1,0 +1,18 @@
+{
+  "imagePath": "image-targets/elevator_risercard_target.png",
+  "name": "elevator_risercard",
+  "type": "PLANAR",
+  "properties": {
+    "top": 258,
+    "left": 0,
+    "width": 892,
+    "height": 1189,
+    "isRotated": true,
+    "originalWidth": 892,
+    "originalHeight": 1707
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1761108021519,
+  "updated": 1761108021519
+}
