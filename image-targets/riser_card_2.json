@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/riser_card_2_target.jpeg",
+  "imagePath": "image-targets/riser_card_2_luminance.jpeg",
+  "resources": {
+    "originalImage": "riser_card_2_original.jpeg",
+    "croppedImage": "riser_card_2_cropped.jpeg",
+    "thumbnailImage": "riser_card_2_thumbnail.jpeg",
+    "geometryImage": "riser_card_2_geometry.jpeg",
+    "luminanceImage": "riser_card_2_luminance.jpeg"
+  },
   "name": "riser_card_2",
   "type": "PLANAR",
   "properties": {

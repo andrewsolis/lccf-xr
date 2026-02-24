@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/Image Target_target.jpeg",
+  "imagePath": "image-targets/Image Target_luminance.jpeg",
+  "resources": {
+    "originalImage": "Image Target_original.jpeg",
+    "croppedImage": "Image Target_cropped.jpeg",
+    "thumbnailImage": "Image Target_thumbnail.jpeg",
+    "geometryImage": "Image Target_geometry.jpeg",
+    "luminanceImage": "Image Target_luminance.jpeg"
+  },
   "name": "Image Target",
   "type": "PLANAR",
   "properties": {

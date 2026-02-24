@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/roads-powergrids_motherboard_v002_target.png",
+  "imagePath": "image-targets/roads-powergrids_motherboard_v002_luminance.png",
+  "resources": {
+    "originalImage": "roads-powergrids_motherboard_v002_original.png",
+    "croppedImage": "roads-powergrids_motherboard_v002_cropped.png",
+    "thumbnailImage": "roads-powergrids_motherboard_v002_thumbnail.png",
+    "geometryImage": "roads-powergrids_motherboard_v002_geometry.png",
+    "luminanceImage": "roads-powergrids_motherboard_v002_luminance.png"
+  },
   "name": "roads-powergrids_motherboard_v002",
   "type": "PLANAR",
   "properties": {

@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/superchip_1_a_target.png",
+  "imagePath": "image-targets/superchip_1_a_luminance.png",
+  "resources": {
+    "originalImage": "superchip_1_a_original.png",
+    "croppedImage": "superchip_1_a_cropped.png",
+    "thumbnailImage": "superchip_1_a_thumbnail.png",
+    "geometryImage": "superchip_1_a_geometry.png",
+    "luminanceImage": "superchip_1_a_luminance.png"
+  },
   "name": "superchip_1_a",
   "type": "PLANAR",
   "properties": {

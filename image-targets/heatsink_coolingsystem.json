@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/heatsink_coolingsystem_target.png",
+  "imagePath": "image-targets/heatsink_coolingsystem_luminance.png",
+  "resources": {
+    "originalImage": "heatsink_coolingsystem_original.png",
+    "croppedImage": "heatsink_coolingsystem_cropped.png",
+    "thumbnailImage": "heatsink_coolingsystem_thumbnail.png",
+    "geometryImage": "heatsink_coolingsystem_geometry.png",
+    "luminanceImage": "heatsink_coolingsystem_luminance.png"
+  },
   "name": "heatsink_coolingsystem",
   "type": "PLANAR",
   "properties": {

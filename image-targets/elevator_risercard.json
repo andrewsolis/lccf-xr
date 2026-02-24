@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/elevator_risercard_target.png",
+  "imagePath": "image-targets/elevator_risercard_luminance.png",
+  "resources": {
+    "originalImage": "elevator_risercard_original.png",
+    "croppedImage": "elevator_risercard_cropped.png",
+    "thumbnailImage": "elevator_risercard_thumbnail.png",
+    "geometryImage": "elevator_risercard_geometry.png",
+    "luminanceImage": "elevator_risercard_luminance.png"
+  },
   "name": "elevator_risercard",
   "type": "PLANAR",
   "properties": {

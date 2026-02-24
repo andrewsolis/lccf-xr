@@ -1,7 +1,8 @@
+// play-audio.ts
 import * as ecs from '@8thwall/ecs'
 
 // Audio descriptions for technical / analogy components
-const CONTENT = {
+const CONTENT: any = {
   heatsink: {
     audioBase: 'heatsink',
     technical: [
@@ -105,79 +106,83 @@ const CONTENT = {
 ecs.registerComponent({
   name: 'play-audio',
   schema: {
-    type: ecs.string,
-    mode: ecs.string,
+    type: ecs.string,              // key into CONTENT
+    mode: ecs.string,              // "technical" or "analogy"
+    triggerEventName: ecs.string,  // event dispatched by audio-trigger
+    allowDirectTouch: ecs.ui8,     // 0/1
   },
   schemaDefaults: {
     type: 'heatsink',
     mode: 'technical',
+    triggerEventName: 'play-audio-trigger',
+    allowDirectTouch: 0,
   },
   data: {
     index: ecs.ui32,
   },
   stateMachine: ({world, eid, schemaAttribute, dataAttribute}) => {
-    ecs.defineState('on')
+    const step = () => {
+      const data = dataAttribute.cursor(eid)
+      const {type, mode} = schemaAttribute.get(eid) as any
+
+      const contentData = CONTENT[type]
+      if (!contentData) {
+        console.error(`No content found for type: ${type}`)
+        return
+      }
+
+      let textArray: string[] = []
+      let filenameSuffix = ''
+
+      if (mode === 'analogy') {
+        textArray = contentData.analogy
+        filenameSuffix = '-analogy'
+      } else {
+        textArray = contentData.technical
+        filenameSuffix = ''
+      }
+
+      const currentIndex = Number(data.index) || 0
+      const audioIndex = currentIndex + 1
+      const audioUrl = `assets/Audio/${contentData.audioBase}${filenameSuffix}-${audioIndex}.mp3`
+
+      world.audio.pause()
+      console.log(`Playing: ${audioUrl}`)
+
+      ecs.Audio.set(world, eid, {
+        url: audioUrl,
+        volume: 1,
+        loop: false,
+        paused: false,
+        positional: false,
+      })
+      world.audio.play()
+
+      data.index = ((currentIndex + 1) % textArray.length) as any
+    }
+
+    const triggerName = () => {
+      const s = schemaAttribute.get(eid) as any
+      return String(s?.triggerEventName ?? 'play-audio-trigger')
+    }
+
+    return ecs.defineState('on')
       .onEnter(() => {
         const data = dataAttribute.cursor(eid)
-        data.index = 0
-
-        if (ecs.Ui.has(world, eid)) {
-          ecs.Ui.mutate(world, eid, (cursor) => {
-            cursor.text = 'Click Here to Listen!'
-          })
-        } else {
-          console.warn(`WARNING: "play-audio" attached to entity (ID: ${eid}) which has NO UI Text component.`)
-        }
+        data.index = 0 as any
       })
-      .listen(eid, ecs.input.SCREEN_TOUCH_START, (touchEvent) => {
-        const data = dataAttribute.cursor(eid)
-        const {type, mode} = schemaAttribute.get(eid)
 
-        const contentData = CONTENT[type]
-
-        if (!contentData) {
-          console.error(`No content found for type: ${type}`)
-          return
-        }
-
-        // Determine which set of text/audio to use
-        let textArray = []
-        let filenameSuffix = ''
-
-        if (mode === 'analogy') {
-          textArray = contentData.analogy
-          filenameSuffix = '-analogy'
-        } else {
-          textArray = contentData.technical
-          filenameSuffix = ''
-        }
-
-        const currentIndex = data.index
-
-        // Update text
-        ecs.Ui.mutate(world, eid, (cursor) => {
-          cursor.text = textArray[currentIndex]
-        })
-
-        // Play audio
-        const audioIndex = currentIndex + 1
-        const audioUrl = `assets/Audio/${contentData.audioBase}${filenameSuffix}-${audioIndex}.mp3`
-
-        world.audio.pause()
-        console.log(`Playing: ${audioUrl}`)
-
-        ecs.Audio.set(world, eid, {
-          url: audioUrl,
-          volume: 1,
-          loop: false,
-          paused: false,
-          positional: false,
-        })
-        world.audio.play()
-
-        // Increment index
-        data.index = (currentIndex + 1) % textArray.length
+      // Parent/root calls this
+      .listen(eid, triggerName(), () => {
+        step()
       })
+
+      // Optional: direct touch on the AudioFrame (leave off if parent handles all input)
+      .listen(eid, ecs.input.SCREEN_TOUCH_START, () => {
+        const {allowDirectTouch} = schemaAttribute.get(eid) as any
+        if (Number(allowDirectTouch) !== 0) step()
+      })
+
       .initial()
   },
 })

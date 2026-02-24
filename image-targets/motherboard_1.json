@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/motherboard_1_target.jpeg",
+  "imagePath": "image-targets/motherboard_1_luminance.jpeg",
+  "resources": {
+    "originalImage": "motherboard_1_original.jpeg",
+    "croppedImage": "motherboard_1_cropped.jpeg",
+    "thumbnailImage": "motherboard_1_thumbnail.jpeg",
+    "geometryImage": "motherboard_1_geometry.jpeg",
+    "luminanceImage": "motherboard_1_luminance.jpeg"
+  },
   "name": "motherboard_1",
   "type": "PLANAR",
   "properties": {

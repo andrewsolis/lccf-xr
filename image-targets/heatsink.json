@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/heatsink_target.jpeg",
+  "imagePath": "image-targets/heatsink_luminance.jpeg",
+  "resources": {
+    "originalImage": "heatsink_original.jpeg",
+    "croppedImage": "heatsink_cropped.jpeg",
+    "thumbnailImage": "heatsink_thumbnail.jpeg",
+    "geometryImage": "heatsink_geometry.jpeg",
+    "luminanceImage": "heatsink_luminance.jpeg"
+  },
   "name": "heatsink",
   "type": "PLANAR",
   "properties": {

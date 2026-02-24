@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/library_m.2_target.png",
+  "imagePath": "image-targets/library_m.2_luminance.png",
+  "resources": {
+    "originalImage": "library_m.2_original.png",
+    "croppedImage": "library_m.2_cropped.png",
+    "thumbnailImage": "library_m.2_thumbnail.png",
+    "geometryImage": "library_m.2_geometry.png",
+    "luminanceImage": "library_m.2_luminance.png"
+  },
   "name": "library_m.2",
   "type": "PLANAR",
   "properties": {

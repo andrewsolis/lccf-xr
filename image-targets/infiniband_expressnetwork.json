@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/infiniband_expressnetwork_target.png",
+  "imagePath": "image-targets/infiniband_expressnetwork_luminance.png",
+  "resources": {
+    "originalImage": "infiniband_expressnetwork_original.png",
+    "croppedImage": "infiniband_expressnetwork_cropped.png",
+    "thumbnailImage": "infiniband_expressnetwork_thumbnail.png",
+    "geometryImage": "infiniband_expressnetwork_geometry.png",
+    "luminanceImage": "infiniband_expressnetwork_luminance.png"
+  },
   "name": "infiniband_expressnetwork",
   "type": "PLANAR",
   "properties": {

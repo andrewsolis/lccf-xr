@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/mdot2_2_target.jpeg",
+  "imagePath": "image-targets/mdot2_2_luminance.jpeg",
+  "resources": {
+    "originalImage": "mdot2_2_original.jpeg",
+    "croppedImage": "mdot2_2_cropped.jpeg",
+    "thumbnailImage": "mdot2_2_thumbnail.jpeg",
+    "geometryImage": "mdot2_2_geometry.jpeg",
+    "luminanceImage": "mdot2_2_luminance.jpeg"
+  },
   "name": "mdot2_2",
   "type": "PLANAR",
   "properties": {

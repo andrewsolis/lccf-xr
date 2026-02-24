@@ -1,5 +1,12 @@
 {
-  "imagePath": "image-targets/brainpower_cpu_target.png",
+  "imagePath": "image-targets/brainpower_cpu_luminance.png",
+  "resources": {
+    "originalImage": "brainpower_cpu_original.png",
+    "croppedImage": "brainpower_cpu_cropped.png",
+    "thumbnailImage": "brainpower_cpu_thumbnail.png",
+    "geometryImage": "brainpower_cpu_geometry.png",
+    "luminanceImage": "brainpower_cpu_luminance.png"
+  },
   "name": "brainpower_cpu",
   "type": "PLANAR",
   "properties": {
