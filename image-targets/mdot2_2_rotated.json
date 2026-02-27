@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/mdot2_2_rotated_luminance.jpeg",
+  "resources": {
+    "originalImage": "mdot2_2_rotated_original.jpeg",
+    "croppedImage": "mdot2_2_rotated_cropped.jpeg",
+    "thumbnailImage": "mdot2_2_rotated_thumbnail.jpeg",
+    "geometryImage": "mdot2_2_rotated_geometry.jpeg",
+    "luminanceImage": "mdot2_2_rotated_luminance.jpeg"
+  },
+  "name": "mdot2_2_rotated",
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 0,
+    "width": 1500,
+    "height": 2000,
+    "isRotated": true,
+    "originalWidth": 1500,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772205821655,
+  "updated": 1772205821655
+}

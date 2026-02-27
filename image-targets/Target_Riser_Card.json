@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/Target_Riser_Card_luminance.png",
+  "resources": {
+    "originalImage": "Target_Riser_Card_original.png",
+    "croppedImage": "Target_Riser_Card_cropped.png",
+    "thumbnailImage": "Target_Riser_Card_thumbnail.png",
+    "geometryImage": "Target_Riser_Card_geometry.png",
+    "luminanceImage": "Target_Riser_Card_luminance.png"
+  },
+  "name": "Target_Riser_Card",
+  "type": "PLANAR",
+  "properties": {
+    "top": 466,
+    "left": 0,
+    "width": 800,
+    "height": 1066,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772224548496,
+  "updated": 1772224548496
+}

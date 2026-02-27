@@ -20,6 +20,8 @@ ecs.registerComponent({
     ecs.defineState('showingSplash')
       .initial()
       .onEnter(() => {
+        window.dispatchEvent(new CustomEvent('splash-visible'))
+
         const starUrl = require('../assets/splash_screen/star.png')
         const blurStarUrl = require('../assets/splash_screen/blur_star.png')
         const taccLogoUrl = require('../assets/splash_screen/tacc_logo.png')
@@ -222,6 +224,7 @@ ecs.registerComponent({
 
     ecs.defineState('loadingSpace')
       .onEnter(() => {
+        window.dispatchEvent(new CustomEvent('splash-hidden'))
         const splash = document.getElementById(splashId)
         if (splash) {
           splash.classList.add('hidden')

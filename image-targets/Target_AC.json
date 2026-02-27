@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/Target_AC_luminance.png",
+  "resources": {
+    "originalImage": "Target_AC_original.png",
+    "croppedImage": "Target_AC_cropped.png",
+    "thumbnailImage": "Target_AC_thumbnail.png",
+    "geometryImage": "Target_AC_geometry.png",
+    "luminanceImage": "Target_AC_luminance.png"
+  },
+  "name": "Target_AC",
+  "type": "PLANAR",
+  "properties": {
+    "top": 466,
+    "left": 0,
+    "width": 800,
+    "height": 1066,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772224592101,
+  "updated": 1772224592101
+}

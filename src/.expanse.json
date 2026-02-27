@@ -1,315 +1,35 @@
 {
+  "activeMap": "default",
   "entrySpaceId": "a55d223c-0156-41fc-829f-6db9d3381528",
+  "inputs": {
+    "default": [
+      {
+        "name": "Credits",
+        "bindings": [
+          {
+            "input": "keyboard:KeyC",
+            "modifiers": []
+          }
+        ]
+      }
+    ],
+    "Credits": []
+  },
   "objects": {
-    "004953db-653c-49e7-80d5-0c500241e8f3": {
+    "002c15b5-985b-486c-94cb-59a4f01d00a5": {
       "components": {},
       "geometry": null,
-      "id": "004953db-653c-49e7-80d5-0c500241e8f3",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
+      "id": "002c15b5-985b-486c-94cb-59a4f01d00a5",
+      "imageTarget": {
+        "name": "supercity-credit-full-page"
       },
-      "name": "AudioFrame (7)",
-      "order": 5.001453337449641,
-      "parentId": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
-      "position": [
-        0.6895160750013948,
-        0.032342702307880056,
-        0.06167470591892554
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        0.5,
-        0.5,
-        0.5
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
-        "type": "3d",
-        "width": 50
-      }
-    },
-    "050ebb2e-a9cd-4761-9061-cf33180b85cc": {
-      "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
-        },
-        "14e843d3-b323-4cc8-9937-c91f7314d236": {
-          "id": "14e843d3-b323-4cc8-9937-c91f7314d236",
-          "name": "play-audio",
-          "parameters": {
-            "type": "grace_hopper",
-            "mode": "analogy"
-          }
-        }
-      },
-      "geometry": null,
-      "id": "050ebb2e-a9cd-4761-9061-cf33180b85cc",
       "material": null,
-      "name": "AudioText (8)",
-      "order": 1,
-      "parentId": "36dcdb8b-568a-46f9-9aab-582893e5631e",
+      "name": "supercity-credit-full-page",
+      "order": 3.7087733408862804,
+      "parentId": "9cdbc3fa-e4c5-4bbc-8949-8ed9b0c8793f",
       "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
-      ],
-      "rotation": [
-        0,
-        -0.16442519759970609,
-        0,
-        0.9863895550918499
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 0.8,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "color": "#ffffff",
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "font": {
-          "type": "font",
-          "font": "Gotham"
-        },
-        "fontSize": 4,
-        "gap": 12,
-        "height": 60,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "nineSliceBorderBottom": 43,
-        "nineSliceBorderLeft": 43,
-        "nineSliceBorderRight": 43,
-        "nineSliceBorderTop": 43,
-        "paddingBottom": 12,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 12,
-        "text": "Sample Text",
-        "textAlign": "left",
-        "type": "3d",
-        "verticalTextAlign": "start",
-        "width": 40
-      }
-    },
-    "06427d75-dcbd-4d2d-bea9-350faaddf145": {
-      "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
-        },
-        "9b0eab0a-1dc0-4216-8fd4-b0a5df2f14f4": {
-          "id": "9b0eab0a-1dc0-4216-8fd4-b0a5df2f14f4",
-          "name": "play-audio",
-          "parameters": {
-            "mode": "analogy"
-          }
-        }
-      },
-      "geometry": null,
-      "id": "06427d75-dcbd-4d2d-bea9-350faaddf145",
-      "material": null,
-      "name": "AudioText (7)",
-      "order": 2,
-      "parentId": "004953db-653c-49e7-80d5-0c500241e8f3",
-      "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
-      ],
-      "rotation": [
-        0,
-        -0.16442519759970609,
-        0,
-        0.9863895550918499
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 0.8,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "color": "#ffffff",
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "font": {
-          "type": "font",
-          "font": "Gotham"
-        },
-        "fontSize": 4,
-        "gap": 12,
-        "height": 60,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "nineSliceBorderBottom": 43,
-        "nineSliceBorderLeft": 43,
-        "nineSliceBorderRight": 43,
-        "nineSliceBorderTop": 43,
-        "paddingBottom": 12,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 12,
-        "text": "Sample Text",
-        "textAlign": "left",
-        "type": "3d",
-        "verticalTextAlign": "start",
-        "width": 40
-      }
-    },
-    "0fd47b47-b6ac-4a67-bb25-40ed2ac17276": {
-      "components": {},
-      "geometry": null,
-      "id": "0fd47b47-b6ac-4a67-bb25-40ed2ac17276",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "AudioFrame (3)",
-      "order": 1.5061794313787964,
-      "parentId": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
-      "position": [
-        1.542082116087776e-16,
-        0.6944920443387614,
-        -5.551115123125783e-17
-      ],
-      "rotation": [
-        0,
-        0,
-        0.7071067811865475,
-        0.7071067811865476
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
-        "type": "3d",
-        "width": 50
-      }
-    },
-    "193cd53a-4a30-4a26-9433-c0ea6a5f14d7": {
-      "components": {},
-      "geometry": null,
-      "id": "193cd53a-4a30-4a26-9433-c0ea6a5f14d7",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "AudioFrame (9)",
-      "order": 14.232613135299195,
-      "parentId": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
-      "position": [
-        0.652163413325523,
-        0.025744552873252946,
-        0.014312013687422409
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        0.5,
-        0.5,
-        0.5
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
-        "type": "3d",
-        "width": 50
-      }
-    },
-    "21d3712a-84f7-4f29-ba6b-c51aa95862f7": {
-      "components": {},
-      "geometry": null,
-      "id": "21d3712a-84f7-4f29-ba6b-c51aa95862f7",
-      "material": null,
-      "name": "Text",
-      "order": 1.0492439893794234,
-      "parentId": "5032e120-2161-40dd-a57b-1b546f745bb9",
-      "position": [
-        0,
-        0,
+        0.28163827294863797,
+        3.100902765290436,
         0
       ],
       "rotation": [
@@ -319,37 +39,262 @@
         1
       ],
       "scale": [
+        4.100000000000003,
+        4.100000000000003,
+        4.100000000000003
+      ]
+    },
+    "01e540d4-aaba-4fdc-b222-1006fe9418fb": {
+      "components": {},
+      "geometry": null,
+      "id": "01e540d4-aaba-4fdc-b222-1006fe9418fb",
+      "material": null,
+      "name": "GraceHopperAudioIconAnalogy",
+      "order": 9.128631706553618,
+      "parentId": "4b33edf9-da47-49cc-8740-157391ad1895",
+      "position": [
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
         1,
         1,
         1
       ],
       "ui": {
-        "color": "#1f7ba3",
-        "font": {
-          "type": "font",
-          "font": "Helvetica"
-        },
-        "fontSize": 12,
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
         "height": 14,
-        "text": "Know More",
-        "verticalTextAlign": "center",
-        "width": 64
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
+        },
+        "type": "3d",
+        "width": 14
       }
     },
-    "25a60273-8144-43d0-b6f8-9ad64c2461b1": {
+    "03ab96ef-1307-4f85-8a94-e84d13628aef": {
+      "components": {},
+      "geometry": null,
+      "id": "03ab96ef-1307-4f85-8a94-e84d13628aef",
+      "material": null,
+      "name": "InfinibandClickHereAnalogy",
+      "order": 15.10919544226907,
+      "parentId": "45328c1a-760e-46e3-aebd-770f13437600",
+      "position": [
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
+      }
+    },
+    "04c45868-ea60-4f30-aaef-2bf2bdcf12dd": {
       "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
+        "75255656-dd62-4cce-9e34-1847c3d79b8c": {
+          "id": "75255656-dd62-4cce-9e34-1847c3d79b8c",
+          "name": "object-label",
           "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
+            "name": "model"
+          }
+        }
+      },
+      "geometry": null,
+      "gltfModel": {
+        "animationClip": "",
+        "loop": true,
+        "src": {
+          "type": "asset",
+          "asset": "assets/Models/riser_card_analogy.glb"
+        }
+      },
+      "id": "04c45868-ea60-4f30-aaef-2bf2bdcf12dd",
+      "material": null,
+      "name": "RiserCardModelAnalogy",
+      "order": 14.688284150747489,
+      "parentId": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
+      "position": [
+        0,
+        0.6238804086041057,
+        0.7706334609490882
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ]
+    },
+    "05aa72ad-e630-4546-875a-be1bfffe5201": {
+      "components": {},
+      "geometry": null,
+      "id": "05aa72ad-e630-4546-875a-be1bfffe5201",
+      "material": null,
+      "name": "RiserCardClickHere",
+      "order": 2.996039242523417,
+      "parentId": "ad213fa3-1461-46a3-9fdc-d37215e69568",
+      "position": [
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
+      }
+    },
+    "07753d37-9db3-46e6-9ff2-88bd54892e41": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "07753d37-9db3-46e6-9ff2-88bd54892e41",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "GraceHopperLabel",
+      "order": -1.901179445651009,
+      "parentId": "d94a6ae4-4470-4857-889e-674844e065e1",
+      "position": [
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "ui": {
+        "alignItems": "center",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 8,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsComponents/Super_Chip.png"
+        },
+        "justifyContent": "center",
+        "maxWidth": 50,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "09cd56ac-700c-4402-8d3d-86947dc1e8c3": {
+      "components": {},
+      "geometry": null,
+      "id": "09cd56ac-700c-4402-8d3d-86947dc1e8c3",
+      "material": null,
+      "name": "HeatsinkImage",
+      "order": 0.5076517120878743,
+      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
+      "position": [
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesComponents/Property_1Heat_Sink.png"
+        },
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "0a6a1b1c-5c61-4196-84da-a49cc5621958": {
+      "components": {
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
+          "name": "object-label",
+          "parameters": {
+            "name": "audio"
           }
         },
-        "508aea7e-cd09-4c65-acd2-a11703184d14": {
-          "id": "508aea7e-cd09-4c65-acd2-a11703184d14",
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
           "name": "play-audio",
           "parameters": {
             "type": "infiniband"
@@ -357,21 +302,416 @@
         }
       },
       "geometry": null,
-      "id": "25a60273-8144-43d0-b6f8-9ad64c2461b1",
+      "id": "0a6a1b1c-5c61-4196-84da-a49cc5621958",
       "material": null,
-      "name": "AudioText (11)",
-      "order": 1,
-      "parentId": "a6e5b441-c9e9-4412-9390-6fe410378b43",
+      "name": "InfinibandAudioBox",
+      "order": -0.7504002152291962,
+      "parentId": "2de9254b-f992-4aac-9193-c2979d214ed8",
       "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
       ],
       "rotation": [
         0,
-        -0.16442519759970609,
         0,
-        0.9863895550918499
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 80,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+        },
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "0a86588d-da94-4b0e-b9fa-356cb37e1beb": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "0a86588d-da94-4b0e-b9fa-356cb37e1beb",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "InfinibandLabelAnalogy",
+      "order": 14.633681695221679,
+      "parentId": "45328c1a-760e-46e3-aebd-770f13437600",
+      "position": [
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "ui": {
+        "alignItems": "center",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 8,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsAnalogies/Delivery_Services.png"
+        },
+        "justifyContent": "center",
+        "maxWidth": 50,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "1520c828-7fda-455e-b467-c60da8709b76": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "1520c828-7fda-455e-b467-c60da8709b76",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "M2Frame",
+      "order": -1.1410141107668224,
+      "parentId": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
+      "position": [
+        0,
+        0.044040473484080994,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        2.9,
+        2.85
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 40,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
+        "justifyContent": "flex-start",
+        "maxWidth": 60,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 60
+      }
+    },
+    "1893b2b2-7d3a-4c4e-9356-b4a35166c67e": {
+      "components": {},
+      "geometry": null,
+      "id": "1893b2b2-7d3a-4c4e-9356-b4a35166c67e",
+      "material": null,
+      "name": "GraceHopperAudioIcon",
+      "order": -1.6266070031248563,
+      "parentId": "d94a6ae4-4470-4857-889e-674844e065e1",
+      "position": [
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
+        },
+        "type": "3d",
+        "width": 14
+      }
+    },
+    "19cf9b21-053d-464d-a71e-ce67fd20dd14": {
+      "components": {
+        "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f": {
+          "id": "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f",
+          "name": "object-label",
+          "parameters": {
+            "name": "model"
+          }
+        }
+      },
+      "gltfModel": {
+        "animationClip": "",
+        "loop": true,
+        "src": {
+          "type": "asset",
+          "asset": "assets/Models/grace_hopper_analogy.glb"
+        }
+      },
+      "id": "19cf9b21-053d-464d-a71e-ce67fd20dd14",
+      "name": "GraceHopperModelAnalogy",
+      "order": 9.033011865048659,
+      "parentId": "4b33edf9-da47-49cc-8740-157391ad1895",
+      "position": [
+        0,
+        0.6238804086041057,
+        0.7706334609490882
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.03,
+        0.03,
+        0.03
+      ],
+      "shadow": {
+        "castShadow": true
+      },
+      "ui": {
+        "height": 2500,
+        "ignoreRaycast": true,
+        "stackingOrder": 0,
+        "type": "3d",
+        "width": 2500
+      }
+    },
+    "1c757788-3bf6-405e-b6e9-916c830df46c": {
+      "components": {},
+      "geometry": null,
+      "id": "1c757788-3bf6-405e-b6e9-916c830df46c",
+      "material": null,
+      "name": "MBClickHere",
+      "order": 0.46786351709436846,
+      "parentId": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
+      "position": [
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
+      }
+    },
+    "1d818e96-3cb3-42cb-b01e-ec98d1302d11": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "1d818e96-3cb3-42cb-b01e-ec98d1302d11",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "HeatsinkFrame",
+      "order": 0.3666754619243948,
+      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
+      "position": [
+        0,
+        0.044040473484080994,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        2.9,
+        2.85
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 40,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
+        "justifyContent": "flex-start",
+        "maxWidth": 60,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 60
+      }
+    },
+    "1d9647a2-f198-4461-aeb4-1f96b7c3255e": {
+      "components": {},
+      "geometry": null,
+      "id": "1d9647a2-f198-4461-aeb4-1f96b7c3255e",
+      "material": null,
+      "name": "HeatsinkImageAnalogy",
+      "order": 3.8652377467671055,
+      "parentId": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
+      "position": [
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesAnalogies/Property_1Heatsink_Analogy_AC.png"
+        },
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "1e037e4b-b098-47fa-8492-778c0b8f723c": {
+      "components": {},
+      "geometry": null,
+      "id": "1e037e4b-b098-47fa-8492-778c0b8f723c",
+      "material": null,
+      "name": "GraceHopperImage",
+      "order": -1.9927035931597266,
+      "parentId": "d94a6ae4-4470-4857-889e-674844e065e1",
+      "position": [
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesComponents/Property_1Super_Chip.png"
+        },
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "24f1aba8-7c18-4dab-ad12-ed17233aed18": {
+      "components": {
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
+          "name": "object-label",
+          "parameters": {
+            "name": "text"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "24f1aba8-7c18-4dab-ad12-ed17233aed18",
+      "material": null,
+      "name": "GraceHopperText",
+      "order": -1.4435587081074213,
+      "parentId": "d94a6ae4-4470-4857-889e-674844e065e1",
+      "position": [
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
       ],
       "scale": [
         1,
@@ -381,21 +721,21 @@
       "ui": {
         "alignItems": "flex-start",
         "background": "#405d6c",
-        "backgroundOpacity": 0.8,
+        "backgroundOpacity": 0,
         "backgroundSize": "contain",
         "borderRadius": 4,
-        "color": "#ffffff",
+        "color": "#4dffff",
         "flexDirection": "column",
         "flexWrap": "wrap",
         "font": {
           "type": "font",
-          "font": "Gotham"
+          "font": "Helvetica"
         },
-        "fontSize": 4,
+        "fontSize": 6,
         "gap": 12,
-        "height": 60,
+        "height": 85,
+        "ignoreRaycast": true,
         "justifyContent": "flex-start",
-        "maxWidth": 50,
         "nineSliceBorderBottom": 43,
         "nineSliceBorderLeft": 43,
         "nineSliceBorderRight": 43,
@@ -404,28 +744,29 @@
         "paddingLeft": 4,
         "paddingRight": 4,
         "paddingTop": 12,
-        "text": "Sample Text",
+        "text": "Click Here",
         "textAlign": "left",
         "type": "3d",
         "verticalTextAlign": "start",
-        "width": 40
+        "width": 65
       }
     },
-    "26b2e815-e257-41cf-9481-79067f1a3689": {
+    "26a2fa6e-2c2b-4578-acaa-b762bc7bd33e": {
       "components": {},
       "geometry": null,
-      "id": "26b2e815-e257-41cf-9481-79067f1a3689",
+      "hidden": false,
+      "id": "26a2fa6e-2c2b-4578-acaa-b762bc7bd33e",
       "material": {
         "color": "#FFFFFF",
         "type": "basic"
       },
-      "name": "AudioFrame (4)",
-      "order": 0.5386961722542654,
-      "parentId": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
+      "name": "InfinibandFrameAnalogy",
+      "order": 14.395924821697982,
+      "parentId": "45328c1a-760e-46e3-aebd-770f13437600",
       "position": [
-        0.7713351882720385,
         0,
-        -5.551115123125783e-17
+        0.044040473484080994,
+        0.24
       ],
       "rotation": [
         0,
@@ -434,30 +775,114 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        3,
+        2.9,
+        2.85
       ],
       "ui": {
         "alignItems": "flex-start",
-        "background": "#405d6c",
+        "background": "#000000",
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
         "borderRadius": 4,
-        "borderWidth": 1,
         "flexDirection": "column",
         "flexWrap": "wrap",
-        "height": 72,
+        "height": 40,
         "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
         "justifyContent": "flex-start",
-        "maxWidth": 50,
+        "maxWidth": 60,
         "paddingBottom": 4,
         "paddingLeft": 4,
         "paddingRight": 4,
         "paddingTop": 4,
         "type": "3d",
-        "width": 50
+        "width": 60
+      }
+    },
+    "26a69a23-02ef-4cea-b96f-a64de9cd2083": {
+      "components": {},
+      "geometry": null,
+      "id": "26a69a23-02ef-4cea-b96f-a64de9cd2083",
+      "material": null,
+      "name": "RiserCardImage",
+      "order": 2.799079001613712,
+      "parentId": "ad213fa3-1461-46a3-9fdc-d37215e69568",
+      "position": [
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesComponents/Property_1Riser_Card.png"
+        },
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "26e40001-744c-4019-8fb2-03626303bc61": {
+      "components": {
+        "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f": {
+          "id": "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f",
+          "name": "object-label",
+          "parameters": {
+            "name": "model"
+          }
+        }
+      },
+      "gltfModel": {
+        "animationClip": "",
+        "loop": true,
+        "src": {
+          "type": "asset",
+          "asset": "assets/riserCard_rf.glb"
+        }
+      },
+      "id": "26e40001-744c-4019-8fb2-03626303bc61",
+      "name": "RiserCardModel",
+      "order": 2.8375824107233503,
+      "parentId": "ad213fa3-1461-46a3-9fdc-d37215e69568",
+      "position": [
+        0,
+        0.6238804086041057,
+        0.7706334609490882
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4,
+        4,
+        4
+      ],
+      "ui": {
+        "height": 10,
+        "ignoreRaycast": true,
+        "stackingOrder": 0,
+        "type": "3d",
+        "width": 16
       }
     },
     "27def0a3-1f0c-4f09-90dc-0759b390a551": {
@@ -499,21 +924,18 @@
         0.30000000000000004
       ]
     },
-    "2ae196d3-e75a-4788-9cea-8aaa2bc38a4f": {
+    "2b263d92-890e-4293-b7fc-a4255cae4780": {
       "components": {},
       "geometry": null,
-      "id": "2ae196d3-e75a-4788-9cea-8aaa2bc38a4f",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "AudioFrame (6)",
-      "order": 13.485065701538206,
-      "parentId": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
+      "id": "2b263d92-890e-4293-b7fc-a4255cae4780",
+      "material": null,
+      "name": "HeatsinkAudioIconAnalogy",
+      "order": 3.923615857059621,
+      "parentId": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
       "position": [
-        0.6814084960539972,
-        0.007003098886588011,
-        0.05704604912173172
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
       ],
       "rotation": [
         0,
@@ -522,62 +944,54 @@
         1
       ],
       "scale": [
-        0.5,
-        0.5,
-        0.5
+        1,
+        1,
+        1
       ],
       "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
+        },
         "type": "3d",
-        "width": 50
+        "width": 14
       }
     },
     "2de9254b-f992-4aac-9193-c2979d214ed8": {
       "components": {
-        "2aaec208-6257-4639-aa80-5a7d90f54216": {
-          "id": "2aaec208-6257-4639-aa80-5a7d90f54216",
-          "name": "drag-input-manager"
-        },
-        "3179934e-061a-40f1-8dd2-03ba8fe960e8": {
-          "id": "3179934e-061a-40f1-8dd2-03ba8fe960e8",
-          "name": "object-rotation-controls",
+        "7746024a-b887-4692-a28e-b063ce5d1675": {
+          "id": "7746024a-b887-4692-a28e-b063ce5d1675",
+          "name": "unified-input-controller",
           "parameters": {
-            "dragGain": 5,
-            "radiansPerPixel": 1
+            "modelLabel": "model",
+            "targetEid": {
+              "type": "entity",
+              "id": "2de9254b-f992-4aac-9193-c2979d214ed8"
+            }
           }
         },
-        "47a74f18-35ef-40e6-8a18-927a86c4fcd7": {
-          "id": "47a74f18-35ef-40e6-8a18-927a86c4fcd7",
-          "name": "input-manager"
+        "06494cf4-77fd-4360-a9bc-d28db55b37cc": {
+          "id": "06494cf4-77fd-4360-a9bc-d28db55b37cc",
+          "name": "object-rotation-controls",
+          "parameters": {}
         }
       },
       "geometry": null,
+      "hidden": false,
       "id": "2de9254b-f992-4aac-9193-c2979d214ed8",
       "imageTarget": {
-        "name": "infiniband_3_a"
+        "name": "Target_Infiniband"
       },
       "material": null,
       "name": "infiniband",
-      "order": 9.290201620279813,
+      "order": 2.5707932578526322,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "position": [
-        16.455607661040002,
+        -3,
         0,
         0
       ],
@@ -591,70 +1005,28 @@
         1,
         1,
         1
-      ],
-      "hidden": false
+      ]
     },
-    "3272454c-9c54-4b79-84ee-43c71ad28ef3": {
+    "2ec55e50-b89a-4f31-aa17-52540b5e9c25": {
       "components": {
-        "1b670b72-6ff4-4e48-8cb9-773b62161e2a": {
-          "id": "1b670b72-6ff4-4e48-8cb9-773b62161e2a",
-          "name": "input-manager"
-        },
-        "73d40d9b-75f2-4e80-8c90-ea2b631067a0": {
-          "id": "73d40d9b-75f2-4e80-8c90-ea2b631067a0",
-          "name": "object-rotation-controls",
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
+          "name": "object-label",
           "parameters": {
-            "dragGain": 5,
-            "radiansPerPixel": 1
+            "name": "text"
           }
-        },
-        "abe272a5-ed70-4152-ac15-68b5347b4ec6": {
-          "id": "abe272a5-ed70-4152-ac15-68b5347b4ec6",
-          "name": "drag-input-manager"
         }
       },
       "geometry": null,
-      "id": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
-      "imageTarget": {
-        "name": "roads-powergrids_motherboard_v002"
-      },
+      "id": "2ec55e50-b89a-4f31-aa17-52540b5e9c25",
       "material": null,
-      "name": "motherboard_analogy",
-      "order": 14.028195931921603,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "position": [
-        9.482802571969948,
-        1.1972909786791177,
-        -2.1746667112185163
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        2,
-        2,
-        2
-      ],
-      "hidden": false
-    },
-    "36dcdb8b-568a-46f9-9aab-582893e5631e": {
-      "components": {},
-      "geometry": null,
-      "id": "36dcdb8b-568a-46f9-9aab-582893e5631e",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "AudioFrame (8)",
-      "order": 11.467290714960003,
+      "name": "GraceHopperTextAnalogy",
+      "order": 9.224251548058575,
       "parentId": "4b33edf9-da47-49cc-8740-157391ad1895",
       "position": [
-        0.6641347197887932,
-        0.020486075406025317,
-        0.06731215930655376
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
       ],
       "rotation": [
         0,
@@ -663,23 +1035,287 @@
         1
       ],
       "scale": [
-        0.5,
-        0.5,
-        0.5
+        1,
+        1,
+        1
       ],
       "ui": {
         "alignItems": "flex-start",
         "background": "#405d6c",
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0,
         "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
         "borderRadius": 4,
-        "borderWidth": 1,
+        "color": "#4dffff",
         "flexDirection": "column",
         "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
+        "font": {
+          "type": "font",
+          "font": "Helvetica"
+        },
+        "fontSize": 6,
+        "gap": 12,
+        "height": 85,
+        "ignoreRaycast": true,
         "justifyContent": "flex-start",
+        "nineSliceBorderBottom": 43,
+        "nineSliceBorderLeft": 43,
+        "nineSliceBorderRight": 43,
+        "nineSliceBorderTop": 43,
+        "paddingBottom": 12,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 12,
+        "text": "Click Here",
+        "textAlign": "left",
+        "type": "3d",
+        "verticalTextAlign": "start",
+        "width": 65
+      }
+    },
+    "2f81bcc8-8ec6-4b21-8137-9ee10915fd11": {
+      "components": {
+        "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f": {
+          "id": "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f",
+          "name": "object-label",
+          "parameters": {
+            "name": "model"
+          }
+        }
+      },
+      "gltfModel": {
+        "animationClip": "",
+        "loop": true,
+        "src": {
+          "type": "asset",
+          "asset": "assets/infiniband_sh_origin.glb"
+        }
+      },
+      "id": "2f81bcc8-8ec6-4b21-8137-9ee10915fd11",
+      "name": "InfinibandModel",
+      "order": -0.8226743121000615,
+      "parentId": "2de9254b-f992-4aac-9193-c2979d214ed8",
+      "position": [
+        0,
+        0.6238804086041057,
+        0.7706334609490882
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        10,
+        10,
+        10
+      ],
+      "ui": {
+        "height": 4,
+        "ignoreRaycast": true,
+        "stackingOrder": 0,
+        "type": "3d",
+        "width": 8
+      }
+    },
+    "31187486-e628-4943-b10c-162bb8f5004f": {
+      "components": {},
+      "geometry": null,
+      "id": "31187486-e628-4943-b10c-162bb8f5004f",
+      "material": null,
+      "name": "InfinibandImageAnalogy",
+      "order": 14.51480325845983,
+      "parentId": "45328c1a-760e-46e3-aebd-770f13437600",
+      "position": [
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesAnalogies/Property_1Infiniband_Analogy_Delivery.png"
+        },
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "3272454c-9c54-4b79-84ee-43c71ad28ef3": {
+      "components": {
+        "5934d547-703c-4172-85b2-2a3023e02aa3": {
+          "id": "5934d547-703c-4172-85b2-2a3023e02aa3",
+          "name": "unified-input-controller",
+          "parameters": {
+            "targetEid": {
+              "type": "entity",
+              "id": "3272454c-9c54-4b79-84ee-43c71ad28ef3"
+            }
+          }
+        },
+        "7500f9d1-a32e-46a6-b80e-ffdf87298dcd": {
+          "id": "7500f9d1-a32e-46a6-b80e-ffdf87298dcd",
+          "name": "object-rotation-controls",
+          "parameters": {}
+        }
+      },
+      "geometry": null,
+      "hidden": false,
+      "id": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
+      "imageTarget": {
+        "name": "Target_Roads"
+      },
+      "material": null,
+      "name": "motherboard_analogy",
+      "order": 3.858144544106855,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "position": [
+        1,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "32ab5f08-515b-4291-9fdb-b23c63fa0014": {
+      "components": {},
+      "geometry": null,
+      "id": "32ab5f08-515b-4291-9fdb-b23c63fa0014",
+      "material": null,
+      "name": "MBAudioIconAnalogy",
+      "order": 7.86823124224544,
+      "parentId": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
+      "position": [
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
+        },
+        "type": "3d",
+        "width": 14
+      }
+    },
+    "33853e75-7223-49e1-8fc7-4234248ed869": {
+      "components": {},
+      "geometry": null,
+      "id": "33853e75-7223-49e1-8fc7-4234248ed869",
+      "material": null,
+      "name": "HeatsinkClickHere",
+      "order": 1.50772957079522,
+      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
+      "position": [
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
+      }
+    },
+    "37e19027-7801-4102-afef-9cd62404a2ff": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "37e19027-7801-4102-afef-9cd62404a2ff",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "InfinibandLabel",
+      "order": -0.8949484089709269,
+      "parentId": "2de9254b-f992-4aac-9193-c2979d214ed8",
+      "position": [
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "ui": {
+        "alignItems": "center",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 8,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsComponents/Infiniband.png"
+        },
+        "justifyContent": "center",
         "maxWidth": 50,
         "paddingBottom": 4,
         "paddingLeft": 4,
@@ -689,13 +1325,111 @@
         "width": 50
       }
     },
-    "38551112-e1b1-42a1-9828-068d3a7344c2": {
+    "39057009-5678-483f-89c0-7af1bc7f9778": {
       "components": {
-        "c1fd7ee3-0ac9-48da-89e6-88ff7d838ed7": {
-          "id": "c1fd7ee3-0ac9-48da-89e6-88ff7d838ed7",
+        "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f": {
+          "id": "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f",
           "name": "object-label",
           "parameters": {
-            "name": "sled_2"
+            "name": "model"
+          }
+        }
+      },
+      "gltfModel": {
+        "animationClip": "",
+        "loop": true,
+        "src": {
+          "type": "asset",
+          "asset": "assets/m2_texture.glb"
+        }
+      },
+      "id": "39057009-5678-483f-89c0-7af1bc7f9778",
+      "name": "M2Model",
+      "order": -0.8861227546339144,
+      "parentId": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
+      "position": [
+        0,
+        0.6238804086041057,
+        0.7706334609490882
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "height": 50,
+        "ignoreRaycast": true,
+        "stackingOrder": 0,
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "3b2b5264-38a2-46a3-8f75-cf00960b318d": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "3b2b5264-38a2-46a3-8f75-cf00960b318d",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "MBFrameAnalogy",
+      "order": 7.671374127384743,
+      "parentId": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
+      "position": [
+        0,
+        0.044040473484080994,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        2.9,
+        2.85
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 40,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
+        "justifyContent": "flex-start",
+        "maxWidth": 60,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 60
+      }
+    },
+    "3c040f09-bae2-43a2-84d6-376727e920ab": {
+      "components": {
+        "5c7e491d-25e8-45b1-a1ea-a2ce47fbb648": {
+          "id": "5c7e491d-25e8-45b1-a1ea-a2ce47fbb648",
+          "name": "object-label",
+          "parameters": {
+            "name": "model"
           }
         }
       },
@@ -705,18 +1439,18 @@
         "loop": true,
         "src": {
           "type": "asset",
-          "asset": "assets/vista_sled.glb"
+          "asset": "assets/Models/heatsink_analogy.glb"
         }
       },
-      "id": "38551112-e1b1-42a1-9828-068d3a7344c2",
+      "id": "3c040f09-bae2-43a2-84d6-376727e920ab",
       "material": null,
-      "name": "vista_sled.glb (1)",
-      "order": 13.536255466474223,
-      "parentId": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
+      "name": "HeatsinkModelAnalogy",
+      "order": 3.8978725345159644,
+      "parentId": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
       "position": [
-        -0.006736013863378965,
-        0.03502924472768221,
-        0.32815961225655355
+        0,
+        0.6238804086041057,
+        0.7540444680049601
       ],
       "rotation": [
         0,
@@ -725,29 +1459,135 @@
         1
       ],
       "scale": [
-        2,
-        2,
-        2
+        0.7,
+        0.7,
+        0.7
       ],
       "ui": {
+        "ignoreRaycast": true,
         "type": "3d"
       }
     },
-    "3a44a961-3ef6-4ac5-97a8-2562e18996b5": {
+    "3de2d976-0d36-41db-be4a-edad1f167540": {
+      "components": {
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
+          "name": "object-label",
+          "parameters": {
+            "name": "audio"
+          }
+        },
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
+          "name": "play-audio",
+          "parameters": {
+            "mode": "analogy",
+            "type": "motherboard"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "3de2d976-0d36-41db-be4a-edad1f167540",
+      "material": null,
+      "name": "MBAudioBoxAnalogy",
+      "order": 7.828859819273301,
+      "parentId": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
+      "position": [
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 80,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+        },
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "3f8df73e-46a3-4a18-941a-36921f3a6749": {
+      "components": {
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
+          "name": "object-label",
+          "parameters": {
+            "name": "audio"
+          }
+        },
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
+          "name": "play-audio",
+          "parameters": {
+            "mode": "analogy",
+            "type": "riser"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "3f8df73e-46a3-4a18-941a-36921f3a6749",
+      "material": null,
+      "name": "RiserCardAudioBoxAnalogy",
+      "order": 14.733587388231188,
+      "parentId": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
+      "position": [
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 80,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+        },
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "450a1017-a15b-4310-ab04-dc60df510cae": {
       "components": {},
       "geometry": null,
-      "id": "3a44a961-3ef6-4ac5-97a8-2562e18996b5",
+      "hidden": false,
+      "id": "450a1017-a15b-4310-ab04-dc60df510cae",
       "material": {
         "color": "#FFFFFF",
         "type": "basic"
       },
-      "name": "AudioFrame (12)",
-      "order": 16.346952315792766,
-      "parentId": "45328c1a-760e-46e3-aebd-770f13437600",
+      "name": "MBLabelAnalogy",
+      "order": 7.750116973329022,
+      "parentId": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
       "position": [
-        0.6456022673419639,
-        -0.005000263438178165,
-        -0.020651907493322463
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
       ],
       "rotation": [
         0,
@@ -756,23 +1596,25 @@
         1
       ],
       "scale": [
-        0.5,
-        0.5,
-        0.5
+        2.4,
+        2.4,
+        2.4
       ],
       "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
+        "alignItems": "center",
+        "background": "#000000",
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
         "borderRadius": 4,
-        "borderWidth": 1,
         "flexDirection": "column",
         "flexWrap": "wrap",
-        "height": 72,
+        "height": 8,
         "ignoreRaycast": false,
-        "justifyContent": "flex-start",
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsAnalogies/Roads__Bridges.png"
+        },
+        "justifyContent": "center",
         "maxWidth": 50,
         "paddingBottom": 4,
         "paddingLeft": 4,
@@ -782,29 +1624,44 @@
         "width": 50
       }
     },
-    "41580bca-4779-4af3-91be-93dfbf2a2127": {
-      "audio": {
-        "loop": true,
-        "paused": true,
-        "src": null
+    "45328c1a-760e-46e3-aebd-770f13437600": {
+      "components": {
+        "75173781-3a0f-4ea0-aaff-aadbbd225bd1": {
+          "id": "75173781-3a0f-4ea0-aaff-aadbbd225bd1",
+          "name": "unified-input-controller",
+          "parameters": {
+            "targetEid": {
+              "type": "entity",
+              "id": "45328c1a-760e-46e3-aebd-770f13437600"
+            }
+          }
+        },
+        "fd809cfe-5db6-4dc0-afb4-3f1c6786b5d4": {
+          "id": "fd809cfe-5db6-4dc0-afb4-3f1c6786b5d4",
+          "name": "object-rotation-controls",
+          "parameters": {}
+        }
       },
-      "components": {},
       "geometry": null,
-      "id": "41580bca-4779-4af3-91be-93dfbf2a2127",
+      "hidden": false,
+      "id": "45328c1a-760e-46e3-aebd-770f13437600",
+      "imageTarget": {
+        "name": "Target_Delivery"
+      },
       "material": null,
-      "name": "audioHolder",
-      "order": 1.4658606159363536,
-      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
+      "name": "infiniband_analogy",
+      "order": 3.1193294945515886,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "position": [
+        -3,
         0,
-        0,
-        0
+        -3
       ],
       "rotation": [
         0,
         0,
-        1,
-        6.123233995736766e-17
+        0,
+        1
       ],
       "scale": [
         1,
@@ -812,46 +1669,18 @@
         1
       ]
     },
-    "45328c1a-760e-46e3-aebd-770f13437600": {
-      "components": {
-        "74cb69f0-c5ea-4599-80eb-0932fbb73a62": {
-          "id": "74cb69f0-c5ea-4599-80eb-0932fbb73a62",
-          "name": "drag-input-manager"
-        },
-        "774431fc-aab1-4ca2-ae84-cb8d4a33fef7": {
-          "id": "774431fc-aab1-4ca2-ae84-cb8d4a33fef7",
-          "name": "input-manager"
-        },
-        "8e86ecc6-f45d-49eb-aa3a-09ce8c591e97": {
-          "id": "8e86ecc6-f45d-49eb-aa3a-09ce8c591e97",
-          "name": "object-rotation-controls",
-          "parameters": {
-            "dragGain": 5,
-            "radiansPerPixel": 1
-          }
-        },
-        "ea3d1c24-16e1-415e-9e53-92391ac16b16": {
-          "id": "ea3d1c24-16e1-415e-9e53-92391ac16b16",
-          "name": "play-audio",
-          "parameters": {
-            "type": "infiniband",
-            "mode": "analogy"
-          }
-        }
-      },
+    "475a4a53-2c2e-4cf5-b58c-4fe5ce060960": {
+      "components": {},
       "geometry": null,
-      "id": "45328c1a-760e-46e3-aebd-770f13437600",
-      "imageTarget": {
-        "name": "infiniband_expressnetwork"
-      },
+      "id": "475a4a53-2c2e-4cf5-b58c-4fe5ce060960",
       "material": null,
-      "name": "infiniband_analogy",
-      "order": 16.394449112860315,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "name": "InfinibandAudioIconAnalogy",
+      "order": 14.990317005507222,
+      "parentId": "45328c1a-760e-46e3-aebd-770f13437600",
       "position": [
-        16.762744463854304,
-        1.1261511964488984,
-        -2.418762672444318
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
       ],
       "rotation": [
         0,
@@ -860,11 +1689,22 @@
         1
       ],
       "scale": [
-        2,
-        2,
-        2
+        1,
+        1,
+        1
       ],
-      "hidden": false
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
+        },
+        "type": "3d",
+        "width": 14
+      }
     },
     "47699d9e-18a5-4f88-a4f9-b8be92e8f74a": {
       "components": {},
@@ -894,46 +1734,22 @@
         1
       ]
     },
-    "4b33edf9-da47-49cc-8740-157391ad1895": {
-      "components": {
-        "8c9692c5-b757-4f27-bdba-36b409ad6874": {
-          "id": "8c9692c5-b757-4f27-bdba-36b409ad6874",
-          "name": "object-rotation-controls",
-          "parameters": {
-            "dragGain": 5,
-            "radiansPerPixel": 1
-          }
-        },
-        "a0f7a3eb-f886-499a-9fbb-8db551b4cdf0": {
-          "id": "a0f7a3eb-f886-499a-9fbb-8db551b4cdf0",
-          "name": "drag-input-manager"
-        },
-        "b2ee858c-e645-475c-9b4d-5242a1f1b3a8": {
-          "id": "b2ee858c-e645-475c-9b4d-5242a1f1b3a8",
-          "name": "input-manager"
-        },
-        "ee36d375-68e9-44fc-a299-d6ca98980cc5": {
-          "id": "ee36d375-68e9-44fc-a299-d6ca98980cc5",
-          "name": "play-audio",
-          "parameters": {
-            "type": "gracehopper",
-            "mode": "analogy"
-          }
-        }
-      },
+    "4a9ffda7-7305-4885-b8a8-1503c0fbe8a7": {
+      "components": {},
       "geometry": null,
-      "id": "4b33edf9-da47-49cc-8740-157391ad1895",
-      "imageTarget": {
-        "name": "brainpower_cpu"
+      "hidden": false,
+      "id": "4a9ffda7-7305-4885-b8a8-1503c0fbe8a7",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
       },
-      "material": null,
-      "name": "grace_hopper_analogy",
-      "order": 11.333757086027362,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "name": "MBFrame",
+      "order": 0.3529157742410848,
+      "parentId": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
       "position": [
-        6.187578598078632,
-        1.1742311642944112,
-        -2.249589201576124
+        0,
+        0.044040473484080994,
+        0.24
       ],
       "rotation": [
         0,
@@ -942,49 +1758,522 @@
         1
       ],
       "scale": [
-        2,
-        2,
-        2
+        3,
+        2.9,
+        2.85
       ],
-      "hidden": false
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 40,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
+        "justifyContent": "flex-start",
+        "maxWidth": 60,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 60
+      }
     },
-    "5032e120-2161-40dd-a57b-1b546f745bb9": {
+    "4af56a2e-72eb-4725-b172-a673bf1152fd": {
       "components": {},
       "geometry": null,
-      "hidden": false,
-      "id": "5032e120-2161-40dd-a57b-1b546f745bb9",
+      "id": "4af56a2e-72eb-4725-b172-a673bf1152fd",
       "material": null,
-      "name": "playButton",
-      "order": 1.690068373487232,
-      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
+      "name": "RiserCardAudioIcon",
+      "order": 2.946799182295991,
+      "parentId": "ad213fa3-1461-46a3-9fdc-d37215e69568",
       "position": [
-        -2.0140732245406,
-        0.2281358291907988,
-        0.4808133688284367
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
       ],
       "rotation": [
         0,
         0,
-        1,
-        6.123233995736766e-17
+        0,
+        1
       ],
       "scale": [
-        0.4,
-        0.4,
-        0.4
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
+        },
+        "type": "3d",
+        "width": 14
+      }
+    },
+    "4b33edf9-da47-49cc-8740-157391ad1895": {
+      "components": {
+        "91c10d3e-5fcd-4d28-9e47-706e0fb5e1fb": {
+          "id": "91c10d3e-5fcd-4d28-9e47-706e0fb5e1fb",
+          "name": "unified-input-controller",
+          "parameters": {
+            "targetEid": {
+              "type": "entity",
+              "id": "4b33edf9-da47-49cc-8740-157391ad1895"
+            }
+          }
+        },
+        "f702e0dc-6aa8-42ee-a795-bc5de29a1b63": {
+          "id": "f702e0dc-6aa8-42ee-a795-bc5de29a1b63",
+          "name": "object-rotation-controls",
+          "parameters": {}
+        }
+      },
+      "geometry": null,
+      "hidden": false,
+      "id": "4b33edf9-da47-49cc-8740-157391ad1895",
+      "imageTarget": {
+        "name": "Target_Govt_officials"
+      },
+      "material": null,
+      "name": "grace_hopper_analogy",
+      "order": 5.769716330752777,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "position": [
+        5,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "4d30c4c8-b5ac-4e32-a350-808833656b60": {
+      "components": {},
+      "geometry": null,
+      "id": "4d30c4c8-b5ac-4e32-a350-808833656b60",
+      "material": null,
+      "name": "RiserCardImageAnalogy",
+      "order": 14.584474376215399,
+      "parentId": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
+      "position": [
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesAnalogies/Property_1Rise_Card_Analogy_elevators.png"
+        },
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "50bce985-92b7-4512-847f-8fdc22610812": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "50bce985-92b7-4512-847f-8fdc22610812",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "HeatsinkFrameAnalogy",
+      "order": 3.8457783766696,
+      "parentId": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
+      "position": [
+        0,
+        0.044040473484080994,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        2.9,
+        2.85
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 40,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
+        "justifyContent": "flex-start",
+        "maxWidth": 60,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 60
+      }
+    },
+    "579ada7a-80be-474f-8ad8-59269b4608b9": {
+      "components": {},
+      "geometry": null,
+      "id": "579ada7a-80be-474f-8ad8-59269b4608b9",
+      "material": null,
+      "name": "M2ClickHereAnalogy",
+      "order": 8.017600351964226,
+      "parentId": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
+      "position": [
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
+      }
+    },
+    "641546f7-5461-4384-a514-76bbf4c4aa47": {
+      "components": {},
+      "geometry": null,
+      "id": "641546f7-5461-4384-a514-76bbf4c4aa47",
+      "material": null,
+      "name": "GraceHopperImageAnalogy",
+      "order": 8.937392023543701,
+      "parentId": "4b33edf9-da47-49cc-8740-157391ad1895",
+      "position": [
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesAnalogies/Property_1Super_Chip_Analogy_gov_officials.png"
+        },
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "66394fcd-96ab-4f06-a274-400c61793251": {
+      "components": {
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
+          "name": "object-label",
+          "parameters": {
+            "name": "text"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "66394fcd-96ab-4f06-a274-400c61793251",
+      "material": null,
+      "name": "InfinibandTextAnalogy",
+      "order": 15.656110720112242,
+      "parentId": "45328c1a-760e-46e3-aebd-770f13437600",
+      "position": [
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#405d6c",
+        "backgroundOpacity": 0,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "color": "#4dffff",
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "font": {
+          "type": "font",
+          "font": "Helvetica"
+        },
+        "fontSize": 6,
+        "gap": 12,
+        "height": 85,
+        "ignoreRaycast": true,
+        "justifyContent": "flex-start",
+        "nineSliceBorderBottom": 43,
+        "nineSliceBorderLeft": 43,
+        "nineSliceBorderRight": 43,
+        "nineSliceBorderTop": 43,
+        "paddingBottom": 12,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 12,
+        "text": "Click Here",
+        "textAlign": "left",
+        "type": "3d",
+        "verticalTextAlign": "start",
+        "width": 65
+      }
+    },
+    "66e99cd9-bba5-4509-a823-006fc69ffd2b": {
+      "components": {
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
+          "name": "object-label",
+          "parameters": {
+            "name": "text"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "66e99cd9-bba5-4509-a823-006fc69ffd2b",
+      "material": null,
+      "name": "HeatsinkText",
+      "order": 1.5079143165419733,
+      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
+      "position": [
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#405d6c",
+        "backgroundOpacity": 0,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "color": "#4dffff",
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "font": {
+          "type": "font",
+          "font": "Helvetica"
+        },
+        "fontSize": 6,
+        "gap": 12,
+        "height": 85,
+        "ignoreRaycast": true,
+        "justifyContent": "flex-start",
+        "nineSliceBorderBottom": 43,
+        "nineSliceBorderLeft": 43,
+        "nineSliceBorderRight": 43,
+        "nineSliceBorderTop": 43,
+        "paddingBottom": 12,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 12,
+        "text": "Click Here",
+        "textAlign": "left",
+        "type": "3d",
+        "verticalTextAlign": "start",
+        "width": 65
+      }
+    },
+    "69e19db1-ab60-439b-99a6-6d056571fb83": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "69e19db1-ab60-439b-99a6-6d056571fb83",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "HeatsinkLabelAnalogy",
+      "order": 3.8846971168646105,
+      "parentId": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
+      "position": [
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2.4,
+        2.4,
+        2.4
       ],
       "ui": {
         "alignItems": "center",
-        "background": "#e6e6e6",
+        "background": "#000000",
         "backgroundOpacity": 1,
-        "borderRadius": 14,
-        "flexDirection": "row",
-        "gap": 4,
-        "height": 28,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 8,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsAnalogies/Air_conditioning_system.png"
+        },
         "justifyContent": "center",
-        "padding": "10",
+        "maxWidth": 50,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
         "type": "3d",
-        "width": 110
+        "width": 50
+      }
+    },
+    "6a04bf1e-c1e1-46a6-8eba-2c3e813ee7a1": {
+      "components": {
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
+          "name": "object-label",
+          "parameters": {
+            "name": "text"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "6a04bf1e-c1e1-46a6-8eba-2c3e813ee7a1",
+      "material": null,
+      "name": "MBText",
+      "order": 1.2376654964208371,
+      "parentId": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
+      "position": [
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#405d6c",
+        "backgroundOpacity": 0,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "color": "#4dffff",
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "font": {
+          "type": "font",
+          "font": "Helvetica"
+        },
+        "fontSize": 6,
+        "gap": 12,
+        "height": 85,
+        "ignoreRaycast": true,
+        "justifyContent": "flex-start",
+        "nineSliceBorderBottom": 43,
+        "nineSliceBorderLeft": 43,
+        "nineSliceBorderRight": 43,
+        "nineSliceBorderTop": 43,
+        "paddingBottom": 12,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 12,
+        "text": "Click Here",
+        "textAlign": "left",
+        "type": "3d",
+        "verticalTextAlign": "start",
+        "width": 65
       }
     },
     "6b341159-3e35-45e9-a61f-eff6422c11a0": {
@@ -993,11 +2282,10 @@
           "id": "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f",
           "name": "object-label",
           "parameters": {
-            "name": "heatsink-nc"
+            "name": "model"
           }
         }
       },
-      "geometry": null,
       "gltfModel": {
         "animationClip": "",
         "loop": true,
@@ -1007,14 +2295,13 @@
         }
       },
       "id": "6b341159-3e35-45e9-a61f-eff6422c11a0",
-      "material": null,
-      "name": "heatsink2_nc.glb (1)",
-      "order": 1.6744723666511558,
+      "name": "HeatsinkModel",
+      "order": 1.5005660184800993,
       "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
       "position": [
         0,
-        0.54399851950226,
-        0.42563051250898487
+        0.6238804086041057,
+        0.7706334609490882
       ],
       "rotation": [
         0,
@@ -1028,185 +2315,135 @@
         4
       ],
       "ui": {
-        "type": "3d",
+        "height": 10,
         "ignoreRaycast": true,
-        "stackingOrder": 1
+        "stackingOrder": 0,
+        "type": "3d",
+        "width": 16
       }
     },
-    "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5": {
+    "6da6192a-26a4-4b18-96f2-95d5aa0f7660": {
       "components": {
-        "4b0a2c10-28b8-4936-b04f-37138256674c": {
-          "id": "4b0a2c10-28b8-4936-b04f-37138256674c",
-          "name": "drag-input-manager"
-        },
-        "984c1d63-63f1-47bc-aab7-b130713b9efb": {
-          "id": "984c1d63-63f1-47bc-aab7-b130713b9efb",
-          "name": "input-manager"
-        },
-        "d3face3b-f737-4f65-a4ed-89697bbebb4d": {
-          "id": "d3face3b-f737-4f65-a4ed-89697bbebb4d",
-          "name": "object-rotation-controls",
-          "parameters": {
-            "dragGain": 5,
-            "flickImpulseGain": 0.05,
-            "radiansPerPixel": 1
-          }
-        }
-      },
-      "geometry": null,
-      "id": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
-      "imageTarget": {
-        "name": "motherboard_1"
-      },
-      "material": null,
-      "name": "motherboard",
-      "order": 6.617973949119444,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "position": [
-        9.31552141099632,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        -0.7071067811865475,
-        0.7071067811865476
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "hidden": false
-    },
-    "808aa433-5c4c-45a0-93aa-9d79778d8af3": {
-      "components": {
-        "5962b37c-0486-46b5-9fcb-7ef2349fca4a": {
-          "id": "5962b37c-0486-46b5-9fcb-7ef2349fca4a",
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
           "name": "object-label",
           "parameters": {
-            "name": "vista_gh"
-          }
-        }
-      },
-      "geometry": null,
-      "gltfModel": {
-        "animationClip": "",
-        "loop": true,
-        "src": {
-          "type": "asset",
-          "asset": "assets/vista_GH.glb"
-        }
-      },
-      "id": "808aa433-5c4c-45a0-93aa-9d79778d8af3",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "vista_GH.glb",
-      "order": 1.7175780549909154,
-      "parentId": "d94a6ae4-4470-4857-889e-674844e065e1",
-      "position": [
-        -0.2243824477427081,
-        0,
-        0.5029583592703535
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        4.599999999999998,
-        4.599999999999998,
-        4.599999999999998
-      ],
-      "ui": {
-        "type": "3d"
-      }
-    },
-    "80cef03c-d8a2-449e-96b3-6f41d34d86ea": {
-      "components": {
-        "1124bc7a-2894-4095-8804-16dcafb15f33": {
-          "id": "1124bc7a-2894-4095-8804-16dcafb15f33",
-          "name": "object-label",
-          "parameters": {
-            "name": "m2_2"
-          }
-        }
-      },
-      "geometry": null,
-      "gltfModel": {
-        "animationClip": "",
-        "loop": true,
-        "src": {
-          "type": "asset",
-          "asset": "assets/vista_M2.glb"
-        }
-      },
-      "id": "80cef03c-d8a2-449e-96b3-6f41d34d86ea",
-      "material": null,
-      "name": "vista_M2.glb (2)",
-      "order": 13.15290833251512,
-      "parentId": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
-      "position": [
-        0.04215592590768291,
-        -0.05399760327387537,
-        0.1996395999918329
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        6,
-        6,
-        6
-      ],
-      "ui": {
-        "type": "3d"
-      }
-    },
-    "82a1b9c3-eaca-424b-a62c-90461a928fea": {
-      "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
+            "name": "audio"
           }
         },
-        "2ae585f3-4c86-4ee6-8fbc-045a3801e111": {
-          "id": "2ae585f3-4c86-4ee6-8fbc-045a3801e111",
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
           "name": "play-audio",
           "parameters": {
-            "type": "riser_card"
+            "mode": "analogy"
           }
         }
       },
       "geometry": null,
-      "id": "82a1b9c3-eaca-424b-a62c-90461a928fea",
+      "id": "6da6192a-26a4-4b18-96f2-95d5aa0f7660",
       "material": null,
-      "name": "AudioText (2)",
-      "order": 1,
-      "parentId": "df96ae79-d55a-4842-a140-1b0bc1afb515",
+      "name": "HeatsinkAudioBoxAnalogy",
+      "order": 3.9041564869621155,
+      "parentId": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
       "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
       ],
       "rotation": [
         0,
-        -0.16442519759970609,
         0,
-        0.9863895550918499
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 80,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+        },
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "70ef14c2-aaf1-4da1-84f3-63cec4520258": {
+      "components": {
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
+          "name": "object-label",
+          "parameters": {
+            "name": "audio"
+          }
+        },
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
+          "name": "play-audio",
+          "parameters": {
+            "mode": "analogy",
+            "triggerEventName": "play-audio-trigger",
+            "type": "grace_hopper"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "70ef14c2-aaf1-4da1-84f3-63cec4520258",
+      "material": null,
+      "name": "GraceHopperAudioBoxAnalogy",
+      "order": 9.080821785801138,
+      "parentId": "4b33edf9-da47-49cc-8740-157391ad1895",
+      "position": [
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 80,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+        },
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "71a474bb-0d82-4e8d-8d4e-258347e6e1ca": {
+      "components": {},
+      "geometry": null,
+      "id": "71a474bb-0d82-4e8d-8d4e-258347e6e1ca",
+      "material": null,
+      "name": "RiserCardAudioIconAnalogy",
+      "order": 14.783291725569784,
+      "parentId": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
+      "position": [
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
       ],
       "scale": [
         1,
@@ -1214,53 +2451,34 @@
         1
       ],
       "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 0.8,
+        "backgroundOpacity": 1,
         "backgroundSize": "contain",
-        "borderRadius": 4,
-        "color": "#ffffff",
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "font": {
-          "type": "font",
-          "font": "Gotham"
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
         },
-        "fontSize": 4,
-        "gap": 12,
-        "height": 60,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "nineSliceBorderBottom": 43,
-        "nineSliceBorderLeft": 43,
-        "nineSliceBorderRight": 43,
-        "nineSliceBorderTop": 43,
-        "paddingBottom": 12,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 12,
-        "text": "Sample Text",
-        "textAlign": "left",
         "type": "3d",
-        "verticalTextAlign": "start",
-        "width": 40
+        "width": 14
       }
     },
-    "89ea3e63-9b15-4067-b095-dcecfaef729b": {
+    "76ac0be6-4835-4af1-a830-3b58a3463c60": {
       "components": {},
       "geometry": null,
-      "id": "89ea3e63-9b15-4067-b095-dcecfaef729b",
+      "hidden": false,
+      "id": "76ac0be6-4835-4af1-a830-3b58a3463c60",
       "material": {
         "color": "#FFFFFF",
         "type": "basic"
       },
-      "name": "AudioFrame (1)",
-      "order": -0.26051041308998624,
-      "parentId": "d94a6ae4-4470-4857-889e-674844e065e1",
+      "name": "M2Label",
+      "order": -0.9710865400115505,
+      "parentId": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
       "position": [
-        0.6797813836665689,
-        0,
-        -5.551115123125783e-17
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
       ],
       "rotation": [
         0,
@@ -1269,23 +2487,25 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        2.4,
+        2.4,
+        2.4
       ],
       "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
+        "alignItems": "center",
+        "background": "#000000",
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
         "borderRadius": 4,
-        "borderWidth": 1,
         "flexDirection": "column",
         "flexWrap": "wrap",
-        "height": 72,
+        "height": 8,
         "ignoreRaycast": false,
-        "justifyContent": "flex-start",
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsComponents/M2.png"
+        },
+        "justifyContent": "center",
         "maxWidth": 50,
         "paddingBottom": 4,
         "paddingLeft": 4,
@@ -1295,271 +2515,37 @@
         "width": 50
       }
     },
-    "8bbfa828-7502-4f87-ade8-e9ecfd6b853f": {
+    "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5": {
       "components": {
-        "7094b4b5-72f2-43fa-9dbe-7fb4651fa237": {
-          "id": "7094b4b5-72f2-43fa-9dbe-7fb4651fa237",
-          "name": "drag-input-manager"
-        },
-        "87d120d4-e159-44c7-88f5-411742ccd012": {
-          "id": "87d120d4-e159-44c7-88f5-411742ccd012",
-          "name": "object-rotation-controls",
+        "a254cba6-82c0-4378-b8c4-5c483ddb6901": {
+          "id": "a254cba6-82c0-4378-b8c4-5c483ddb6901",
+          "name": "unified-input-controller",
           "parameters": {
-            "dragGain": 5,
-            "radiansPerPixel": 1
-          }
-        },
-        "b34946eb-f620-4f26-a1f0-237e9efc27fc": {
-          "id": "b34946eb-f620-4f26-a1f0-237e9efc27fc",
-          "name": "input-manager"
-        },
-        "8c92018d-bdf9-4808-9a60-785c95d6a3b9": {
-          "id": "8c92018d-bdf9-4808-9a60-785c95d6a3b9",
-          "name": "play-audio",
-          "parameters": {
-            "type": "m2",
-            "mode": "analogy"
-          }
-        }
-      },
-      "geometry": null,
-      "id": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
-      "imageTarget": {
-        "name": "library_m.2"
-      },
-      "material": null,
-      "name": "m2_analogy",
-      "order": 15.747741688760922,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "position": [
-        12.922777018475818,
-        1.1261511964488984,
-        -2.418762672444318
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        2,
-        2,
-        2
-      ],
-      "hidden": false
-    },
-    "8cd1b57c-94de-4335-908d-845f6c3bb93c": {
-      "components": {},
-      "geometry": null,
-      "id": "8cd1b57c-94de-4335-908d-845f6c3bb93c",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "AudioFrame",
-      "order": 1.6221668929277295,
-      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
-      "position": [
-        0.75,
-        8.492518787004388e-17,
-        0.22
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
-        "type": "3d",
-        "width": 50,
-        "image": {
-          "type": "asset",
-          "asset": "assets/HeatsinkGraphics/Heat_Sink_Audio_Description.png"
-        }
-      },
-      "collider": {
-        "geometry": {
-          "type": "box",
-          "depth": 1,
-          "height": 1,
-          "width": 1
-        }
-      },
-      "hidden": false
-    },
-    "92c577b4-1ae7-47f0-91a5-7f140605d00f": {
-      "components": {
-        "05f983f4-75b1-49e7-a974-6b4a8dd327ad": {
-          "id": "05f983f4-75b1-49e7-a974-6b4a8dd327ad",
-          "name": "input-manager"
-        },
-        "276ea986-0f80-4ab2-8564-fd6413bb9d2d": {
-          "id": "276ea986-0f80-4ab2-8564-fd6413bb9d2d",
-          "name": "drag-input-manager"
-        },
-        "e2ba9bfb-d9f0-4ce7-813d-0de2c8c1d2a3": {
-          "id": "e2ba9bfb-d9f0-4ce7-813d-0de2c8c1d2a3",
-          "name": "object-rotation-controls",
-          "parameters": {
-            "dragGain": 5,
-            "radiansPerPixel": 1
-          }
-        }
-      },
-      "geometry": null,
-      "id": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
-      "imageTarget": {
-        "name": "elevator_risercard"
-      },
-      "material": null,
-      "name": "riser_card_analogy",
-      "order": 12.418269307348844,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "position": [
-        2.7292114236115754,
-        1.1261511964488984,
-        -2.3132984850289313
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        2,
-        2,
-        2
-      ],
-      "hidden": false
-    },
-    "9e01f02e-a34a-41d2-bdc1-a30ad9d4b76a": {
-      "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
+            "targetEid": {
               "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
+              "id": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5"
+            },
+            "modelLabel": "model"
           }
         },
-        "ec7295d8-f4b0-4e9c-9256-7387cb026619": {
-          "id": "ec7295d8-f4b0-4e9c-9256-7387cb026619",
-          "name": "play-audio",
-          "parameters": {
-            "type": "m2"
-          }
-        }
-      },
-      "geometry": null,
-      "id": "9e01f02e-a34a-41d2-bdc1-a30ad9d4b76a",
-      "material": null,
-      "name": "AudioText (4)",
-      "order": 1,
-      "parentId": "26b2e815-e257-41cf-9481-79067f1a3689",
-      "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
-      ],
-      "rotation": [
-        0,
-        -0.16442519759970609,
-        0,
-        0.9863895550918499
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 0.8,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "color": "#ffffff",
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "font": {
-          "type": "font",
-          "font": "Gotham"
-        },
-        "fontSize": 4,
-        "gap": 12,
-        "height": 60,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "nineSliceBorderBottom": 43,
-        "nineSliceBorderLeft": 43,
-        "nineSliceBorderRight": 43,
-        "nineSliceBorderTop": 43,
-        "paddingBottom": 12,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 12,
-        "text": "Sample Text",
-        "textAlign": "left",
-        "type": "3d",
-        "verticalTextAlign": "start",
-        "width": 40
-      }
-    },
-    "9e045c8b-b317-4e24-8298-4f13cbbc46b3": {
-      "components": {
-        "058d264b-544c-4e29-b85d-2557e5bc0836": {
-          "id": "058d264b-544c-4e29-b85d-2557e5bc0836",
-          "name": "drag-input-manager"
-        },
-        "ceafdd53-883f-46a1-b558-0a87f26d2441": {
-          "id": "ceafdd53-883f-46a1-b558-0a87f26d2441",
-          "name": "input-manager"
-        },
-        "ee1b8d01-b1c2-4459-b4a1-646019df4e7f": {
-          "id": "ee1b8d01-b1c2-4459-b4a1-646019df4e7f",
+        "8d005715-8e85-45e2-a791-66366dc0c936": {
+          "id": "8d005715-8e85-45e2-a791-66366dc0c936",
           "name": "object-rotation-controls",
-          "parameters": {
-            "dragGain": 5,
-            "radiansPerPixel": 1
-          }
+          "parameters": {}
         }
       },
       "geometry": null,
-      "id": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
+      "hidden": false,
+      "id": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
       "imageTarget": {
-        "name": "heatsink_1"
+        "name": "Target_Motherboard"
       },
       "material": null,
-      "name": "heatsink",
-      "order": 2.322562702977726,
+      "name": "motherboard",
+      "order": 2.604999272442881,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "position": [
-        0,
+        1,
         0,
         0
       ],
@@ -1573,8 +2559,841 @@
         1,
         1,
         1
+      ]
+    },
+    "8507a793-db5b-4bc8-bddb-d274c6e68dd0": {
+      "components": {
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
+          "name": "object-label",
+          "parameters": {
+            "name": "audio"
+          }
+        },
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
+          "name": "play-audio",
+          "parameters": {
+            "type": "m2"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "8507a793-db5b-4bc8-bddb-d274c6e68dd0",
+      "material": null,
+      "name": "M2AudioBox",
+      "order": -0.8011589692562785,
+      "parentId": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
+      "position": [
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
       ],
-      "hidden": false
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 80,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+        },
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "889ccb32-e7a9-4a16-a445-aedb36cdf41b": {
+      "components": {
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
+          "name": "object-label",
+          "parameters": {
+            "name": "text"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "889ccb32-e7a9-4a16-a445-aedb36cdf41b",
+      "material": null,
+      "name": "M2Text",
+      "order": -0.11338716647141897,
+      "parentId": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
+      "position": [
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#405d6c",
+        "backgroundOpacity": 0,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "color": "#4dffff",
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "font": {
+          "type": "font",
+          "font": "Helvetica"
+        },
+        "fontSize": 6,
+        "gap": 12,
+        "height": 85,
+        "ignoreRaycast": true,
+        "justifyContent": "flex-start",
+        "nineSliceBorderBottom": 43,
+        "nineSliceBorderLeft": 43,
+        "nineSliceBorderRight": 43,
+        "nineSliceBorderTop": 43,
+        "paddingBottom": 12,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 12,
+        "text": "Click Here",
+        "textAlign": "left",
+        "type": "3d",
+        "verticalTextAlign": "start",
+        "width": 65
+      }
+    },
+    "89e3f35c-6381-47db-9ab3-a9dcbf7ee64f": {
+      "components": {
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
+          "name": "object-label",
+          "parameters": {
+            "name": "audio"
+          }
+        },
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
+          "name": "play-audio",
+          "parameters": {}
+        }
+      },
+      "geometry": null,
+      "id": "89e3f35c-6381-47db-9ab3-a9dcbf7ee64f",
+      "material": null,
+      "name": "HeatsinkAudioBox",
+      "order": 1.505434200790948,
+      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
+      "position": [
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 80,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+        },
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "8b152efc-e868-4291-8a06-d74788173b84": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "8b152efc-e868-4291-8a06-d74788173b84",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "RiserCardFrame",
+      "order": 2.749838941386286,
+      "parentId": "ad213fa3-1461-46a3-9fdc-d37215e69568",
+      "position": [
+        0,
+        0.044040473484080994,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        2.9,
+        2.85
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 40,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
+        "justifyContent": "flex-start",
+        "maxWidth": 60,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 60
+      }
+    },
+    "8bbfa828-7502-4f87-ade8-e9ecfd6b853f": {
+      "components": {
+        "f23f153a-5257-4d2a-ae03-addd39872c20": {
+          "id": "f23f153a-5257-4d2a-ae03-addd39872c20",
+          "name": "unified-input-controller",
+          "parameters": {
+            "targetEid": {
+              "type": "entity",
+              "id": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f"
+            }
+          }
+        },
+        "08bca2c3-1a92-468a-ad70-722e2f752cba": {
+          "id": "08bca2c3-1a92-468a-ad70-722e2f752cba",
+          "name": "object-rotation-controls",
+          "parameters": {}
+        }
+      },
+      "geometry": null,
+      "hidden": false,
+      "id": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
+      "imageTarget": {
+        "name": "Target_Library"
+      },
+      "material": null,
+      "name": "m2_analogy",
+      "order": 3.5046748457813246,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "position": [
+        -1,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "91982a1a-81a0-45a6-9879-a253fa9ed53a": {
+      "components": {
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
+          "name": "object-label",
+          "parameters": {
+            "name": "text"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "91982a1a-81a0-45a6-9879-a253fa9ed53a",
+      "material": null,
+      "name": "InfinibandText",
+      "order": -0.13580771630698987,
+      "parentId": "2de9254b-f992-4aac-9193-c2979d214ed8",
+      "position": [
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#405d6c",
+        "backgroundOpacity": 0,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "color": "#4dffff",
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "font": {
+          "type": "font",
+          "font": "Helvetica"
+        },
+        "fontSize": 6,
+        "gap": 12,
+        "height": 85,
+        "ignoreRaycast": true,
+        "justifyContent": "flex-start",
+        "nineSliceBorderBottom": 43,
+        "nineSliceBorderLeft": 43,
+        "nineSliceBorderRight": 43,
+        "nineSliceBorderTop": 43,
+        "paddingBottom": 12,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 12,
+        "text": "Click Here",
+        "textAlign": "left",
+        "type": "3d",
+        "verticalTextAlign": "start",
+        "width": 65
+      }
+    },
+    "92c577b4-1ae7-47f0-91a5-7f140605d00f": {
+      "components": {
+        "51cdf2dd-3351-4669-ba65-e938ff4eda74": {
+          "id": "51cdf2dd-3351-4669-ba65-e938ff4eda74",
+          "name": "unified-input-controller",
+          "parameters": {
+            "targetEid": {
+              "type": "entity",
+              "id": "92c577b4-1ae7-47f0-91a5-7f140605d00f"
+            }
+          }
+        },
+        "6deb6f53-28c3-4aec-afd8-33a40cdb432a": {
+          "id": "6deb6f53-28c3-4aec-afd8-33a40cdb432a",
+          "name": "object-rotation-controls",
+          "parameters": {}
+        }
+      },
+      "geometry": null,
+      "hidden": false,
+      "id": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
+      "imageTarget": {
+        "name": "Target_Elevators"
+      },
+      "material": null,
+      "name": "riser_card_analogy",
+      "order": 4.117879673248977,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "position": [
+        3,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "944e430e-862e-48bf-a8ca-ac98a407edb6": {
+      "components": {
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
+          "name": "object-label",
+          "parameters": {
+            "name": "text"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "944e430e-862e-48bf-a8ca-ac98a407edb6",
+      "material": null,
+      "name": "HeatsinkTextAnalogy",
+      "order": 3.962534597254631,
+      "parentId": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
+      "position": [
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#405d6c",
+        "backgroundOpacity": 0,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "color": "#4dffff",
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "font": {
+          "type": "font",
+          "font": "Helvetica"
+        },
+        "fontSize": 6,
+        "gap": 12,
+        "height": 85,
+        "ignoreRaycast": true,
+        "justifyContent": "flex-start",
+        "nineSliceBorderBottom": 43,
+        "nineSliceBorderLeft": 43,
+        "nineSliceBorderRight": 43,
+        "nineSliceBorderTop": 43,
+        "paddingBottom": 12,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 12,
+        "text": "Click Here",
+        "textAlign": "left",
+        "type": "3d",
+        "verticalTextAlign": "start",
+        "width": 65
+      }
+    },
+    "94d6c25d-ac07-4800-ace1-444c1c87b6fc": {
+      "components": {},
+      "geometry": null,
+      "id": "94d6c25d-ac07-4800-ace1-444c1c87b6fc",
+      "material": null,
+      "name": "InfinibandAudioIcon",
+      "order": -0.6781261183583307,
+      "parentId": "2de9254b-f992-4aac-9193-c2979d214ed8",
+      "position": [
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
+        },
+        "type": "3d",
+        "width": 14
+      }
+    },
+    "9615e3a4-3201-475a-a3fe-cdb17d8974ae": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "9615e3a4-3201-475a-a3fe-cdb17d8974ae",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "MBLabel",
+      "order": 0.3912316885255127,
+      "parentId": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
+      "position": [
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "ui": {
+        "alignItems": "center",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 8,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsComponents/Motherboard.png"
+        },
+        "justifyContent": "center",
+        "maxWidth": 50,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "9829cde5-f87a-4cfd-a603-40dd07d39123": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "9829cde5-f87a-4cfd-a603-40dd07d39123",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "InfinibandFrame",
+      "order": -1.0394966027126578,
+      "parentId": "2de9254b-f992-4aac-9193-c2979d214ed8",
+      "position": [
+        0,
+        0.044040473484080994,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        2.9,
+        2.85
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 40,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
+        "justifyContent": "flex-start",
+        "maxWidth": 60,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 60
+      }
+    },
+    "982e6bc2-ab7b-4471-abc8-1a147d9d4b6d": {
+      "components": {
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
+          "name": "object-label",
+          "parameters": {
+            "name": "audio"
+          }
+        },
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
+          "name": "play-audio",
+          "parameters": {
+            "type": "infiniband",
+            "mode": "analogy"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "982e6bc2-ab7b-4471-abc8-1a147d9d4b6d",
+      "material": null,
+      "name": "InfinibandAudioBoxAnalogy",
+      "order": 14.871438568745374,
+      "parentId": "45328c1a-760e-46e3-aebd-770f13437600",
+      "position": [
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 80,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+        },
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "9e045c8b-b317-4e24-8298-4f13cbbc46b3": {
+      "components": {
+        "d3662ff7-73bb-48af-9e7a-b95a2b70a2a6": {
+          "id": "d3662ff7-73bb-48af-9e7a-b95a2b70a2a6",
+          "name": "unified-input-controller",
+          "parameters": {
+            "targetEid": {
+              "type": "entity",
+              "id": "9e045c8b-b317-4e24-8298-4f13cbbc46b3"
+            },
+            "modelLabel": "model"
+          }
+        },
+        "ee1b8d01-b1c2-4459-b4a1-646019df4e7f": {
+          "id": "ee1b8d01-b1c2-4459-b4a1-646019df4e7f",
+          "name": "object-rotation-controls",
+          "parameters": {
+            "dragGain": 5,
+            "flickImpulseGain": 0.08,
+            "flickThresholdPxPerSec": 900,
+            "radiansPerPixel": 1
+          }
+        }
+      },
+      "geometry": null,
+      "hidden": false,
+      "id": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
+      "imageTarget": {
+        "name": "Target_Heat_Sink"
+      },
+      "material": null,
+      "name": "heatsink",
+      "order": 2.322562702977726,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "position": [
+        -5,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "a01aa64b-c1a6-491d-84b4-01767a7ef741": {
+      "components": {},
+      "geometry": null,
+      "id": "a01aa64b-c1a6-491d-84b4-01767a7ef741",
+      "material": null,
+      "name": "MBImage",
+      "order": 0.37207373138329874,
+      "parentId": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
+      "position": [
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesComponents/Property_1Motherboard.png"
+        },
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "a1e8aa87-6c62-4bd9-bfa2-b073069c5e64": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "a1e8aa87-6c62-4bd9-bfa2-b073069c5e64",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "HeatsinkLabel",
+      "order": 1.121012815991012,
+      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
+      "position": [
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "ui": {
+        "alignItems": "center",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 8,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsComponents/Heat_Sink.png"
+        },
+        "justifyContent": "center",
+        "maxWidth": 50,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "a28a34ab-714e-4182-95e1-acc80e81f77d": {
+      "components": {
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
+          "name": "object-label",
+          "parameters": {
+            "name": "text"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "a28a34ab-714e-4182-95e1-acc80e81f77d",
+      "material": null,
+      "name": "RiserCardTextAnalogy",
+      "order": 14.882700400246977,
+      "parentId": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
+      "position": [
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#405d6c",
+        "backgroundOpacity": 0,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "color": "#4dffff",
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "font": {
+          "type": "font",
+          "font": "Helvetica"
+        },
+        "fontSize": 6,
+        "gap": 12,
+        "height": 85,
+        "ignoreRaycast": true,
+        "justifyContent": "flex-start",
+        "nineSliceBorderBottom": 43,
+        "nineSliceBorderLeft": 43,
+        "nineSliceBorderRight": 43,
+        "nineSliceBorderTop": 43,
+        "paddingBottom": 12,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 12,
+        "text": "Click Here",
+        "textAlign": "left",
+        "type": "3d",
+        "verticalTextAlign": "start",
+        "width": 65
+      }
     },
     "a608ddd9-9379-464d-966f-5d8d8674c83c": {
       "camera": {
@@ -1610,21 +3429,18 @@
         0.9999998715044741
       ]
     },
-    "a6e5b441-c9e9-4412-9390-6fe410378b43": {
+    "a965599f-0bcd-4b91-9b21-1ad895463bd4": {
       "components": {},
       "geometry": null,
-      "id": "a6e5b441-c9e9-4412-9390-6fe410378b43",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "AudioFrame (11)",
-      "order": 0.5386961722542654,
-      "parentId": "2de9254b-f992-4aac-9193-c2979d214ed8",
+      "id": "a965599f-0bcd-4b91-9b21-1ad895463bd4",
+      "material": null,
+      "name": "MBClickHereAnalogy",
+      "order": 7.90760266521758,
+      "parentId": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
       "position": [
-        0.7713351882720385,
-        0,
-        -5.551115123125783e-17
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
       ],
       "rotation": [
         0,
@@ -1638,23 +3454,65 @@
         1
       ],
       "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
+      }
+    },
+    "aadf52ac-237e-4c32-9624-06725b22924c": {
+      "components": {
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
+          "name": "object-label",
+          "parameters": {
+            "name": "audio"
+          }
+        },
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
+          "name": "play-audio",
+          "parameters": {
+            "type": "riser"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "aadf52ac-237e-4c32-9624-06725b22924c",
+      "material": null,
+      "name": "RiserCardAudioBox",
+      "order": 2.897559122068565,
+      "parentId": "ad213fa3-1461-46a3-9fdc-d37215e69568",
+      "position": [
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 80,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+        },
         "type": "3d",
         "width": 50
       }
@@ -1690,34 +3548,34 @@
     },
     "ad213fa3-1461-46a3-9fdc-d37215e69568": {
       "components": {
-        "4dfdbd4d-6737-4578-bb23-d7d62a8009ac": {
-          "id": "4dfdbd4d-6737-4578-bb23-d7d62a8009ac",
-          "name": "input-manager"
-        },
-        "793e1127-ff6d-439b-ab32-3f86169e087a": {
-          "id": "793e1127-ff6d-439b-ab32-3f86169e087a",
-          "name": "drag-input-manager"
-        },
-        "b27ab6a6-1b16-4579-b25d-360eef67656b": {
-          "id": "b27ab6a6-1b16-4579-b25d-360eef67656b",
-          "name": "object-rotation-controls",
+        "04bfb649-3b61-420e-9f77-a22abe8561f2": {
+          "id": "04bfb649-3b61-420e-9f77-a22abe8561f2",
+          "name": "unified-input-controller",
           "parameters": {
-            "dragGain": 5,
-            "radiansPerPixel": 1
+            "targetEid": {
+              "type": "entity",
+              "id": "ad213fa3-1461-46a3-9fdc-d37215e69568"
+            }
           }
+        },
+        "bb5e2268-c41b-4730-994f-a3913b1db12b": {
+          "id": "bb5e2268-c41b-4730-994f-a3913b1db12b",
+          "name": "object-rotation-controls",
+          "parameters": {}
         }
       },
       "geometry": null,
+      "hidden": false,
       "id": "ad213fa3-1461-46a3-9fdc-d37215e69568",
       "imageTarget": {
-        "name": "riser_card_2"
+        "name": "Target_Riser_Card"
       },
       "material": null,
       "name": "riser_card",
-      "order": 3.6607461862681205,
+      "order": 2.7248603443966184,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "position": [
-        2.6121853128828327,
+        3,
         0,
         0
       ],
@@ -1731,51 +3589,94 @@
         1,
         1,
         1
-      ],
-      "hidden": false
+      ]
     },
-    "b2ae349d-8175-40af-8c12-fddb33d4b898": {
+    "b01e14ba-d94e-47f8-8ded-2d27eb821ac7": {
       "components": {
-        "6b3cf3b8-13a4-418b-8a10-452b530e141f": {
-          "id": "6b3cf3b8-13a4-418b-8a10-452b530e141f",
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
           "name": "object-label",
           "parameters": {
-            "name": "mb"
+            "name": "audio"
+          }
+        },
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
+          "name": "play-audio",
+          "parameters": {
+            "type": "grace_hopper"
           }
         }
       },
       "geometry": null,
-      "gltfModel": {
-        "animationClip": "",
-        "loop": true,
-        "src": {
-          "type": "asset",
-          "asset": "assets/MB.glb"
-        }
-      },
-      "id": "b2ae349d-8175-40af-8c12-fddb33d4b898",
+      "id": "b01e14ba-d94e-47f8-8ded-2d27eb821ac7",
       "material": null,
-      "name": "MB.glb",
-      "order": 3.504733488549741,
-      "parentId": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
+      "name": "GraceHopperAudioBox",
+      "order": -1.718131150633574,
+      "parentId": "d94a6ae4-4470-4857-889e-674844e065e1",
       "position": [
-        0,
-        0,
-        0.28027762916301224
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
       ],
       "rotation": [
         0,
         0,
-        0.7071067811865475,
-        0.7071067811865476
+        0,
+        1
       ],
       "scale": [
-        2.2000000000000006,
-        2.2000000000000006,
-        2.2000000000000006
+        1.5,
+        1.5,
+        1.5
       ],
       "ui": {
-        "type": "3d"
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 80,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+        },
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "b36c4275-4291-4a6e-a27d-0511429463b1": {
+      "components": {},
+      "geometry": null,
+      "id": "b36c4275-4291-4a6e-a27d-0511429463b1",
+      "material": null,
+      "name": "M2ClickHere",
+      "order": -0.6312313985010065,
+      "parentId": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
+      "position": [
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
       }
     },
     "b3af1e80-a70c-4fc5-b11a-cc130a577052": {
@@ -1816,43 +3717,130 @@
         "width": 100
       }
     },
-    "b3b2ae2e-9848-4413-8706-bd53cdcc2ec2": {
-      "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
+    "b5558eec-9f82-4d68-a94f-22c669cc63e7": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "b5558eec-9f82-4d68-a94f-22c669cc63e7",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "M2LabelAnalogy",
+      "order": 7.89158984463356,
+      "parentId": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
+      "position": [
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "ui": {
+        "alignItems": "center",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 8,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsAnalogies/Library.png"
         },
-        "aad9ac02-0e8a-4676-885f-f313f066956a": {
-          "id": "aad9ac02-0e8a-4676-885f-f313f066956a",
-          "name": "play-audio",
+        "justifyContent": "center",
+        "maxWidth": 50,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "ba35ba2d-3dc3-45c9-9e43-77ea12eb40c4": {
+      "components": {
+        "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f": {
+          "id": "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f",
+          "name": "object-label",
           "parameters": {
-            "type": "motherboard",
-            "mode": "analogy"
+            "name": "model"
+          }
+        }
+      },
+      "gltfModel": {
+        "animationClip": "",
+        "loop": true,
+        "src": {
+          "type": "asset",
+          "asset": "assets/Models/m2_analogy.glb"
+        }
+      },
+      "id": "ba35ba2d-3dc3-45c9-9e43-77ea12eb40c4",
+      "name": "M2ModelAnalogy",
+      "order": 7.9230924714662265,
+      "parentId": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
+      "position": [
+        0,
+        0.6238804086041057,
+        0.7706334609490882
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "ui": {
+        "height": 400,
+        "ignoreRaycast": true,
+        "stackingOrder": 0,
+        "type": "3d",
+        "width": 225
+      }
+    },
+    "ba392311-f4fa-489d-9bbd-ff84526e1422": {
+      "components": {
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
+          "name": "object-label",
+          "parameters": {
+            "name": "text"
           }
         }
       },
       "geometry": null,
-      "id": "b3b2ae2e-9848-4413-8706-bd53cdcc2ec2",
+      "id": "ba392311-f4fa-489d-9bbd-ff84526e1422",
       "material": null,
-      "name": "AudioText (9)",
-      "order": 1,
-      "parentId": "193cd53a-4a30-4a26-9433-c0ea6a5f14d7",
+      "name": "M2TextAnalogy",
+      "order": 8.615439716904888,
+      "parentId": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
       "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
       ],
       "rotation": [
         0,
-        -0.16442519759970609,
         0,
-        0.9863895550918499
+        0,
+        1
       ],
       "scale": [
         1,
@@ -1862,21 +3850,21 @@
       "ui": {
         "alignItems": "flex-start",
         "background": "#405d6c",
-        "backgroundOpacity": 0.8,
+        "backgroundOpacity": 0,
         "backgroundSize": "contain",
         "borderRadius": 4,
-        "color": "#ffffff",
+        "color": "#4dffff",
         "flexDirection": "column",
         "flexWrap": "wrap",
         "font": {
           "type": "font",
-          "font": "Gotham"
+          "font": "Helvetica"
         },
-        "fontSize": 4,
+        "fontSize": 6,
         "gap": 12,
-        "height": 60,
+        "height": 85,
+        "ignoreRaycast": true,
         "justifyContent": "flex-start",
-        "maxWidth": 50,
         "nineSliceBorderBottom": 43,
         "nineSliceBorderLeft": 43,
         "nineSliceBorderRight": 43,
@@ -1885,47 +3873,876 @@
         "paddingLeft": 4,
         "paddingRight": 4,
         "paddingTop": 12,
-        "text": "Sample Text",
+        "text": "Click Here",
         "textAlign": "left",
         "type": "3d",
         "verticalTextAlign": "start",
-        "width": 40
+        "width": 65
       }
     },
-    "bb584d5a-4d27-4ed8-88b0-d6f1e11e8b0c": {
+    "badb1718-3162-45bb-afcd-98948b18d88c": {
+      "components": {},
+      "geometry": null,
+      "id": "badb1718-3162-45bb-afcd-98948b18d88c",
+      "material": null,
+      "name": "InfinibandClickHere",
+      "order": -0.6058520214874654,
+      "parentId": "2de9254b-f992-4aac-9193-c2979d214ed8",
+      "position": [
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
+      }
+    },
+    "c178c224-3655-46f3-92a8-bb80fb268bf3": {
+      "components": {},
+      "geometry": null,
+      "id": "c178c224-3655-46f3-92a8-bb80fb268bf3",
+      "material": null,
+      "name": "RiserCardClickHereAnalogy",
+      "order": 14.83299606290838,
+      "parentId": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
+      "position": [
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
+      }
+    },
+    "c18b6fe3-8ac2-4646-849d-cb4924f6c26e": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "c18b6fe3-8ac2-4646-849d-cb4924f6c26e",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "RiserCardLabelAnalogy",
+      "order": 14.634178713553995,
+      "parentId": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
+      "position": [
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "ui": {
+        "alignItems": "center",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 8,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsAnalogies/Elevators.png"
+        },
+        "justifyContent": "center",
+        "maxWidth": 50,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "c52d9cdb-792a-461e-bc6b-2a475b03ea51": {
+      "components": {},
+      "geometry": null,
+      "id": "c52d9cdb-792a-461e-bc6b-2a475b03ea51",
+      "material": null,
+      "name": "M2AudioIcon",
+      "order": -0.7161951838786426,
+      "parentId": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
+      "position": [
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
+        },
+        "type": "3d",
+        "width": 14
+      }
+    },
+    "c7412243-cfa9-4a29-b549-8c3f381e5208": {
+      "components": {},
+      "geometry": null,
+      "id": "c7412243-cfa9-4a29-b549-8c3f381e5208",
+      "material": null,
+      "name": "HeatsinkAudioIcon",
+      "order": 1.5067803950356107,
+      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
+      "position": [
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
+        },
+        "type": "3d",
+        "width": 14
+      }
+    },
+    "ce315df7-53a2-4d92-8bfd-475f6ec6c851": {
       "components": {
-        "81830a7f-be7a-4219-bdeb-c874b7705662": {
-          "id": "81830a7f-be7a-4219-bdeb-c874b7705662",
+        "1b8af799-43ae-42de-8ab9-6b02ff4551b8": {
+          "id": "1b8af799-43ae-42de-8ab9-6b02ff4551b8",
+          "name": "unified-input-controller",
+          "parameters": {
+            "targetEid": {
+              "type": "entity",
+              "id": "ce315df7-53a2-4d92-8bfd-475f6ec6c851"
+            }
+          }
+        },
+        "4968dedc-51df-4208-8edd-890bd3ffed70": {
+          "id": "4968dedc-51df-4208-8edd-890bd3ffed70",
+          "name": "object-rotation-controls",
+          "parameters": {}
+        }
+      },
+      "geometry": null,
+      "hidden": false,
+      "id": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
+      "imageTarget": {
+        "name": "Target_M2"
+      },
+      "material": null,
+      "name": "m2_storage",
+      "order": 2.5886820016269896,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "position": [
+        -1,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "ce6626e8-38f6-4894-9919-11bd394b1a47": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "ce6626e8-38f6-4894-9919-11bd394b1a47",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "M2FrameAnalogy",
+      "order": 7.8285845909682275,
+      "parentId": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
+      "position": [
+        0,
+        0.044040473484080994,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        2.9,
+        2.85
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 40,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
+        "justifyContent": "flex-start",
+        "maxWidth": 60,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 60
+      }
+    },
+    "cf21f6d1-93b1-42f4-a25e-d5b567b149bd": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "cf21f6d1-93b1-42f4-a25e-d5b567b149bd",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "RiserCardLabel",
+      "order": 2.8269029208870293,
+      "parentId": "ad213fa3-1461-46a3-9fdc-d37215e69568",
+      "position": [
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "ui": {
+        "alignItems": "center",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 8,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsComponents/Riser_Card.png"
+        },
+        "justifyContent": "center",
+        "maxWidth": 50,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "d405d0ef-08af-4364-b47f-54ba58c24989": {
+      "components": {
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
           "name": "object-label",
           "parameters": {
-            "name": "heatsink_2"
+            "name": "text"
           }
         }
       },
       "geometry": null,
+      "id": "d405d0ef-08af-4364-b47f-54ba58c24989",
+      "material": null,
+      "name": "MBTextAnalogy",
+      "order": 9.209833446888458,
+      "parentId": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
+      "position": [
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#405d6c",
+        "backgroundOpacity": 0,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "color": "#4dffff",
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "font": {
+          "type": "font",
+          "font": "Helvetica"
+        },
+        "fontSize": 6,
+        "gap": 12,
+        "height": 85,
+        "ignoreRaycast": true,
+        "justifyContent": "flex-start",
+        "nineSliceBorderBottom": 43,
+        "nineSliceBorderLeft": 43,
+        "nineSliceBorderRight": 43,
+        "nineSliceBorderTop": 43,
+        "paddingBottom": 12,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 12,
+        "text": "Click Here",
+        "textAlign": "left",
+        "type": "3d",
+        "verticalTextAlign": "start",
+        "width": 65
+      }
+    },
+    "d5d702f6-57ec-492c-add5-95b5584e1e17": {
+      "components": {
+        "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f": {
+          "id": "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f",
+          "name": "object-label",
+          "parameters": {
+            "name": "model"
+          }
+        }
+      },
       "gltfModel": {
         "animationClip": "",
         "loop": true,
         "src": {
           "type": "asset",
-          "asset": "assets/heatsink2_nc.glb"
+          "asset": "assets/vista_MB.glb"
         }
       },
-      "id": "bb584d5a-4d27-4ed8-88b0-d6f1e11e8b0c",
-      "material": null,
-      "name": "heatsink2_nc.glb",
-      "order": 7.646520894957806,
-      "parentId": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
+      "id": "d5d702f6-57ec-492c-add5-95b5584e1e17",
+      "name": "MBModel",
+      "order": 0.4103896456677266,
+      "parentId": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
       "position": [
         0,
-        0,
-        0.30915166136549543
+        0.6238804086041057,
+        0.7706334609490882
       ],
       "rotation": [
-        0.29237170472273677,
         0,
         0,
-        0.9563047559630357
+        0,
+        1
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "ui": {
+        "height": 10,
+        "ignoreRaycast": true,
+        "stackingOrder": 0,
+        "type": "3d",
+        "width": 16
+      }
+    },
+    "d5f9c529-ffdc-4096-982c-e979750732e5": {
+      "components": {
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
+          "name": "object-label",
+          "parameters": {
+            "name": "audio"
+          }
+        },
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
+          "name": "play-audio",
+          "parameters": {
+            "mode": "analogy",
+            "type": "m2"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "d5f9c529-ffdc-4096-982c-e979750732e5",
+      "material": null,
+      "name": "M2AudioBoxAnalogy",
+      "order": 7.954595098298893,
+      "parentId": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
+      "position": [
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 80,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+        },
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "d7dc0544-6311-46f1-88ea-84f045f46337": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "d7dc0544-6311-46f1-88ea-84f045f46337",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "GraceHopperFrame",
+      "order": -2.084227740668444,
+      "parentId": "d94a6ae4-4470-4857-889e-674844e065e1",
+      "position": [
+        0,
+        0.044040473484080994,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        2.9,
+        2.85
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 40,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
+        "justifyContent": "flex-start",
+        "maxWidth": 60,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 60
+      }
+    },
+    "d904f963-fce3-4062-b11e-e386d4da0d0f": {
+      "components": {},
+      "geometry": null,
+      "id": "d904f963-fce3-4062-b11e-e386d4da0d0f",
+      "material": null,
+      "name": "InfinibandImage",
+      "order": -0.9672225058417923,
+      "parentId": "2de9254b-f992-4aac-9193-c2979d214ed8",
+      "position": [
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesComponents/Property_1Infiniband.png"
+        },
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "d94a6ae4-4470-4857-889e-674844e065e1": {
+      "components": {
+        "60c1bca2-80b1-45da-b6d7-0e3b66f6672d": {
+          "id": "60c1bca2-80b1-45da-b6d7-0e3b66f6672d",
+          "name": "unified-input-controller",
+          "parameters": {
+            "targetEid": {
+              "type": "entity",
+              "id": "d94a6ae4-4470-4857-889e-674844e065e1"
+            }
+          }
+        },
+        "6791df88-7d17-4776-bc99-299dd0b09ec7": {
+          "id": "6791df88-7d17-4776-bc99-299dd0b09ec7",
+          "name": "object-rotation-controls",
+          "parameters": {}
+        }
+      },
+      "geometry": null,
+      "hidden": false,
+      "id": "d94a6ae4-4470-4857-889e-674844e065e1",
+      "imageTarget": {
+        "name": "Target_Superchip"
+      },
+      "material": null,
+      "name": "grace_hopper_chip",
+      "order": 2.749313324545276,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "position": [
+        5,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "d9ce90e0-9c4d-4b32-b305-53c28b07eb35": {
+      "components": {
+        "5d13bf0b-f3e8-43ac-8889-8b1f940ab427": {
+          "id": "5d13bf0b-f3e8-43ac-8889-8b1f940ab427",
+          "name": "unified-input-controller",
+          "parameters": {
+            "targetEid": {
+              "type": "entity",
+              "id": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35"
+            }
+          }
+        },
+        "83593b14-f021-40d8-b63e-7d958e30ebed": {
+          "id": "83593b14-f021-40d8-b63e-7d958e30ebed",
+          "name": "object-rotation-controls",
+          "parameters": {}
+        }
+      },
+      "geometry": null,
+      "hidden": false,
+      "id": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
+      "imageTarget": {
+        "name": "Target_AC"
+      },
+      "material": null,
+      "name": "heatsink_analogy",
+      "order": 2.7609675342362516,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "position": [
+        -5,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    "dadebc7d-c029-4851-8672-e4079a039a3f": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "dadebc7d-c029-4851-8672-e4079a039a3f",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "GraceHopperLabelAnalogy",
+      "order": 8.98520194429618,
+      "parentId": "4b33edf9-da47-49cc-8740-157391ad1895",
+      "position": [
+        -0.0032627983172401898,
+        -0.3737250713264252,
+        0.24806681494317484
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2.4,
+        2.4,
+        2.4
+      ],
+      "ui": {
+        "alignItems": "center",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 8,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsLabelsAnalogies/Govt_officials.png"
+        },
+        "justifyContent": "center",
+        "maxWidth": 50,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 50
+      }
+    },
+    "dcbeaaad-79f1-428f-9c40-c471f410cbae": {
+      "components": {},
+      "geometry": null,
+      "id": "dcbeaaad-79f1-428f-9c40-c471f410cbae",
+      "material": null,
+      "name": "GraceHopperClickHereAnalogy",
+      "order": 9.176441627306096,
+      "parentId": "4b33edf9-da47-49cc-8740-157391ad1895",
+      "position": [
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
+      }
+    },
+    "dcc4885b-bb9e-456c-b180-a3328ed2e5aa": {
+      "components": {},
+      "geometry": null,
+      "hidden": false,
+      "id": "dcc4885b-bb9e-456c-b180-a3328ed2e5aa",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "RiserCardFrameAnalogy",
+      "order": 14.534770038876802,
+      "parentId": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
+      "position": [
+        0,
+        0.044040473484080994,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        2.9,
+        2.85
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 40,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
+        "justifyContent": "flex-start",
+        "maxWidth": 60,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 60
+      }
+    },
+    "e3901321-2e1c-4d46-b207-d8bd3e9d0ea1": {
+      "components": {
+        "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f": {
+          "id": "c49f4d8e-5b70-4a77-be08-3cd5c5784f8f",
+          "name": "object-label",
+          "parameters": {
+            "name": "model"
+          }
+        }
+      },
+      "gltfModel": {
+        "animationClip": "",
+        "loop": true,
+        "src": {
+          "type": "asset",
+          "asset": "assets/GH.glb"
+        }
+      },
+      "id": "e3901321-2e1c-4d46-b207-d8bd3e9d0ea1",
+      "name": "GraceHopperModel",
+      "order": -1.8096552981422915,
+      "parentId": "d94a6ae4-4470-4857-889e-674844e065e1",
+      "position": [
+        0,
+        0.6238804086041057,
+        0.7706334609490882
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
       ],
       "scale": [
         4,
@@ -1933,99 +4750,25 @@
         4
       ],
       "ui": {
-        "type": "3d"
+        "height": 10,
+        "ignoreRaycast": true,
+        "stackingOrder": 0,
+        "type": "3d",
+        "width": 16
       }
     },
-    "c3ab52e8-8053-4ea9-995e-ed0f8922ec2c": {
-      "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
-        },
-        "6fd66ffa-e72d-4e7f-81cd-d199fb65d5a7": {
-          "id": "6fd66ffa-e72d-4e7f-81cd-d199fb65d5a7",
-          "name": "play-audio",
-          "parameters": {}
-        }
-      },
-      "geometry": null,
-      "id": "c3ab52e8-8053-4ea9-995e-ed0f8922ec2c",
-      "material": null,
-      "name": "AudioText",
-      "order": -0.7463615927573092,
-      "parentId": "8cd1b57c-94de-4335-908d-845f6c3bb93c",
-      "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
-      ],
-      "rotation": [
-        0,
-        -0.16442519759970609,
-        0,
-        0.9863895550918499
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 0.8,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "color": "#ffffff",
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "font": {
-          "type": "font",
-          "font": "Gotham"
-        },
-        "fontSize": 4,
-        "gap": 12,
-        "height": 60,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "nineSliceBorderBottom": 43,
-        "nineSliceBorderLeft": 43,
-        "nineSliceBorderRight": 43,
-        "nineSliceBorderTop": 43,
-        "paddingBottom": 12,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 12,
-        "text": "Sample Text",
-        "textAlign": "left",
-        "type": "3d",
-        "verticalTextAlign": "start",
-        "width": 40
-      },
-      "disabled": true,
-      "hidden": false
-    },
-    "c9a5691e-598e-4a21-aefb-2b135d4ea98b": {
+    "e3de2b7e-c5ab-4b43-a407-82ea72db3804": {
       "components": {},
       "geometry": null,
-      "id": "c9a5691e-598e-4a21-aefb-2b135d4ea98b",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "AudioFrame (10)",
-      "order": 16.346952315792766,
+      "id": "e3de2b7e-c5ab-4b43-a407-82ea72db3804",
+      "material": null,
+      "name": "M2AudioIconAnalogy",
+      "order": 7.986097725131559,
       "parentId": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
       "position": [
-        0.6456022673419639,
-        -0.005000263438178165,
-        -0.020651907493322463
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
       ],
       "rotation": [
         0,
@@ -2034,377 +4777,35 @@
         1
       ],
       "scale": [
-        0.5,
-        0.5,
-        0.5
+        1,
+        1,
+        1
       ],
       "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
+        },
         "type": "3d",
-        "width": 50
+        "width": 14
       }
     },
-    "ce315df7-53a2-4d92-8bfd-475f6ec6c851": {
-      "components": {
-        "221547e1-3647-45bf-a65a-6fca43ec5ed7": {
-          "id": "221547e1-3647-45bf-a65a-6fca43ec5ed7",
-          "name": "drag-input-manager"
-        },
-        "a47db448-1434-47be-b8f5-72142428cdef": {
-          "id": "a47db448-1434-47be-b8f5-72142428cdef",
-          "name": "object-rotation-controls",
-          "parameters": {
-            "dragGain": 5,
-            "radiansPerPixel": 1
-          }
-        },
-        "feed6937-8a53-41c2-be1f-3edc4ebcb681": {
-          "id": "feed6937-8a53-41c2-be1f-3edc4ebcb681",
-          "name": "input-manager"
-        }
-      },
-      "geometry": null,
-      "id": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
-      "imageTarget": {
-        "name": "mdot2_2"
-      },
-      "material": null,
-      "name": "m2_storage",
-      "order": 8.292451436398919,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "position": [
-        12.72727637121426,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "hidden": false
-    },
-    "d1e63149-fe63-4e1f-86a9-b2f5bfd79a79": {
-      "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
-        },
-        "516aea85-6b5a-408b-8fc4-710614fc4a6d": {
-          "id": "516aea85-6b5a-408b-8fc4-710614fc4a6d",
-          "name": "play-audio",
-          "parameters": {
-            "type": "infiniband",
-            "mode": "analogy"
-          }
-        }
-      },
-      "geometry": null,
-      "id": "d1e63149-fe63-4e1f-86a9-b2f5bfd79a79",
-      "material": null,
-      "name": "AudioText (12)",
-      "order": 1,
-      "parentId": "3a44a961-3ef6-4ac5-97a8-2562e18996b5",
-      "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
-      ],
-      "rotation": [
-        0,
-        -0.16442519759970609,
-        0,
-        0.9863895550918499
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 0.8,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "color": "#ffffff",
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "font": {
-          "type": "font",
-          "font": "Gotham"
-        },
-        "fontSize": 4,
-        "gap": 12,
-        "height": 60,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "nineSliceBorderBottom": 43,
-        "nineSliceBorderLeft": 43,
-        "nineSliceBorderRight": 43,
-        "nineSliceBorderTop": 43,
-        "paddingBottom": 12,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 12,
-        "text": "Sample Text",
-        "textAlign": "left",
-        "type": "3d",
-        "verticalTextAlign": "start",
-        "width": 40
-      }
-    },
-    "d94a6ae4-4470-4857-889e-674844e065e1": {
-      "components": {
-        "8ed91670-9852-4c6d-a7ce-d2d7b2d8817c": {
-          "id": "8ed91670-9852-4c6d-a7ce-d2d7b2d8817c",
-          "name": "input-manager"
-        },
-        "a2253a14-da77-4fc3-9b89-a17b6148f69e": {
-          "id": "a2253a14-da77-4fc3-9b89-a17b6148f69e",
-          "name": "object-rotation-controls",
-          "parameters": {
-            "dragGain": 5,
-            "radiansPerPixel": 1
-          }
-        },
-        "ffafc238-c6b2-455a-9c36-e21ddc129fbf": {
-          "id": "ffafc238-c6b2-455a-9c36-e21ddc129fbf",
-          "name": "drag-input-manager"
-        }
-      },
-      "geometry": null,
-      "id": "d94a6ae4-4470-4857-889e-674844e065e1",
-      "imageTarget": {
-        "name": "superchip_1_a"
-      },
-      "material": null,
-      "name": "grace_hopper_chip",
-      "order": 5.364876742550359,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "position": [
-        5.77273794457498,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "hidden": false
-    },
-    "d9ce90e0-9c4d-4b32-b305-53c28b07eb35": {
-      "components": {
-        "80ef9008-8f9b-4bba-9ea1-cc913ab59201": {
-          "id": "80ef9008-8f9b-4bba-9ea1-cc913ab59201",
-          "name": "drag-input-manager"
-        },
-        "8e6438f0-de89-482f-84b4-5581e7f62a5b": {
-          "id": "8e6438f0-de89-482f-84b4-5581e7f62a5b",
-          "name": "input-manager"
-        },
-        "f49621fe-555b-4929-bb4b-e5c8299ad757": {
-          "id": "f49621fe-555b-4929-bb4b-e5c8299ad757",
-          "name": "object-rotation-controls",
-          "parameters": {
-            "dragGain": 5,
-            "radiansPerPixel": 1
-          }
-        },
-        "c16b7e27-531a-46a6-9467-661c5f65d78f": {
-          "id": "c16b7e27-531a-46a6-9467-661c5f65d78f",
-          "name": "play-audio",
-          "parameters": {
-            "mode": "analogy"
-          }
-        }
-      },
-      "geometry": null,
-      "id": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
-      "imageTarget": {
-        "name": "heatsink_coolingsystem"
-      },
-      "material": null,
-      "name": "heatsink_analogy",
-      "order": 9.920834750469146,
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "position": [
-        -0.528162162116615,
-        1.1475000721704267,
-        -2.334409301912201
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        2,
-        2,
-        2
-      ],
-      "hidden": false
-    },
-    "df96ae79-d55a-4842-a140-1b0bc1afb515": {
+    "ea8aa124-be75-4bf5-a7b3-6ad1359e4a8e": {
       "components": {},
       "geometry": null,
-      "id": "df96ae79-d55a-4842-a140-1b0bc1afb515",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "AudioFrame (2)",
-      "order": 4.09451936297827,
-      "parentId": "ad213fa3-1461-46a3-9fdc-d37215e69568",
-      "position": [
-        0.7034009446994292,
-        0,
-        -5.551115123125783e-17
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
-        "borderRadius": 4,
-        "borderWidth": 1,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
-        "type": "3d",
-        "width": 50
-      }
-    },
-    "e7302c3c-1ff8-44b3-9dc9-bf8db6679cce": {
-      "components": {
-        "25df1834-4370-421e-8c18-4681de7a6047": {
-          "id": "25df1834-4370-421e-8c18-4681de7a6047",
-          "name": "object-label",
-          "parameters": {
-            "name": "gh2"
-          }
-        }
-      },
-      "geometry": null,
-      "gltfModel": {
-        "animationClip": "",
-        "loop": true,
-        "src": {
-          "type": "asset",
-          "asset": "assets/vista_GH.glb"
-        }
-      },
-      "id": "e7302c3c-1ff8-44b3-9dc9-bf8db6679cce",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "vista_GH.glb (1)",
-      "order": 13.143989593500706,
-      "parentId": "4b33edf9-da47-49cc-8740-157391ad1895",
-      "position": [
-        -0.3241825071118085,
-        -0.05061442920305703,
-        0.14455263902638782
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        6,
-        6.000000000000001,
-        6.000000000000001
-      ],
-      "ui": {
-        "type": "3d"
-      }
-    },
-    "e8a668d3-e787-4981-a8d5-4b2c699fb52a": {
-      "components": {
-        "c9b17574-a490-4200-98c3-bc703f147918": {
-          "id": "c9b17574-a490-4200-98c3-bc703f147918",
-          "name": "object-label",
-          "parameters": {
-            "name": "mb_2"
-          }
-        }
-      },
-      "geometry": null,
-      "gltfModel": {
-        "animationClip": "",
-        "loop": true,
-        "src": {
-          "type": "asset",
-          "asset": "assets/MB.glb"
-        }
-      },
-      "id": "e8a668d3-e787-4981-a8d5-4b2c699fb52a",
+      "id": "ea8aa124-be75-4bf5-a7b3-6ad1359e4a8e",
       "material": null,
-      "name": "MB.glb (1)",
-      "order": 11.440641179462977,
+      "name": "MBImageAnalogy",
+      "order": 7.710745550356882,
       "parentId": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
       "position": [
-        0.005067505179390253,
-        -0.050042867375337585,
-        0.20319274516792762
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
       ],
       "rotation": [
         0,
@@ -2413,179 +4814,33 @@
         1
       ],
       "scale": [
-        2,
-        2,
-        2
+        1.18,
+        1.18,
+        1.18
       ],
       "ui": {
-        "type": "3d"
-      }
-    },
-    "ec24c317-5d07-4b25-8771-677516a6d5d8": {
-      "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
-        },
-        "c5926713-e380-4ac9-a476-44eca65cc2fb": {
-          "id": "c5926713-e380-4ac9-a476-44eca65cc2fb",
-          "name": "play-audio",
-          "parameters": {
-            "type": "riser_card",
-            "mode": "analogy"
-          }
-        }
-      },
-      "geometry": null,
-      "id": "ec24c317-5d07-4b25-8771-677516a6d5d8",
-      "material": null,
-      "name": "AudioText (6)",
-      "order": 2,
-      "parentId": "2ae196d3-e75a-4788-9cea-8aaa2bc38a4f",
-      "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
-      ],
-      "rotation": [
-        0,
-        -0.16442519759970609,
-        0,
-        0.9863895550918499
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 0.8,
+        "backgroundOpacity": 1,
         "backgroundSize": "contain",
-        "borderRadius": 4,
-        "color": "#ffffff",
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "font": {
-          "type": "font",
-          "font": "Gotham"
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesAnalogies/Property_1Motherboard_Analogy_roads.png"
         },
-        "fontSize": 4,
-        "gap": 12,
-        "height": 60,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "nineSliceBorderBottom": 43,
-        "nineSliceBorderLeft": 43,
-        "nineSliceBorderRight": 43,
-        "nineSliceBorderTop": 43,
-        "paddingBottom": 12,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 12,
-        "text": "Sample Text",
-        "textAlign": "left",
         "type": "3d",
-        "verticalTextAlign": "start",
-        "width": 40
+        "width": 100
       }
     },
-    "ec80d008-7972-464d-9408-2164acc5b41d": {
+    "ecbf3b00-c2cd-4424-b0a5-9af096456249": {
       "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
+        "23db61a8-da5a-4027-b9df-b06a3cdddb17": {
+          "id": "23db61a8-da5a-4027-b9df-b06a3cdddb17",
+          "name": "object-label",
           "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
+            "name": "audio"
           }
         },
-        "7e626b52-5610-4607-91dd-956595e90fa8": {
-          "id": "7e626b52-5610-4607-91dd-956595e90fa8",
-          "name": "play-audio",
-          "parameters": {
-            "type": "grace_hopper"
-          }
-        }
-      },
-      "geometry": null,
-      "id": "ec80d008-7972-464d-9408-2164acc5b41d",
-      "material": null,
-      "name": "AudioText (1)",
-      "order": -0.7463615927573092,
-      "parentId": "89ea3e63-9b15-4067-b095-dcecfaef729b",
-      "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
-      ],
-      "rotation": [
-        0,
-        -0.16442519759970609,
-        0,
-        0.9863895550918499
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 0.8,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "color": "#ffffff",
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "font": {
-          "type": "font",
-          "font": "Gotham"
-        },
-        "fontSize": 4,
-        "gap": 12,
-        "height": 60,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "nineSliceBorderBottom": 43,
-        "nineSliceBorderLeft": 43,
-        "nineSliceBorderRight": 43,
-        "nineSliceBorderTop": 43,
-        "paddingBottom": 12,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 12,
-        "text": "Sample Text",
-        "textAlign": "left",
-        "type": "3d",
-        "verticalTextAlign": "start",
-        "width": 40
-      }
-    },
-    "f456a948-cdc4-4e72-8001-1a4428170e13": {
-      "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
-        },
-        "c8136831-077c-4ab6-8d57-e1fa0e45b2ee": {
-          "id": "c8136831-077c-4ab6-8d57-e1fa0e45b2ee",
+        "c3663e97-3681-4952-a0ad-422bdbea5dfe": {
+          "id": "c3663e97-3681-4952-a0ad-422bdbea5dfe",
           "name": "play-audio",
           "parameters": {
             "type": "motherboard"
@@ -2593,234 +4848,431 @@
         }
       },
       "geometry": null,
-      "id": "f456a948-cdc4-4e72-8001-1a4428170e13",
+      "id": "ecbf3b00-c2cd-4424-b0a5-9af096456249",
       "material": null,
-      "name": "AudioText (3)",
-      "order": 1,
-      "parentId": "0fd47b47-b6ac-4a67-bb25-40ed2ac17276",
+      "name": "MBAudioBox",
+      "order": 0.4295476028099406,
+      "parentId": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
       "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
+        0.39609518898423635,
+        -1.1138325177727093,
+        0.25
       ],
       "rotation": [
         0,
-        -0.16442519759970609,
         0,
-        0.9863895550918499
-      ],
-      "scale": [
-        1,
-        1,
+        0,
         1
       ],
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
       "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 0.8,
+        "backgroundOpacity": 1,
         "backgroundSize": "contain",
-        "borderRadius": 4,
-        "color": "#ffffff",
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "font": {
-          "type": "font",
-          "font": "Gotham"
-        },
-        "fontSize": 4,
-        "gap": 12,
-        "height": 60,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "nineSliceBorderBottom": 43,
-        "nineSliceBorderLeft": 43,
-        "nineSliceBorderRight": 43,
-        "nineSliceBorderTop": 43,
-        "paddingBottom": 12,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 12,
-        "text": "Sample Text",
-        "textAlign": "left",
-        "type": "3d",
-        "verticalTextAlign": "start",
-        "width": 40
-      }
-    },
-    "f6855c3f-1dec-4b89-be86-db08669d5de4": {
-      "components": {
-        "38bf6cc4-6fca-4ce3-b66a-e16c1b69c779": {
-          "id": "38bf6cc4-6fca-4ce3-b66a-e16c1b69c779",
-          "name": "object-label",
-          "parameters": {
-            "name": "infiniband"
-          }
-        }
-      },
-      "geometry": null,
-      "gltfModel": {
-        "animationClip": "",
-        "loop": true,
-        "src": {
+        "height": 80,
+        "image": {
           "type": "asset",
-          "asset": "assets/infiniband.glb"
-        }
-      },
-      "id": "f6855c3f-1dec-4b89-be86-db08669d5de4",
-      "material": null,
-      "name": "infiniband.glb",
-      "order": 2.1361124265260094,
-      "parentId": "2de9254b-f992-4aac-9193-c2979d214ed8",
-      "position": [
-        -0.3075883225657172,
-        0,
-        0.5167597533491223
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        9,
-        9,
-        9
-      ],
-      "ui": {
-        "type": "3d"
-      }
-    },
-    "f6bc6129-290d-4626-be01-294f3a01ecb5": {
-      "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
+          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
         },
-        "9d752d72-4d14-436e-a100-35a818eb6318": {
-          "id": "9d752d72-4d14-436e-a100-35a818eb6318",
-          "name": "play-audio",
-          "parameters": {
-            "type": "m2",
-            "mode": "analogy"
-          }
-        }
-      },
-      "geometry": null,
-      "id": "f6bc6129-290d-4626-be01-294f3a01ecb5",
-      "material": null,
-      "name": "AudioText (10)",
-      "order": 1,
-      "parentId": "c9a5691e-598e-4a21-aefb-2b135d4ea98b",
-      "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
-      ],
-      "rotation": [
-        0,
-        -0.16442519759970609,
-        0,
-        0.9863895550918499
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 0.8,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "color": "#ffffff",
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "font": {
-          "type": "font",
-          "font": "Gotham"
-        },
-        "fontSize": 4,
-        "gap": 12,
-        "height": 60,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "nineSliceBorderBottom": 43,
-        "nineSliceBorderLeft": 43,
-        "nineSliceBorderRight": 43,
-        "nineSliceBorderTop": 43,
-        "paddingBottom": 12,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 12,
-        "text": "Sample Text",
-        "textAlign": "left",
         "type": "3d",
-        "verticalTextAlign": "start",
-        "width": 40
+        "width": 50
       }
     },
-    "fa1f5814-1450-47d3-8489-761c71b9963d": {
-      "components": {
-        "a0b4bb05-94d9-4cea-b2d0-b7f1ea7b62ba": {
-          "id": "a0b4bb05-94d9-4cea-b2d0-b7f1ea7b62ba",
-          "name": "object-label",
-          "parameters": {
-            "name": "vistaM2"
-          }
-        }
-      },
-      "geometry": null,
-      "gltfModel": {
-        "animationClip": "",
-        "loop": true,
-        "src": {
-          "type": "asset",
-          "asset": "assets/vista_M2.glb"
-        }
-      },
-      "id": "fa1f5814-1450-47d3-8489-761c71b9963d",
-      "material": null,
-      "name": "vista_M2.glb",
-      "order": 5.486962820446022,
-      "parentId": "ad213fa3-1461-46a3-9fdc-d37215e69568",
-      "position": [
-        0.08079639522308701,
-        0,
-        0.34578042023835476
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        0.9999999999999999
-      ],
-      "scale": [
-        6.7,
-        6.7,
-        6.7
-      ],
-      "ui": {
-        "type": "3d"
-      }
-    },
-    "fa7740c9-1fe9-4dfc-a778-b3088b7fd3ef": {
+    "f3457d27-67c0-49b4-8fc8-6dc980e62eb9": {
       "components": {},
       "geometry": null,
-      "id": "fa7740c9-1fe9-4dfc-a778-b3088b7fd3ef",
-      "material": null,
-      "name": "Icon",
-      "order": 0.4814544272584127,
-      "parentId": "5032e120-2161-40dd-a57b-1b546f745bb9",
+      "hidden": false,
+      "id": "f3457d27-67c0-49b4-8fc8-6dc980e62eb9",
+      "material": {
+        "color": "#FFFFFF",
+        "type": "basic"
+      },
+      "name": "GraceHopperFrameAnalogy",
+      "order": 8.889582102791222,
+      "parentId": "4b33edf9-da47-49cc-8740-157391ad1895",
       "position": [
-        -0.323,
+        0,
+        0.044040473484080994,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        3,
+        2.9,
+        2.85
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#000000",
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "height": 40,
+        "ignoreRaycast": false,
+        "image": {
+          "type": "asset",
+          "asset": "assets/outer-border.png"
+        },
+        "justifyContent": "flex-start",
+        "maxWidth": 60,
+        "paddingBottom": 4,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 4,
+        "type": "3d",
+        "width": 60
+      }
+    },
+    "f45da997-66cc-4dbe-90dd-8ae4d7584b5a": {
+      "components": {},
+      "geometry": null,
+      "id": "f45da997-66cc-4dbe-90dd-8ae4d7584b5a",
+      "material": null,
+      "name": "M2ImageAnalogy",
+      "order": 7.860087217800894,
+      "parentId": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
+      "position": [
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesAnalogies/Property_1M2_Analogy_library.png"
+        },
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "f4d00144-721b-45e4-8523-2b9b78b52189": {
+      "components": {},
+      "geometry": null,
+      "id": "f4d00144-721b-45e4-8523-2b9b78b52189",
+      "material": null,
+      "name": "MBAudioIcon",
+      "order": 0.44870555995215455,
+      "parentId": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
+      "position": [
+        0.12444247264662311,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Audio_icon.png"
+        },
+        "type": "3d",
+        "width": 14
+      }
+    },
+    "f541e451-18fb-4537-9fb1-8c0649ca623b": {
+      "components": {},
+      "geometry": null,
+      "id": "f541e451-18fb-4537-9fb1-8c0649ca623b",
+      "material": null,
+      "name": "HeatsinkClickHereAnalogy",
+      "order": 3.943075227157126,
+      "parentId": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
+      "position": [
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
+      }
+    },
+    "f734a656-17d3-40fe-9730-8c4d815cc38e": {
+      "components": {},
+      "geometry": null,
+      "id": "f734a656-17d3-40fe-9730-8c4d815cc38e",
+      "material": null,
+      "name": "M2Image",
+      "order": -1.0560503253891864,
+      "parentId": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
+      "position": [
+        -0.005781693191187098,
+        0.029324234101680335,
+        0.2453202758106482
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1.18,
+        1.18,
+        1.18
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 50,
+        "image": {
+          "type": "asset",
+          "asset": "assets/ImageTargetsFramesComponents/Property_1M2.png"
+        },
+        "type": "3d",
+        "width": 100
+      }
+    },
+    "f7368dbb-8b38-47f3-95d8-76fd259ab53c": {
+      "components": {
+        "c97abe23-bd1a-425c-bdef-56b6ee8eb634": {
+          "id": "c97abe23-bd1a-425c-bdef-56b6ee8eb634",
+          "name": "object-label",
+          "parameters": {
+            "name": "text"
+          }
+        }
+      },
+      "geometry": null,
+      "id": "f7368dbb-8b38-47f3-95d8-76fd259ab53c",
+      "material": null,
+      "name": "RiserCardText",
+      "order": 4.219028855365183,
+      "parentId": "ad213fa3-1461-46a3-9fdc-d37215e69568",
+      "position": [
+        0.39609518898423635,
+        -1.1700589926736138,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "alignItems": "flex-start",
+        "background": "#405d6c",
+        "backgroundOpacity": 0,
+        "backgroundSize": "contain",
+        "borderRadius": 4,
+        "color": "#4dffff",
+        "flexDirection": "column",
+        "flexWrap": "wrap",
+        "font": {
+          "type": "font",
+          "font": "Helvetica"
+        },
+        "fontSize": 6,
+        "gap": 12,
+        "height": 85,
+        "ignoreRaycast": true,
+        "justifyContent": "flex-start",
+        "nineSliceBorderBottom": 43,
+        "nineSliceBorderLeft": 43,
+        "nineSliceBorderRight": 43,
+        "nineSliceBorderTop": 43,
+        "paddingBottom": 12,
+        "paddingLeft": 4,
+        "paddingRight": 4,
+        "paddingTop": 12,
+        "text": "Click Here",
+        "textAlign": "left",
+        "type": "3d",
+        "verticalTextAlign": "start",
+        "width": 65
+      }
+    },
+    "ffcbcd2c-a57f-4ba6-b3cd-fed5d971e92e": {
+      "components": {},
+      "geometry": null,
+      "id": "ffcbcd2c-a57f-4ba6-b3cd-fed5d971e92e",
+      "material": null,
+      "name": "GraceHopperClickHere",
+      "order": -1.5350828556161389,
+      "parentId": "d94a6ae4-4470-4857-889e-674844e065e1",
+      "position": [
+        0.45823333592205107,
+        -0.666304703160214,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "ui": {
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "height": 14,
+        "ignoreRaycast": true,
+        "image": {
+          "type": "asset",
+          "asset": "assets/AudioText/Click_here_button.png"
+        },
+        "type": "3d",
+        "width": 56
+      }
+    },
+    "f745c470-7290-4248-bb69-d247d867e29a": {
+      "id": "f745c470-7290-4248-bb69-d247d867e29a",
+      "position": [
+        0.03362779081444023,
+        0.583624823138334,
+        0.7745625886460861
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.4,
+        0.4000000000000001,
+        0.4000000000000001
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "45328c1a-760e-46e3-aebd-770f13437600",
+      "components": {
+        "86d209e3-b22f-428f-b2f8-820e964dcd77": {
+          "id": "86d209e3-b22f-428f-b2f8-820e964dcd77",
+          "name": "object-label",
+          "parameters": {
+            "name": "model"
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Models/infiniband_analogy.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "InfinibandModelAnalogy",
+      "order": 14.706706759165055,
+      "ui": {
+        "type": "3d"
+      }
+    },
+    "ae02ba51-a0a6-44d9-bc8d-efd7708a2af5": {
+      "id": "ae02ba51-a0a6-44d9-bc8d-efd7708a2af5",
+      "position": [
+        0.11807029764340737,
+        0.506545971094885,
+        0.750843435100411
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.00025,
+        0.00025,
+        0.00025
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
+      "components": {
+        "4cbccf4c-f625-49d8-b5e6-fab50b160fcc": {
+          "id": "4cbccf4c-f625-49d8-b5e6-fab50b160fcc",
+          "name": "object-label",
+          "parameters": {
+            "name": "model"
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Models/motherboard_analogy.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "MBModelAnalogy",
+      "order": 7.794006853466317,
+      "ui": {
+        "type": "3d"
+      }
+    },
+    "034459d3-cfdd-4cb3-a270-f0834612e5b4": {
+      "id": "034459d3-cfdd-4cb3-a270-f0834612e5b4",
+      "position": [
+        0,
         0,
         0
       ],
@@ -2835,390 +5287,23 @@
         1,
         1
       ],
-      "ui": {
-        "background": "#1f7ba3",
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain",
-        "height": 12,
-        "image": {
-          "type": "asset",
-          "asset": "assets/play-icon.png"
-        },
-        "width": 12
-      }
-    },
-    "fceba4c3-42e5-4e03-989f-75953d5c99f5": {
-      "components": {
-        "f692e9c4-9b18-469e-b960-52eeb63a785b": {
-          "id": "f692e9c4-9b18-469e-b960-52eeb63a785b",
-          "name": "object-label",
-          "parameters": {
-            "name": "infiniband_2"
-          }
-        }
-      },
       "geometry": null,
-      "gltfModel": {
-        "animationClip": "",
-        "loop": true,
-        "src": {
-          "type": "asset",
-          "asset": "assets/infiniband.glb"
-        }
-      },
-      "id": "fceba4c3-42e5-4e03-989f-75953d5c99f5",
       "material": null,
-      "name": "infiniband.glb (1)",
-      "order": 17.396454715409465,
-      "parentId": "45328c1a-760e-46e3-aebd-770f13437600",
-      "position": [
-        -0.32450275084836555,
-        -0.16639084625345224,
-        0.18255356483646068
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        9,
-        9,
-        9
-      ],
-      "ui": {
-        "type": "3d"
-      }
-    },
-    "fd9382ee-229d-4282-9a9a-0f45a16d3537": {
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {
-        "74ff6b21-e0c0-4b41-aa2e-99e333dac825": {
-          "id": "74ff6b21-e0c0-4b41-aa2e-99e333dac825",
-          "name": "object-label",
-          "parameters": {
-            "name": "vista_sled"
-          }
-        }
-      },
-      "geometry": null,
-      "gltfModel": {
-        "animationClip": "",
-        "loop": true,
-        "src": {
-          "type": "asset",
-          "asset": "assets/vista_sled.glb"
-        }
-      },
-      "id": "fd9382ee-229d-4282-9a9a-0f45a16d3537",
-      "material": null,
-      "name": "vista_sled.glb",
-      "order": 1.6007428571246878,
-      "parentId": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
-      "position": [
-        0.0037012599001950974,
-        0,
-        0.18532476582531227
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        2,
-        2,
-        2
-      ],
-      "ui": {
-        "type": "3d"
-      }
-    },
-    "1d818e96-3cb3-42cb-b01e-ec98d1302d11": {
-      "components": {},
-      "geometry": null,
-      "id": "1d818e96-3cb3-42cb-b01e-ec98d1302d11",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "ImageFrame",
-      "order": 0.3666754619243948,
-      "position": [
-        0,
-        8.492518787004388e-17,
-        0.22017584136634205
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        2,
-        2,
-        2
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#000000",
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
-        "type": "3d",
-        "width": 50,
-        "image": {
-          "type": "asset",
-          "asset": "assets/HeatsinkGraphics/Background.png"
-        }
-      },
-      "hidden": false,
-      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3"
-    },
-    "9a9f5170-c026-4876-a636-8905da1596dc": {
-      "components": {},
-      "geometry": null,
-      "id": "9a9f5170-c026-4876-a636-8905da1596dc",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "ImageFrame (1)",
-      "order": 0.7229031982366457,
-      "position": [
-        0,
-        0.051684341051759536,
-        0.24
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1.8,
-        1.8,
-        1.8
-      ],
-      "ui": {
-        "alignItems": "center",
-        "background": "#000000",
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "center",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
-        "type": "3d",
-        "width": 50,
-        "image": {
-          "type": "asset",
-          "asset": "assets/HeatsinkGraphics/Image.png"
-        }
-      },
-      "hidden": false,
-      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3"
-    },
-    "a1e8aa87-6c62-4bd9-bfa2-b073069c5e64": {
-      "components": {},
-      "geometry": null,
-      "id": "a1e8aa87-6c62-4bd9-bfa2-b073069c5e64",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "ImageFrame (2)",
-      "order": 1.121012815991012,
-      "position": [
-        0,
-        -0.2796089260660558,
-        0.24
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1.8,
-        1.8,
-        1.8
-      ],
-      "ui": {
-        "alignItems": "center",
-        "background": "#000000",
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "center",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
-        "type": "3d",
-        "width": 50,
-        "image": {
-          "type": "asset",
-          "asset": "assets/HeatsinkGraphics/Text_Box.png"
-        }
-      },
-      "hidden": false,
-      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3"
-    },
-    "e759716d-21b4-407e-b862-6da46d43ad96": {
-      "components": {},
-      "geometry": null,
-      "id": "e759716d-21b4-407e-b862-6da46d43ad96",
-      "material": {
-        "color": "#FFFFFF",
-        "type": "basic"
-      },
-      "name": "AudioFrame (13)",
-      "order": 1.526072665798089,
-      "position": [
-        0.75,
-        8.492518787004388e-17,
-        0.22
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain",
-        "borderColor": "#9cb0ba",
-        "borderRadius": 4,
-        "borderWidth": 0,
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "height": 72,
-        "ignoreRaycast": false,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "paddingBottom": 4,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 4,
-        "type": "3d",
-        "width": 50,
-        "image": {
-          "type": "asset",
-          "asset": "assets/HeatsinkGraphics/Heat_Sink_Audio_Description.png"
-        }
-      },
-      "hidden": false,
-      "parentId": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
-      "disabled": true
-    },
-    "2ef630a9-b1c9-4afb-9e75-5bca094285e5": {
-      "components": {
-        "edd70a2c-c4cc-46ef-8ecf-b95070c223a6": {
-          "id": "edd70a2c-c4cc-46ef-8ecf-b95070c223a6",
-          "name": "look-at-animation",
-          "parameters": {
-            "target": {
-              "type": "entity",
-              "id": "a608ddd9-9379-464d-966f-5d8d8674c83c"
-            }
-          }
+        "1ec69e48-4039-4421-897b-34401d856c19": {
+          "id": "1ec69e48-4039-4421-897b-34401d856c19",
+          "name": "credits-page",
+          "parameters": {}
         },
-        "48f6b185-2fc3-40dd-b2eb-25707c5755b3": {
-          "id": "48f6b185-2fc3-40dd-b2eb-25707c5755b3",
-          "name": "play-audio",
+        "3f5b3771-5372-46b1-990b-c108282d4f7b": {
+          "id": "3f5b3771-5372-46b1-990b-c108282d4f7b",
+          "name": "credits-button-overlay",
           "parameters": {}
         }
       },
-      "geometry": null,
-      "id": "2ef630a9-b1c9-4afb-9e75-5bca094285e5",
-      "material": null,
-      "name": "AudioText (13)",
-      "order": 1,
-      "parentId": "e759716d-21b4-407e-b862-6da46d43ad96",
-      "position": [
-        0.5896138684951187,
-        0.17716970087679146,
-        0.23371943808792167
-      ],
-      "rotation": [
-        0,
-        -0.16442519759970609,
-        0,
-        0.9863895550918499
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "ui": {
-        "alignItems": "flex-start",
-        "background": "#405d6c",
-        "backgroundOpacity": 0.8,
-        "backgroundSize": "contain",
-        "borderRadius": 4,
-        "color": "#ffffff",
-        "flexDirection": "column",
-        "flexWrap": "wrap",
-        "font": {
-          "type": "font",
-          "font": "Gotham"
-        },
-        "fontSize": 4,
-        "gap": 12,
-        "height": 60,
-        "justifyContent": "flex-start",
-        "maxWidth": 50,
-        "nineSliceBorderBottom": 43,
-        "nineSliceBorderLeft": 43,
-        "nineSliceBorderRight": 43,
-        "nineSliceBorderTop": 43,
-        "paddingBottom": 12,
-        "paddingLeft": 4,
-        "paddingRight": 4,
-        "paddingTop": 12,
-        "text": "Sample Text",
-        "textAlign": "left",
-        "type": "3d",
-        "verticalTextAlign": "start",
-        "width": 40
-      },
-      "disabled": true
+      "name": "UI Manager",
+      "order": 6.903244463863184
     }
   },
   "runtimeVersion": {
@@ -3238,11 +5323,16 @@
         "url": "https://cdn.8thwall.com/web/assets/envmap/basic_env_map-m9hqpneh.jpg"
       }
     },
+    "9cdbc3fa-e4c5-4bbc-8949-8ed9b0c8793f": {
+      "activeCamera": "1308d21c-5773-437d-8251-0d788e828cba",
+      "id": "9cdbc3fa-e4c5-4bbc-8949-8ed9b0c8793f",
+      "name": "Credits"
+    },
     "a55d223c-0156-41fc-829f-6db9d3381528": {
       "activeCamera": "bb4205b1-f2d1-4442-922b-5abcf4fb768e",
       "id": "a55d223c-0156-41fc-829f-6db9d3381528",
       "name": "Splash Screen"
     }
   },
-  "historyVersion": "mla08lar"
+  "historyVersion": "mm5e0tm7"
 }

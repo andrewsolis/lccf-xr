@@ -1,5 +1,5 @@
-// play-audio.ts
 import * as ecs from '@8thwall/ecs'
+import {ObjectLabel} from './object-label'
 
 // Audio descriptions for technical / analogy components
 const CONTENT: any = {
@@ -23,12 +23,12 @@ const CONTENT: any = {
   grace_hopper: {
     audioBase: 'grace-hopper',
     technical: [
-      'This is the Grace Hopper Superchip — the brainpower behind the supercomputer.',
+      'This is the Grace Hopper Superchip - the brainpower behind the supercomputer.',
       'It combines two powerful processors on a single chip: the Grace CPU and the NVIDIA H200 GPU.',
-      'Think of them as the leadership team of TACC SuperCity. The CPU is like the mayor, overseeing and coordinating everything. Whereas, the GPU is the architect, a specialized expert in the office who handles complex designs and performs high-speed calculations — much like how GPUs accelerate AI and machine learning tasks.',
+      'Think of them as the leadership team of TACC SuperCity. The CPU is like the mayor, overseeing and coordinating everything. Whereas, the GPU is the architect, a specialized expert in the office who handles complex designs and performs high-speed calculations - much like how GPUs accelerate AI and machine learning tasks.',
       'Together, they keep the city running efficiently, processing information and solving problems at incredible speeds.',
       'The Grace Hopper Superchip can perform trillions of calculations every second, making it one of the most advanced computing engines in the world.',
-      'Just as a city\'s leaders balance planning and creativity to make progress possible, the CPU and GPU work in perfect harmony — powering discovery at the heart of TACC SuperCity.',
+      'Just as a city\'s leaders balance planning and creativity to make progress possible, the CPU and GPU work in perfect harmony - powering discovery at the heart of TACC SuperCity.',
     ],
     analogy: [
       'In TACC SuperCity, the mayor oversees operations by making decisions, while the architect works on city planning.',
@@ -45,7 +45,7 @@ const CONTENT: any = {
       'It\'s designed for fast data retrieval, much like how an SSD works faster than a traditional hard drive.',
       'In TACC SuperCity, the M.2 is like a smart neighborhood library, keeping books, records, and documents right where people need them.',
       'Residents can access knowledge quickly and conveniently, supporting both learning and decision-making.',
-      'By keeping information close at hand, the M.2 helps the supercomputer — and the city — think, learn, and grow at remarkable speed.',
+      'By keeping information close at hand, the M.2 helps the supercomputer - and the city - think, learn, and grow at remarkable speed.',
     ],
     analogy: [
       'In TACC SuperCity, libraries serve as hubs of knowledge, keeping information close and easy for everyone to access.',
@@ -57,11 +57,11 @@ const CONTENT: any = {
   motherboard: {
     audioBase: 'motherboard',
     technical: [
-      'This is the motherboard — the city\'s roads and power grid.',
+      'This is the motherboard - the city\'s roads and power grid.',
       'It connects every district of TACC SuperCity, from the Grace Hopper Superchip to the M.2 storage and beyond.',
       'Through its intricate network of circuits, it delivers both power and information, making sure data can move smoothly between all the city\'s systems.',
       'Without it, components would be isolated, unable to communicate or share resources.',
-      'In TACC SuperCity, the motherboard is like a vast web of highways, power lines, and communication cables — keeping the lights on, the traffic moving, and the energy flowing so that innovation never stops.',
+      'In TACC SuperCity, the motherboard is like a vast web of highways, power lines, and communication cables - keeping the lights on, the traffic moving, and the energy flowing so that innovation never stops.',
     ],
     analogy: [
       'In TACC SuperCity, roads and bridges connect neighborhoods, buildings, and services so people and resources can move freely.',
@@ -73,11 +73,11 @@ const CONTENT: any = {
   riser: {
     audioBase: 'riser-card',
     technical: [
-      'This is the riser card — the elevator system of TACC SuperCity.',
+      'This is the riser card - the elevator system of TACC SuperCity.',
       'It helps connect components that sit on different levels of the motherboard, making the city more space-efficient and productive.',
-      'By adding vertical connections, riser cards allow for extra expansion slots, where new technologies — like InfiniBand cards or local storage — can be installed.',
+      'By adding vertical connections, riser cards allow for extra expansion slots, where new technologies - like InfiniBand cards or local storage - can be installed.',
       'It\'s a clever way to make the most of limited space, ensuring every part of the supercomputer has access to the tools it needs.',
-      'In TACC SuperCity, the riser card is like an elevator network that helps people and information move between floors quickly — building upward instead of outward to keep the city growing strong.',
+      'In TACC SuperCity, the riser card is like an elevator network that helps people and information move between floors quickly - building upward instead of outward to keep the city growing strong.',
     ],
     analogy: [
       'In TACC SuperCity, elevators help the city grow upward by moving people efficiently between different levels.',
@@ -89,11 +89,11 @@ const CONTENT: any = {
   infiniband: {
     audioBase: 'infiniband',
     technical: [
-      'This is the InfiniBand network — the city\'s express delivery system.',
-      'It moves data between neighborhoods at astonishing speeds — up to 400 gigabytes per second — far faster than traditional networks.',
+      'This is the InfiniBand network - the city\'s express delivery system.',
+      'It moves data between neighborhoods at astonishing speeds - up to 400 gigabytes per second - far faster than traditional networks.',
       'InfiniBand connects each node in the supercomputer to powerful switches, forming an ultra-efficient communication grid.',
       'It ensures that when one part of the city needs information from another, the delivery happens almost instantly.',
-      'In TACC SuperCity, InfiniBand is like a fleet of high-speed drones racing through the skies, carrying messages and supplies between districts — keeping collaboration seamless and the flow of ideas unstoppable.',
+      'In TACC SuperCity, InfiniBand is like a fleet of high-speed drones racing through the skies, carrying messages and supplies between districts - keeping collaboration seamless and the flow of ideas unstoppable.',
     ],
     analogy: [
       'In TACC SuperCity, express delivery systems move packages, supplies, and information quickly between different cities.',
@@ -106,10 +106,10 @@ const CONTENT: any = {
 ecs.registerComponent({
   name: 'play-audio',
   schema: {
-    type: ecs.string,              // key into CONTENT
-    mode: ecs.string,              // "technical" or "analogy"
-    triggerEventName: ecs.string,  // event dispatched by audio-trigger
-    allowDirectTouch: ecs.ui8,     // 0/1
+    type: ecs.string,
+    mode: ecs.string,
+    triggerEventName: ecs.string,
+    allowDirectTouch: ecs.ui8,
   },
   schemaDefaults: {
     type: 'heatsink',
@@ -120,34 +120,54 @@ ecs.registerComponent({
   data: {
     index: ecs.ui32,
   },
-  stateMachine: ({world, eid, schemaAttribute, dataAttribute}) => {
+  stateMachine: ({world, eid, schemaAttribute}) => {
+    let currentIndex = 0
+    let lastTriggerTime = 0
+
+    const stopAudio = () => {
+      if (ecs.Audio.has(world, eid)) {
+        ecs.Audio.remove(world, eid)
+      }
+    }
+
     const step = () => {
-      const data = dataAttribute.cursor(eid)
+      const now = Date.now()
+      if (now - lastTriggerTime < 250) return
+      lastTriggerTime = now
+
+      // Signal every other 'play-audio' component to stop playing
+      world.events.dispatch(world.events.globalId, 'stop-all-audio', {excludeEid: eid})
+
       const {type, mode} = schemaAttribute.get(eid) as any
-
       const contentData = CONTENT[type]
-      if (!contentData) {
-        console.error(`No content found for type: ${type}`)
-        return
+      if (!contentData) return
+
+      const textArray = mode === 'analogy' ? contentData.analogy : contentData.technical
+      const filenameSuffix = mode === 'analogy' ? '-analogy' : ''
+
+      // 1. Update Text
+      const parentEid = world.getParent(eid)
+      if (parentEid) {
+        for (const childEid of world.getChildren(parentEid)) {
+          if (ObjectLabel.has(world, childEid)) {
+            const label = (ObjectLabel.get(world, childEid) as any).name
+            if (label === 'text') {
+              const currentTextString = textArray[currentIndex % textArray.length]
+              ecs.Ui.mutate(world, childEid, (cursor) => {
+                cursor.text = currentTextString
+              })
+              break
+            }
+          }
+        }
       }
 
-      let textArray: string[] = []
-      let filenameSuffix = ''
+      // 2. Play Audio
+      const audioFileIndex = (currentIndex % textArray.length) + 1
+      const audioUrl = `assets/Audio/${contentData.audioBase}${filenameSuffix}-${audioFileIndex}.mp3`
 
-      if (mode === 'analogy') {
-        textArray = contentData.analogy
-        filenameSuffix = '-analogy'
-      } else {
-        textArray = contentData.technical
-        filenameSuffix = ''
-      }
-
-      const currentIndex = Number(data.index) || 0
-      const audioIndex = currentIndex + 1
-      const audioUrl = `assets/Audio/${contentData.audioBase}${filenameSuffix}-${audioIndex}.mp3`
-
-      world.audio.pause()
-      console.log(`Playing: ${audioUrl}`)
+      // Explicitly remove and re-add to prevent internal playback overlap
+      stopAudio()
 
       ecs.Audio.set(world, eid, {
         url: audioUrl,
@@ -156,9 +176,8 @@ ecs.registerComponent({
         paused: false,
         positional: false,
       })
-      world.audio.play()
 
-      data.index = ((currentIndex + 1) % textArray.length) as any
+      currentIndex = (currentIndex + 1) % textArray.length
     }
 
     const triggerName = () => {
@@ -167,22 +186,15 @@ ecs.registerComponent({
     }
 
     return ecs.defineState('on')
-      .onEnter(() => {
-        const data = dataAttribute.cursor(eid)
-        data.index = 0 as any
-      })
-
-      // Parent/root calls this
       .listen(eid, triggerName(), () => {
         step()
       })
-
-      // Optional: direct touch on the AudioFrame (leave off if parent handles all input)
-      .listen(eid, ecs.input.SCREEN_TOUCH_START, () => {
-        const {allowDirectTouch} = schemaAttribute.get(eid) as any
-        if (Number(allowDirectTouch) !== 0) step()
+      .listen(world.events.globalId, 'stop-all-audio', (ev: any) => {
+        // Use optional chaining to safely check the data
+        if (ev?.data?.excludeEid !== eid) {
+          stopAudio()
+        }
       })
-
       .initial()
   },
 })

@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/infiniband_3_a_rotated_luminance.png",
+  "resources": {
+    "originalImage": "infiniband_3_a_rotated_original.png",
+    "croppedImage": "infiniband_3_a_rotated_cropped.png",
+    "thumbnailImage": "infiniband_3_a_rotated_thumbnail.png",
+    "geometryImage": "infiniband_3_a_rotated_geometry.png",
+    "luminanceImage": "infiniband_3_a_rotated_luminance.png"
+  },
+  "name": "infiniband_3_a_rotated",
+  "type": "PLANAR",
+  "properties": {
+    "top": 106,
+    "left": 0,
+    "width": 1341,
+    "height": 1788,
+    "isRotated": true,
+    "originalWidth": 1341,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772205278661,
+  "updated": 1772205278661
+}

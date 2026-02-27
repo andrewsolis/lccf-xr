@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/Target_Elevators_luminance.png",
+  "resources": {
+    "originalImage": "Target_Elevators_original.png",
+    "croppedImage": "Target_Elevators_cropped.png",
+    "thumbnailImage": "Target_Elevators_thumbnail.png",
+    "geometryImage": "Target_Elevators_geometry.png",
+    "luminanceImage": "Target_Elevators_luminance.png"
+  },
+  "name": "Target_Elevators",
+  "type": "PLANAR",
+  "properties": {
+    "top": 466,
+    "left": 0,
+    "width": 800,
+    "height": 1066,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772224680836,
+  "updated": 1772224680836
+}

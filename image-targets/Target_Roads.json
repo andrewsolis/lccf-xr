@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/Target_Roads_luminance.png",
+  "resources": {
+    "originalImage": "Target_Roads_original.png",
+    "croppedImage": "Target_Roads_cropped.png",
+    "thumbnailImage": "Target_Roads_thumbnail.png",
+    "geometryImage": "Target_Roads_geometry.png",
+    "luminanceImage": "Target_Roads_luminance.png"
+  },
+  "name": "Target_Roads",
+  "type": "PLANAR",
+  "properties": {
+    "top": 466,
+    "left": 0,
+    "width": 800,
+    "height": 1066,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772224670040,
+  "updated": 1772224670040
+}

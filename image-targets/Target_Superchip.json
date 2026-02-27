@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/Target_Superchip_luminance.png",
+  "resources": {
+    "originalImage": "Target_Superchip_original.png",
+    "croppedImage": "Target_Superchip_cropped.png",
+    "thumbnailImage": "Target_Superchip_thumbnail.png",
+    "geometryImage": "Target_Superchip_geometry.png",
+    "luminanceImage": "Target_Superchip_luminance.png"
+  },
+  "name": "Target_Superchip",
+  "type": "PLANAR",
+  "properties": {
+    "top": 466,
+    "left": 0,
+    "width": 800,
+    "height": 1066,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772224571140,
+  "updated": 1772224571140
+}

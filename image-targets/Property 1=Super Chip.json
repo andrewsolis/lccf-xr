@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/Property 1=Super Chip_luminance.png",
+  "resources": {
+    "originalImage": "Property 1=Super Chip_original.png",
+    "croppedImage": "Property 1=Super Chip_cropped.png",
+    "thumbnailImage": "Property 1=Super Chip_thumbnail.png",
+    "geometryImage": "Property 1=Super Chip_geometry.png",
+    "luminanceImage": "Property 1=Super Chip_luminance.png"
+  },
+  "name": "Property 1=Super Chip",
+  "type": "PLANAR",
+  "properties": {
+    "top": 557,
+    "left": 155,
+    "width": 664,
+    "height": 885,
+    "isRotated": true,
+    "originalWidth": 974,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772174079664,
+  "updated": 1772174095918
+}

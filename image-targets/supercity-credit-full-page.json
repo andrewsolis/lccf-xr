@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/supercity-credit-full-page_luminance.png",
+  "resources": {
+    "originalImage": "supercity-credit-full-page_original.png",
+    "croppedImage": "supercity-credit-full-page_cropped.png",
+    "thumbnailImage": "supercity-credit-full-page_thumbnail.png",
+    "geometryImage": "supercity-credit-full-page_geometry.png",
+    "luminanceImage": "supercity-credit-full-page_luminance.png"
+  },
+  "name": "supercity-credit-full-page",
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 0,
+    "width": 1500,
+    "height": 2000,
+    "isRotated": false,
+    "originalWidth": 1500,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772127514376,
+  "updated": 1772127514376
+}

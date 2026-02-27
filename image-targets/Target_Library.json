@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/Target_Library_luminance.png",
+  "resources": {
+    "originalImage": "Target_Library_original.png",
+    "croppedImage": "Target_Library_cropped.png",
+    "thumbnailImage": "Target_Library_thumbnail.png",
+    "geometryImage": "Target_Library_geometry.png",
+    "luminanceImage": "Target_Library_luminance.png"
+  },
+  "name": "Target_Library",
+  "type": "PLANAR",
+  "properties": {
+    "top": 466,
+    "left": 0,
+    "width": 800,
+    "height": 1066,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772224649762,
+  "updated": 1772224649762
+}

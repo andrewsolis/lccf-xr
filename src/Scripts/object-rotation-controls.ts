@@ -4,32 +4,29 @@ import {ObjectLabel} from './object-label'
 ecs.registerComponent({
   name: 'object-rotation-controls',
   schema: {
-    cameraEid: ecs.eid,         // optional camera to align axes
-    radiansPerPixel: ecs.f32,   // drag sensitivity
+    cameraEid: ecs.eid,
+    radiansPerPixel: ecs.f32,
     flickThresholdPxPerSec: ecs.f32,
-    flickImpulseGain: ecs.f32,  // px/s -> rad/s gain
-    dragGain: ecs.f32,          // extra multiplier for drag
-
-    minFlickAngularVel: ecs.f32,  // radians/sec floor for flick spin
-    // NEW: how many frames back to sample for flick vector
+    flickImpulseGain: ecs.f32,
+    dragGain: ecs.f32,
+    minFlickAngularVel: ecs.f32,
     historyLookbackFrames: ecs.ui8,
+    decayRate: ecs.f32,  // Added to schema for easier tuning
   },
   schemaDefaults: {
-    radiansPerPixel: 0.006,
+    radiansPerPixel: 1,
     flickThresholdPxPerSec: 900.0,
-    flickImpulseGain: 0.05,
-    dragGain: 1.0,
-    minFlickAngularVel: 0.8,  // tune to taste (0.5–1.5 common)
+    flickImpulseGain: 0.08,
+    dragGain: 5.0,
+    minFlickAngularVel: 0.8,
     historyLookbackFrames: 3,
-
+    decayRate: 1.5,
   },
   data: {
     rotationVelocity: ecs.f32,
     axisX: ecs.f32,
     axisY: ecs.f32,
     axisZ: ecs.f32,
-
-    // drag state
     dragging: ecs.ui8,
     startX: ecs.f32,
     startY: ecs.f32,
@@ -37,8 +34,6 @@ ecs.registerComponent({
     lastY: ecs.f32,
     startT: ecs.f32,
     lastT: ecs.f32,
-
-    // orientation captured at drag start
     baseQx: ecs.f32,
     baseQy: ecs.f32,
     baseQz: ecs.f32,
@@ -51,27 +46,26 @@ ecs.registerComponent({
     d.rotationVelocity = 0
     d.axisX = 0; d.axisY = 0; d.axisZ = 1
     d.dragging = 0
-    d.startX = 0; d.startY = 0
-    d.lastX = 0; d.lastY = 0
-    d.startT = 0; d.lastT = 0
-    d.baseQx = 0; d.baseQy = 0; d.baseQz = 0; d.baseQw = 1
     dataAttribute.commit(eid)
 
-    const radiansPerPixel = Number((schema as any).radiansPerPixel ?? 0.006)
-    const flickThreshold = Number((schema as any).flickThresholdPxPerSec ?? 900.0)
-    const flickGain = Number((schema as any).flickImpulseGain ?? 0.0025)
-    const dragGain = Number((schema as any).dragGain ?? 1.0)
-    const lookback = Math.max(1, Number((schema as any).historyLookbackFrames ?? 3))
-    const maxHistory = Math.max(lookback + 2, 8)  // small ring buffer
+    const radiansPerPixel = Number((schema as any).radiansPerPixel)
+    const flickThreshold = Number((schema as any).flickThresholdPxPerSec)
+    const flickGain = Number((schema as any).flickImpulseGain)
+    const dragGain = Number((schema as any).dragGain)
+    const lookback = Math.max(1, Number((schema as any).historyLookbackFrames))
 
-    // Per-entity motion history: [{x,y,t}, ...] (closure storage)
+    // Internal history for velocity calculation
     const history: Map<any, Array<{x:number, y:number, t:number}>> = (ecs as any).__rotHist || new Map()
     ;(ecs as any).__rotHist = history
     history.set(eid, [])
 
     const resolveTarget = (): any => {
+      // Find the specific child with the 'model' label to rotate
       for (const childEid of world.getChildren(eid)) {
-        if (ObjectLabel.has(world, childEid)) return childEid
+        if (ObjectLabel.has(world, childEid)) {
+          const label = (ObjectLabel.get(world, childEid) as any).name
+          if (label === 'model') return childEid
+        }
       }
       return eid
     }
@@ -84,15 +78,14 @@ ecs.registerComponent({
       return ecs.math.quat.xyzw(0, 0, 0, 1)
     }
 
-    // === DRAG: start / move (absolute) / end ==================================
-
     const onDragStart = (event: any) => {
-      const {targetEid, x, y} = event.data || {}
       const target = resolveTarget()
+      const {targetEid, x, y} = event.data || {}
       if (targetEid != null && targetEid !== eid && targetEid !== target) return
 
       const s = dataAttribute.cursor(eid)
       s.dragging = 1
+      s.rotationVelocity = 0  // Kill existing spin on touch
       s.startX = x; s.startY = y
       s.lastX = x; s.lastY = y
       const now = performance.now() / 1000
@@ -100,11 +93,8 @@ ecs.registerComponent({
 
       const base = ecs.Quaternion.get(world, target)
       s.baseQx = base.x; s.baseQy = base.y; s.baseQz = base.z; s.baseQw = base.w
-
-      s.rotationVelocity = 0  // stop any inertial spin while dragging
       dataAttribute.commit(eid)
 
-      // seed history
       const H = history.get(eid)!
       H.length = 0
       H.push({x, y, t: now})
@@ -112,183 +102,123 @@ ecs.registerComponent({
 
     const onDrag = (event: any) => {
       const target = resolveTarget()
-      const {targetEid} = event.data || {}
-      if (targetEid != null && targetEid !== eid && targetEid !== target) return
-
       const s = dataAttribute.cursor(eid)
       if (!s.dragging) return
 
-      // Prefer absolute x,y from the event; if not present, integrate deltas.
-      let x = event.data?.x
-      let y = event.data?.y
-      if (x == null || y == null) {
-        x = s.lastX + Number(event.data?.deltaX || 0)
-        y = s.lastY + Number(event.data?.deltaY || 0)
-      }
+      const x = event.data?.x ?? (s.lastX + Number(event.data?.deltaX || 0))
+      const y = event.data?.y ?? (s.lastY + Number(event.data?.deltaY || 0))
 
-      // Vector from drag-start to current (path-independent orientation)
       const dx = (x - s.startX)
       const dy = (y - s.startY)
       const pix = Math.hypot(dx, dy)
 
-      // Axis in WORLD space from camera Up/Right projection of the (dx,dy) vector
       if (pix > 1e-6) {
         const camQ = camQuatOrIdentity()
         const camRight = camQ.timesVec(ecs.math.vec3.xyz(1, 0, 0))
         const camUp = camQ.timesVec(ecs.math.vec3.xyz(0, 1, 0))
 
-        // world-axis = dx * Up + dy * Right
-        let ax = camUp.x * dx + camRight.x * dy
-        let ay = camUp.y * dx + camRight.y * dy
-        let az = camUp.z * dx + camRight.z * dy
+        // Rotation axis is perpendicular to drag direction
+        const ax = camUp.x * dx + camRight.x * dy
+        const ay = camUp.y * dx + camRight.y * dy
+        const az = camUp.z * dx + camRight.z * dy
         const len = Math.hypot(ax, ay, az) || 1
-        ax /= len; ay /= len; az /= len
 
-        // Angle from *total* start→current distance (path-independent)
         const angle = pix * radiansPerPixel * dragGain
         const half = angle * 0.5
-        const sQ = Math.sin(half); const
-          cQ = Math.cos(half)
-        const dq = ecs.math.quat.xyzw(ax * sQ, ay * sQ, az * sQ, cQ)
+        const sQ = Math.sin(half); const cQ = Math.cos(half)
+        const dq = ecs.math.quat.xyzw((ax / len) * sQ, (ay / len) * sQ, (az / len) * sQ, cQ)
 
-        // new = dq * base
         const baseQ = ecs.math.quat.xyzw(s.baseQx, s.baseQy, s.baseQz, s.baseQw)
-        const next = ecs.math.quat.from(dq).times(baseQ)
-        ecs.Quaternion.set(world, target, next)
+        ecs.Quaternion.set(world, target, ecs.math.quat.from(dq).times(baseQ))
       }
 
-      // update state + history
       const now = performance.now() / 1000
       s.lastX = x; s.lastY = y; s.lastT = now
       dataAttribute.commit(eid)
 
       const H = history.get(eid)!
       H.push({x, y, t: now})
-      if (H.length > maxHistory) H.shift()
+      if (H.length > 10) H.shift()
     }
 
     const onDragEnd = (event: any) => {
-      const target = resolveTarget()
-      const {targetEid} = event.data || {}
-      if (targetEid != null && targetEid !== eid && targetEid !== target) return
-
       const s = dataAttribute.cursor(eid)
+      if (!s.dragging) return
       s.dragging = 0
 
-      // Compute flick using history: vector from N frames ago to last
       const H = history.get(eid) || []
-      let vx = Number(event.data?.vx); let vy = Number(event.data?.vy); let
-        speed = Number(event.data?.speed)
+      let vx = Number(event.data?.vx || 0)
+      let vy = Number(event.data?.vy || 0)
+      let speed = Number(event.data?.speed || 0)
 
-      if (!isFinite(speed)) {
-        const n = H.length
-        if (n >= 2) {
-          const aIdx = Math.max(0, n - 1 - lookback)
-          const A = H[aIdx]
-          const B = H[n - 1]
-          const dt = Math.max(1e-3, B.t - A.t)
-          const dx = B.x - A.x
-          const dy = B.y - A.y
-          vx = dx / dt
-          vy = dy / dt
-          speed = Math.hypot(vx, vy)
-        } else {
-          // fallback to start→last
-          const dt = Math.max(1e-3, (performance.now() / 1000) - (s.startT || 0))
-          const dx = (s.lastX - s.startX)
-          const dy = (s.lastY - s.startY)
-          vx = dx / dt; vy = dy / dt
-          speed = Math.hypot(vx, vy)
-        }
+      // Fallback velocity calculation if the event doesn't provide it
+      if (speed <= 0 && H.length >= 2) {
+        const A = H[Math.max(0, H.length - 1 - lookback)]
+        const B = H[H.length - 1]
+        const dt = Math.max(0.001, B.t - A.t)
+        vx = (B.x - A.x) / dt
+        vy = (B.y - A.y) / dt
+        speed = Math.hypot(vx, vy)
       }
 
-      if (!isFinite(speed) || speed < flickThreshold) {
+      if (speed > flickThreshold) {
+        const camQ = camQuatOrIdentity()
+        const camRight = camQ.timesVec(ecs.math.vec3.xyz(1, 0, 0))
+        const camUp = camQ.timesVec(ecs.math.vec3.xyz(0, 1, 0))
+
+        const ax = camUp.x * vx + camRight.x * vy
+        const ay = camUp.y * vx + camRight.y * vy
+        const az = camUp.z * vx + camRight.z * vy
+        const len = Math.hypot(ax, ay, az) || 1
+
+        s.axisX = ax / len; s.axisY = ay / len; s.axisZ = az / len
+        s.rotationVelocity = Math.max(speed * flickGain, Number((schema as any).minFlickAngularVel))
+      } else {
         s.rotationVelocity = 0
-        dataAttribute.commit(eid)
-        return
       }
-
-      // Flick impulse axis from camera Up/Right using release velocity
-      const camQ = camQuatOrIdentity()
-      const camRight = camQ.timesVec(ecs.math.vec3.xyz(1, 0, 0))
-      const camUp = camQ.timesVec(ecs.math.vec3.xyz(0, 1, 0))
-      const ax = camUp.x * vx + camRight.x * vy
-      const ay = camUp.y * vx + camRight.y * vy
-      const az = camUp.z * vx + camRight.z * vy
-      const len = Math.hypot(ax, ay, az) || 1
-      s.axisX = ax / len; s.axisY = ay / len; s.axisZ = az / len
-
-      let angularVelocity = speed * flickGain
-      const minSpin = Number((schema as any).minFlickAngularVel ?? 0)
-      // Floor weak-but-valid flicks to a visible spin
-      if (angularVelocity < minSpin) angularVelocity = minSpin
-
-      s.rotationVelocity = angularVelocity
-      dataAttribute.commit(eid)
-
-      // clear history after release (optional)
-      history.set(eid, [])
-    }
-
-    // === Legacy swipe impulse (optional) =======================================
-    const onSwipeImpulse = (event: any) => {
-      const {deltaX, deltaY} = event.data || {}
-      const camQ = camQuatOrIdentity()
-      const camRight = camQ.timesVec(ecs.math.vec3.xyz(1, 0, 0))
-      const camUp = camQ.timesVec(ecs.math.vec3.xyz(0, 1, 0))
-      const ax = camUp.x * deltaX + camRight.x * deltaY
-      const ay = camUp.y * deltaX + camRight.y * deltaY
-      const az = camUp.z * deltaX + camRight.z * deltaY
-      const len = Math.hypot(ax, ay, az) || 1
-      const cur = dataAttribute.cursor(eid)
-      cur.axisX = ax / len; cur.axisY = ay / len; cur.axisZ = az / len
-      const speedLike = Math.hypot(deltaX, deltaY) * 60
-      cur.rotationVelocity = speedLike * flickGain
       dataAttribute.commit(eid)
     }
 
-    // Listeners
     world.events.addListener(world.events.globalId, 'on-drag-start', onDragStart)
     world.events.addListener(world.events.globalId, 'on-drag', onDrag)
     world.events.addListener(world.events.globalId, 'on-drag-end', onDragEnd)
-    world.events.addListener(eid, 'on-input-delta', onSwipeImpulse)
   },
 
   tick: (world, component) => {
-    const {eid} = component
-    const dt = world.time.delta * 0.001
-    const s = component.data
-    const vel = s.rotationVelocity
-    if (vel <= 0) return
+    const s = component.data as any
+    if (s.dragging || s.rotationVelocity <= 0) return
 
-    // pick labeled child if present
-    let targetEid = eid
-    for (const childEid of world.getChildren(eid)) {
+    const dt = world.time.delta * 0.001
+
+    // Find model target
+    let targetEid = component.eid
+    for (const childEid of world.getChildren(component.eid)) {
       if (ObjectLabel.has(world, childEid)) {
-        targetEid = childEid; break
+        if ((ObjectLabel.get(world, childEid) as any).name === 'model') {
+          targetEid = childEid
+          break
+        }
       }
     }
 
-    // world-space delta quaternion around stored axis
-    const axis = ecs.math.vec3.xyz(s.axisX || 0, s.axisY || 0, s.axisZ || 0)
-    axis.normalize()
-    const angle = vel * dt
+    // Apply Rotation
+    const axis = ecs.math.vec3.xyz(s.axisX, s.axisY, s.axisZ)
+    const angle = s.rotationVelocity * dt
     const half = angle * 0.5
-    const sinH = Math.sin(half); const
-      cosH = Math.cos(half)
+    const sinH = Math.sin(half); const cosH = Math.cos(half)
     const dq = ecs.math.quat.xyzw(axis.x * sinH, axis.y * sinH, axis.z * sinH, cosH)
 
-    const cur = ecs.Quaternion.get(world, targetEid)
-    const next = ecs.math.quat.from(dq).times(cur)
-    ecs.Quaternion.set(world, targetEid, next)
+    const curQ = ecs.Quaternion.get(world, targetEid)
+    const nextQ = ecs.math.quat.from(dq).times(curQ)
+    ecs.Quaternion.set(world, targetEid, nextQ)
 
-    // ease-out
-    const decayRate = 1.5
-    s.rotationVelocity = Math.max(0, vel - decayRate * dt)
+    // Apply Decay
+    const decay = Number((component.schema as any).decayRate ?? 1.5)
+    s.rotationVelocity *= Math.pow(0.1, dt * decay)  // Smoother exponential decay
+    if (s.rotationVelocity < 0.01) s.rotationVelocity = 0
   },
 
   remove: (world, component) => {
-    // cleanup history store
     const map: Map<any, any> | undefined = (ecs as any).__rotHist
     if (map) map.delete(component.eid)
   },

@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/Property 1=Heatsink Analogy (AC)_luminance.png",
+  "resources": {
+    "originalImage": "Property 1=Heatsink Analogy (AC)_original.png",
+    "croppedImage": "Property 1=Heatsink Analogy (AC)_cropped.png",
+    "thumbnailImage": "Property 1=Heatsink Analogy (AC)_thumbnail.png",
+    "geometryImage": "Property 1=Heatsink Analogy (AC)_geometry.png",
+    "luminanceImage": "Property 1=Heatsink Analogy (AC)_luminance.png"
+  },
+  "name": "Property 1=Heatsink Analogy (AC)",
+  "type": "PLANAR",
+  "properties": {
+    "top": 554,
+    "left": 153,
+    "width": 669,
+    "height": 892,
+    "isRotated": true,
+    "originalWidth": 974,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772172076383,
+  "updated": 1772172098521
+}
