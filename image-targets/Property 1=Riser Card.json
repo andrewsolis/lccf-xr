@@ -19,7 +19,7 @@
     "originalHeight": 2000
   },
   "userMetadataIsJson": true,
-  "loadAutomatically": true,
+  "loadAutomatically": false,
   "created": 1772172878508,
-  "updated": 1772172898349
+  "updated": 1772241146567
 }
