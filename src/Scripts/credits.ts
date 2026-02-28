@@ -73,12 +73,6 @@ ecs.registerComponent({
                   </div>
 
                   <div class="credit-item">
-                    <span class="credit-name">Jo Wozniak </span>
-                    <span class="credit-role">RESA IV</span>
-                    <a href="https://tacc.utexas.edu/about/staff-directory/jo-wozniak/" target="_blank" class="credit-link">tacc.utexas.edu/about/staff-directory/jo-wozniak/</a>
-                  </div>
-
-                  <div class="credit-item">
                     <span class="credit-name">Sanika Goyal</span>
                     <span class="credit-role">Experience Design Lead</span>
                     <a href="https://sanikagoyal.com/" target="_blank" class="credit-link">sanikagoyal.com</a>
