@@ -245,3 +245,52 @@ window.XR8 ? onxrloaded() : window.addEventListener('xrloaded', onxrloaded)
 - `external/`: Contains dependencies used by your project, loaded in `index.html`.
   - If you are not using the XR Engine, you can remove the xr.js script tag from `index.html` and delete the `external/xr/` folder to save bandwidth.
   - You can also customize whether `face`, `slam`, or both, are loaded on the `data-preload-chunks` attribute.
+
+
+## Target Images for Testing
+
+### Heat Sink (Supercomputer Component)
+![heat sink](./images/heat_sink.png)
+
+### AC (City Analogy)
+![heat sink analogy](./images/heat_sink_analogy.png)
+
+---
+
+### InfiniBand (Supercomputer Component)
+![infiniband](./images/infiniband.png)
+
+### Delivery System (City Analogy)
+![infiniband analogy](./images/infiniband_analogy.png)
+
+---
+
+### M.2 Storage (Supercomputer Component)
+![m2](./images/m2.png)
+
+### Library (City Analogy)
+![m2 analogy](./images/m2_analogy.png)
+
+---
+
+### Motherboard (Supercomputer Component)
+![motherboard](./images/motherboard.png)
+
+### Roads & Power Grid (City Analogy)
+![motherboard analogy](./images/motherboard_analogy.png)
+
+---
+
+### Riser Card (Supercomputer Component)
+![riser card](./images/riser_card.png)
+
+### Elevators (City Analogy)
+![riser card analogy](./images/riser_card_analogy.png)
+
+---
+
+### Superchip (Supercomputer Component)
+![superchip](./images/superchip.png)
+
+### Government Officials (City Analogy)
+![superchip analogy](./images/superchip_analogy.png)
