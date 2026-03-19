@@ -362,7 +362,7 @@
         "loop": true,
         "src": {
           "type": "asset",
-          "asset": "assets/heatsink2_nc.glb"
+          "asset": "assets/models/heatsink.glb"
         }
       },
       "id": "6b341159-3e35-45e9-a61f-eff6422c11a0",
@@ -1134,7 +1134,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Models/riser_card_analogy.glb"
+          "asset": "assets/models/riser_card_analogy.glb"
         },
         "animationClip": "",
         "loop": true
@@ -1175,7 +1175,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Models/heatsink_analogy.glb"
+          "asset": "assets/models/heatsink_analogy.glb"
         },
         "animationClip": "",
         "loop": true
@@ -1860,7 +1860,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/riserCard_rf.glb"
+          "asset": "assets/models/riser_card.glb"
         },
         "animationClip": "",
         "loop": true
@@ -2377,7 +2377,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/GH.glb"
+          "asset": "assets/models/grace_hopper.glb"
         },
         "animationClip": "",
         "loop": true
@@ -2753,7 +2753,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Models/grace_hopper_analogy.glb"
+          "asset": "assets/models/grace_hopper_analogy.glb"
         },
         "animationClip": "",
         "loop": true
@@ -3199,7 +3199,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/vista_MB.glb"
+          "asset": "assets/models/motherboard.glb"
         },
         "animationClip": "",
         "loop": true
@@ -3906,7 +3906,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/m2_texture.glb"
+          "asset": "assets/models/m2.glb"
         },
         "animationClip": "",
         "loop": true
@@ -4282,7 +4282,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Models/m2_analogy.glb"
+          "asset": "assets/models/m2_analogy.glb"
         },
         "animationClip": "",
         "loop": true
@@ -4659,7 +4659,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/infiniband_sh_origin.glb"
+          "asset": "assets/models/infiniband.glb"
         },
         "animationClip": "",
         "loop": true
@@ -5181,7 +5181,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Models/infiniband_analogy.glb"
+          "asset": "assets/models/infiniband_analogy.glb"
         },
         "animationClip": "",
         "loop": true
@@ -5225,7 +5225,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Models/motherboard_analogy.glb"
+          "asset": "assets/models/motherboard_analogy.glb"
         },
         "animationClip": "",
         "loop": true
