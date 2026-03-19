@@ -138,45 +138,6 @@
         "width": 60
       }
     },
-    "27def0a3-1f0c-4f09-90dc-0759b390a551": {
-      "components": {
-        "e6b999c9-bcbe-4384-946c-f1d3eedc6da7": {
-          "id": "e6b999c9-bcbe-4384-946c-f1d3eedc6da7",
-          "name": "model-controls",
-          "parameters": {}
-        }
-      },
-      "geometry": null,
-      "gltfModel": {
-        "animationClip": "",
-        "loop": true,
-        "src": {
-          "type": "asset",
-          "asset": "assets/air_conditioner.glb"
-        }
-      },
-      "id": "27def0a3-1f0c-4f09-90dc-0759b390a551",
-      "material": null,
-      "name": "air_conditioner.glb",
-      "order": -1.2139530553015967,
-      "position": [
-        1.3836545352531475,
-        -0.3191326174729624,
-        1.4340639890468756
-      ],
-      "prefab": true,
-      "rotation": [
-        0,
-        0.7071067811865475,
-        0,
-        0.7071067811865476
-      ],
-      "scale": [
-        0.30000000000000004,
-        0.30000000000000004,
-        0.30000000000000004
-      ]
-    },
     "2de9254b-f992-4aac-9193-c2979d214ed8": {
       "components": {
         "7746024a-b887-4692-a28e-b063ce5d1675": {
