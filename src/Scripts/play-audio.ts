@@ -145,7 +145,7 @@ ecs.registerComponent({
       const textArray = mode === 'analogy' ? contentData.analogy : contentData.technical
       const filenameSuffix = mode === 'analogy' ? '-analogy' : ''
 
-      // 1. Update Text
+      // Update Text
       const parentEid = world.getParent(eid)
       if (parentEid) {
         for (const childEid of world.getChildren(parentEid)) {
@@ -162,9 +162,9 @@ ecs.registerComponent({
         }
       }
 
-      // 2. Play Audio
+      // Play Audio
       const audioFileIndex = (currentIndex % textArray.length) + 1
-      const audioUrl = `assets/Audio/${contentData.audioBase}${filenameSuffix}-${audioFileIndex}.mp3`
+      const audioUrl = `assets/audio/${contentData.audioBase}${filenameSuffix}-${audioFileIndex}.mp3`
 
       // Explicitly remove and re-add to prevent internal playback overlap
       stopAudio()
@@ -190,7 +190,6 @@ ecs.registerComponent({
         step()
       })
       .listen(world.events.globalId, 'stop-all-audio', (ev: any) => {
-        // Use optional chaining to safely check the data
         if (ev?.data?.excludeEid !== eid) {
           stopAudio()
         }

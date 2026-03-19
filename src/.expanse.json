@@ -954,7 +954,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "backgroundOpacity": 1,
         "backgroundSize": "contain"
@@ -990,7 +990,7 @@
         "height": 14,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
@@ -1027,7 +1027,7 @@
         "height": 14,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "backgroundOpacity": 1,
         "backgroundSize": "contain",
@@ -1371,7 +1371,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "type": "3d",
         "width": 50
@@ -1408,7 +1408,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "type": "3d",
         "width": 14
@@ -1445,7 +1445,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "type": "3d",
         "width": 56
@@ -1766,7 +1766,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "type": "3d",
         "width": 50
@@ -1803,7 +1803,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "type": "3d",
         "width": 14
@@ -1840,7 +1840,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "type": "3d",
         "width": 56
@@ -2078,7 +2078,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "type": "3d",
         "width": 50
@@ -2115,7 +2115,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "type": "3d",
         "width": 14
@@ -2152,7 +2152,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "type": "3d",
         "width": 56
@@ -2454,7 +2454,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "type": "3d",
         "width": 50
@@ -2491,7 +2491,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "type": "3d",
         "width": 14
@@ -2528,7 +2528,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "type": "3d",
         "width": 56
@@ -2835,7 +2835,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "type": "3d",
         "width": 50
@@ -2872,7 +2872,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "type": "3d",
         "width": 14
@@ -2909,7 +2909,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "type": "3d",
         "width": 56
@@ -3276,7 +3276,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "type": "3d",
         "width": 50
@@ -3313,7 +3313,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "type": "3d",
         "width": 14
@@ -3350,7 +3350,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "type": "3d",
         "width": 56
@@ -3607,7 +3607,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "type": "3d",
         "width": 50
@@ -3644,7 +3644,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "type": "3d",
         "width": 14
@@ -3681,7 +3681,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "type": "3d",
         "width": 56
@@ -3983,7 +3983,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "type": "3d",
         "width": 50
@@ -4020,7 +4020,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "type": "3d",
         "width": 14
@@ -4057,7 +4057,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "type": "3d",
         "width": 56
@@ -4360,7 +4360,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "type": "3d",
         "width": 50
@@ -4397,7 +4397,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "type": "3d",
         "width": 14
@@ -4434,7 +4434,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "type": "3d",
         "width": 56
@@ -4736,7 +4736,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "type": "3d",
         "width": 50
@@ -4773,7 +4773,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "type": "3d",
         "width": 14
@@ -4810,7 +4810,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "type": "3d",
         "width": 56
@@ -5067,7 +5067,7 @@
         "height": 80,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Longer_Audio_textbox_base.png"
+          "asset": "assets/audio_images/textbox_base.png"
         },
         "type": "3d",
         "width": 50
@@ -5104,7 +5104,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Audio_icon.png"
+          "asset": "assets/audio_images/audio_icon.png"
         },
         "type": "3d",
         "width": 14
@@ -5141,7 +5141,7 @@
         "ignoreRaycast": true,
         "image": {
           "type": "asset",
-          "asset": "assets/AudioText/Click_here_button.png"
+          "asset": "assets/audio_images/click_here_button.png"
         },
         "type": "3d",
         "width": 56
