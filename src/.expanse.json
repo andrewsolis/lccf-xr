@@ -620,7 +620,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsComponents/Heat_Sink.png"
+          "asset": "assets/component_labels/heatsink_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
@@ -1314,7 +1314,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsAnalogies/Air_conditioning_system.png"
+          "asset": "assets/component_labels/heatsink_analogy_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
@@ -1709,7 +1709,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsComponents/Riser_Card.png"
+          "asset": "assets/component_labels/riser_card_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
@@ -2020,7 +2020,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsAnalogies/Elevators.png"
+          "asset": "assets/component_labels/riser_card_analogy_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
@@ -2351,7 +2351,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsComponents/Super_Chip.png"
+          "asset": "assets/component_labels/grace_hopper_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
@@ -2727,7 +2727,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsAnalogies/Govt_officials.png"
+          "asset": "assets/component_labels/grace_hopper_analogy_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
@@ -3173,7 +3173,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsComponents/Motherboard.png"
+          "asset": "assets/component_labels/motherboard_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
@@ -3549,7 +3549,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsAnalogies/Roads__Bridges.png"
+          "asset": "assets/component_labels/motherboard_analogy_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
@@ -3880,7 +3880,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsComponents/M2.png"
+          "asset": "assets/component_labels/m2_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
@@ -4256,7 +4256,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsAnalogies/Library.png"
+          "asset": "assets/component_labels/m2_analogy_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
@@ -4633,7 +4633,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsComponents/Infiniband.png"
+          "asset": "assets/component_labels/infiniband_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
@@ -5009,7 +5009,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsLabelsAnalogies/Delivery_Services.png"
+          "asset": "assets/component_labels/infiniband_analogy_label.png"
         },
         "justifyContent": "center",
         "maxWidth": 50,
