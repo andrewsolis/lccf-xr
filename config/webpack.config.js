@@ -70,6 +70,7 @@ const config = {
     '@8thwall/ecs': 'window.ecs',
   },
   devServer: {
+    allowedHosts: ['.ngrok-free.dev'],
     open: false,
     compress: true,
     hot: true,
