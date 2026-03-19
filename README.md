@@ -126,18 +126,7 @@ ngrok config add-authtoken <YOUR_TOKEN>
 
 Replace <YOUR_TOKEN> with the token from your ngrok dashboard.
 
-### 4. Important Configuration Fix
-
-After setting up ngrok, add the following configuration to `config/webpack.config.js` under the `devServer` section:
-
-```javascript
-devServer: {
-  // ... existing config
-  allowedHosts: ['.ngrok-free.dev']
-}
-```
-
-### 5. Start the Local Server
+### 4. Start the Local Server
 
 In one terminal:
 
@@ -145,7 +134,7 @@ In one terminal:
 npm run serve
 ```
 
-### 6. Start the HTTPS Tunnel
+### 5. Start the HTTPS Tunnel
 
 In a second terminal:
 
@@ -159,7 +148,7 @@ Ngrok will generate an HTTPS forwarding address similar to:
 https://example-name.ngrok-free.dev
 ```
 
-### 7. Open the Experience on Your Phone
+### 6. Open the Experience on Your Phone
 
 - Copy the HTTPS ngrok URL
 - Open it on your mobile device browser
