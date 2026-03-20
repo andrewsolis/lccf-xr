@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/grace_hopper_luminance.png",
+  "resources": {
+    "originalImage": "grace_hopper_original.png",
+    "croppedImage": "grace_hopper_cropped.png",
+    "thumbnailImage": "grace_hopper_thumbnail.png",
+    "geometryImage": "grace_hopper_geometry.png",
+    "luminanceImage": "grace_hopper_luminance.png"
+  },
+  "name": "grace_hopper",
+  "type": "PLANAR",
+  "properties": {
+    "top": 466,
+    "left": 0,
+    "width": 800,
+    "height": 1066,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772224571140,
+  "updated": 1772224571140
+}

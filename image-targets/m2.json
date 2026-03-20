@@ -1,13 +1,13 @@
 {
-  "imagePath": "image-targets/Target_M2_luminance.png",
+  "imagePath": "image-targets/m2_luminance.png",
   "resources": {
-    "originalImage": "Target_M2_original.png",
-    "croppedImage": "Target_M2_cropped.png",
-    "thumbnailImage": "Target_M2_thumbnail.png",
-    "geometryImage": "Target_M2_geometry.png",
-    "luminanceImage": "Target_M2_luminance.png"
+    "originalImage": "m2_original.png",
+    "croppedImage": "m2_cropped.png",
+    "thumbnailImage": "m2_thumbnail.png",
+    "geometryImage": "m2_geometry.png",
+    "luminanceImage": "m2_luminance.png"
   },
-  "name": "Target_M2",
+  "name": "m2",
   "type": "PLANAR",
   "properties": {
     "top": 466,

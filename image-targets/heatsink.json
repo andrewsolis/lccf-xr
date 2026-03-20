@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/heatsink_luminance.png",
+  "resources": {
+    "originalImage": "heatsink_original.png",
+    "croppedImage": "heatsink_cropped.png",
+    "thumbnailImage": "heatsink_thumbnail.png",
+    "geometryImage": "heatsink_geometry.png",
+    "luminanceImage": "heatsink_luminance.png"
+  },
+  "name": "heatsink",
+  "type": "PLANAR",
+  "properties": {
+    "top": 466,
+    "left": 0,
+    "width": 800,
+    "height": 1066,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772224424133,
+  "updated": 1772224424133
+}

@@ -161,7 +161,7 @@
       "hidden": false,
       "id": "2de9254b-f992-4aac-9193-c2979d214ed8",
       "imageTarget": {
-        "name": "Target_Infiniband"
+        "name": "infiniband"
       },
       "material": null,
       "name": "infiniband",
@@ -206,7 +206,7 @@
       "hidden": false,
       "id": "3272454c-9c54-4b79-84ee-43c71ad28ef3",
       "imageTarget": {
-        "name": "Target_Roads"
+        "name": "motherboard_analogy"
       },
       "material": null,
       "name": "motherboard_analogy",
@@ -251,7 +251,7 @@
       "hidden": false,
       "id": "45328c1a-760e-46e3-aebd-770f13437600",
       "imageTarget": {
-        "name": "Target_Delivery"
+        "name": "infiniband_analogy"
       },
       "material": null,
       "name": "infiniband_analogy",
@@ -324,7 +324,7 @@
       "hidden": false,
       "id": "4b33edf9-da47-49cc-8740-157391ad1895",
       "imageTarget": {
-        "name": "Target_Govt_officials"
+        "name": "grace_hopper_analogy"
       },
       "material": null,
       "name": "grace_hopper_analogy",
@@ -416,7 +416,7 @@
       "hidden": false,
       "id": "7dd7cd65-2e89-46a9-8bc5-a59a24a254e5",
       "imageTarget": {
-        "name": "Target_Motherboard"
+        "name": "motherboard"
       },
       "material": null,
       "name": "motherboard",
@@ -461,7 +461,7 @@
       "hidden": false,
       "id": "8bbfa828-7502-4f87-ade8-e9ecfd6b853f",
       "imageTarget": {
-        "name": "Target_Library"
+        "name": "m2_analogy"
       },
       "material": null,
       "name": "m2_analogy",
@@ -506,7 +506,7 @@
       "hidden": false,
       "id": "92c577b4-1ae7-47f0-91a5-7f140605d00f",
       "imageTarget": {
-        "name": "Target_Elevators"
+        "name": "riser_card_analogy"
       },
       "material": null,
       "name": "riser_card_analogy",
@@ -557,7 +557,7 @@
       "hidden": false,
       "id": "9e045c8b-b317-4e24-8298-4f13cbbc46b3",
       "imageTarget": {
-        "name": "Target_Heat_Sink"
+        "name": "heatsink"
       },
       "material": null,
       "name": "heatsink",
@@ -717,7 +717,7 @@
       "hidden": false,
       "id": "ad213fa3-1461-46a3-9fdc-d37215e69568",
       "imageTarget": {
-        "name": "Target_Riser_Card"
+        "name": "riser_card"
       },
       "material": null,
       "name": "riser_card",
@@ -800,7 +800,7 @@
       "hidden": false,
       "id": "ce315df7-53a2-4d92-8bfd-475f6ec6c851",
       "imageTarget": {
-        "name": "Target_M2"
+        "name": "m2"
       },
       "material": null,
       "name": "m2_storage",
@@ -845,7 +845,7 @@
       "hidden": false,
       "id": "d94a6ae4-4470-4857-889e-674844e065e1",
       "imageTarget": {
-        "name": "Target_Superchip"
+        "name": "grace_hopper"
       },
       "material": null,
       "name": "grace_hopper_chip",
@@ -890,7 +890,7 @@
       "hidden": false,
       "id": "d9ce90e0-9c4d-4b32-b305-53c28b07eb35",
       "imageTarget": {
-        "name": "Target_AC"
+        "name": "heatsink_analogy"
       },
       "material": null,
       "name": "heatsink_analogy",

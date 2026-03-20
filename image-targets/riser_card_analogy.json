@@ -1,0 +1,25 @@
+{
+  "imagePath": "image-targets/riser_card_analogy_luminance.png",
+  "resources": {
+    "originalImage": "riser_card_analogy_original.png",
+    "croppedImage": "riser_card_analogy_cropped.png",
+    "thumbnailImage": "riser_card_analogy_thumbnail.png",
+    "geometryImage": "riser_card_analogy_geometry.png",
+    "luminanceImage": "riser_card_analogy_luminance.png"
+  },
+  "name": "riser_card_analogy",
+  "type": "PLANAR",
+  "properties": {
+    "top": 466,
+    "left": 0,
+    "width": 800,
+    "height": 1066,
+    "isRotated": true,
+    "originalWidth": 800,
+    "originalHeight": 2000
+  },
+  "userMetadataIsJson": true,
+  "loadAutomatically": true,
+  "created": 1772224680836,
+  "updated": 1772224680836
+}
