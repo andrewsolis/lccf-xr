@@ -9,7 +9,6 @@ ecs.registerComponent({
     const styleId = 'ui-credits-button-styles'
 
     const injectUI = () => {
-      // 1. Inject Styles (Matched to your Back Button)
       if (!document.getElementById(styleId)) {
         const style = document.createElement('style')
         style.id = styleId
@@ -49,7 +48,6 @@ ecs.registerComponent({
         document.head.appendChild(style)
       }
 
-      // 2. Inject Button
       if (!document.getElementById(buttonId)) {
         const buttonHTML = `<button id="${buttonId}" class="overlay-credits-btn">Credits</button>`
         document.body.insertAdjacentHTML('beforeend', buttonHTML)
@@ -58,7 +56,6 @@ ecs.registerComponent({
       const btn = document.getElementById(buttonId)
       if (!btn) return
 
-      // 3. Logic Helpers
       const showBtn = () => {
         console.log('CREDITS_DEBUG: Showing Button')
         btn.classList.remove('hidden')

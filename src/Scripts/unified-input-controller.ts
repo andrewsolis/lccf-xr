@@ -35,7 +35,7 @@ ecs.registerComponent({
     }
 
     const onTouchStart = (ev: any) => {
-      // 1. ISOLATION: Only process if the hit object is inside THIS target's tree
+      // Only process if the hit object is inside THIS target's tree
       const hitEid = ev?.data?.target ?? ev?.data?.targetEid
       if (!hitEid || !isDescendant(hitEid, target)) return
 
@@ -120,7 +120,7 @@ ecs.registerComponent({
     world.events.addListener(world.events.globalId, ecs.input.SCREEN_TOUCH_END, onTouchEnd)
   },
 
-  // --- THE CRITICAL FIX: REMOVE LISTENERS ON UNMOUNT ---
+  // Remove listeners when component is removed
   remove: (world, component) => {
     const handlers = (component as any)._handlers
     if (handlers) {

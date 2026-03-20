@@ -11,7 +11,7 @@ ecs.registerComponent({
     dragGain: ecs.f32,
     minFlickAngularVel: ecs.f32,
     historyLookbackFrames: ecs.ui8,
-    decayRate: ecs.f32,  // Added to schema for easier tuning
+    decayRate: ecs.f32,
   },
   schemaDefaults: {
     radiansPerPixel: 1,

@@ -80,7 +80,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesComponents/Property_1Heat_Sink.png"
+          "asset": "assets/framed_components/framed_heatsink.png"
         },
         "type": "3d",
         "width": 100
@@ -126,7 +126,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -1226,7 +1226,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -1268,7 +1268,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesAnalogies/Property_1Heatsink_Analogy_AC.png"
+          "asset": "assets/framed_components/framed_heatsink_analogy.png"
         },
         "type": "3d",
         "width": 100
@@ -1621,7 +1621,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -1663,7 +1663,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesComponents/Property_1Riser_Card.png"
+          "asset": "assets/framed_components/framed_riser_card.png"
         },
         "type": "3d",
         "width": 100
@@ -1932,7 +1932,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -1974,7 +1974,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesAnalogies/Property_1Rise_Card_Analogy_elevators.png"
+          "asset": "assets/framed_components/framed_riser_card_analogy.png"
         },
         "type": "3d",
         "width": 100
@@ -2263,7 +2263,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -2305,7 +2305,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesComponents/Property_1Super_Chip.png"
+          "asset": "assets/framed_components/framed_grace_hopper.png"
         },
         "type": "3d",
         "width": 100
@@ -2639,7 +2639,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -2681,7 +2681,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesAnalogies/Property_1Super_Chip_Analogy_gov_officials.png"
+          "asset": "assets/framed_components/framed_grace_hopper_analogy.png"
         },
         "type": "3d",
         "width": 100
@@ -3085,7 +3085,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -3127,7 +3127,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesComponents/Property_1Motherboard.png"
+          "asset": "assets/framed_components/framed_motherboard.png"
         },
         "type": "3d",
         "width": 100
@@ -3461,7 +3461,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -3503,7 +3503,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesAnalogies/Property_1Motherboard_Analogy_roads.png"
+          "asset": "assets/framed_components/framed_motherboard_analogy.png"
         },
         "type": "3d",
         "width": 100
@@ -3792,7 +3792,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -3834,7 +3834,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesComponents/Property_1M2.png"
+          "asset": "assets/framed_components/framed_m2.png"
         },
         "type": "3d",
         "width": 100
@@ -4168,7 +4168,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -4210,7 +4210,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesAnalogies/Property_1M2_Analogy_library.png"
+          "asset": "assets/framed_components/framed_m2_analogy.png"
         },
         "type": "3d",
         "width": 100
@@ -4545,7 +4545,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -4587,7 +4587,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesComponents/Property_1Infiniband.png"
+          "asset": "assets/framed_components/framed_infiniband.png"
         },
         "type": "3d",
         "width": 100
@@ -4921,7 +4921,7 @@
         "ignoreRaycast": false,
         "image": {
           "type": "asset",
-          "asset": "assets/outer-border.png"
+          "asset": "assets/framed_components/outer_frame.png"
         },
         "justifyContent": "flex-start",
         "maxWidth": 60,
@@ -4963,7 +4963,7 @@
         "height": 50,
         "image": {
           "type": "asset",
-          "asset": "assets/ImageTargetsFramesAnalogies/Property_1Infiniband_Analogy_Delivery.png"
+          "asset": "assets/framed_components/framed_infiniband_analogy.png"
         },
         "type": "3d",
         "width": 100
