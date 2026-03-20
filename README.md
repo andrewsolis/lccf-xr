@@ -278,8 +278,8 @@ window.XR8 ? onxrloaded() : window.addEventListener('xrloaded', onxrloaded)
 
 ---
 
-### Superchip (Supercomputer Component)
-![superchip](./images/superchip.png)
+### Grace Hopper Superchip (Supercomputer Component)
+![grace hopper superchip](./images/grace_hopper.png)
 
 ### Government Officials (City Analogy)
-![superchip analogy](./images/superchip_analogy.png)
+![grace hopper superchip analogy](./images/grace_hopper_analogy.png)
