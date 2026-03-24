@@ -15,8 +15,8 @@ ecs.registerComponent({
         style.textContent = `
           .overlay-credits-btn {
             position: fixed;
-            bottom: 24px;   /* Matched spacing */
-            left: 24px;    /* Matched spacing */
+            bottom: 24px;
+            left: 24px;
             z-index: 99999; 
             background: rgba(77, 255, 255, 0.1);
             border: 1.5px solid #4DFFFF;

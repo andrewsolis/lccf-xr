@@ -179,6 +179,8 @@ ecs.registerComponent({
               background: var(--dark-bg);
               color: #fff;
               overflow: hidden;
+              height: 100vh;
+              height: 100dvh;
             }
 
             #${creditsId}.hidden {
@@ -282,9 +284,14 @@ ecs.registerComponent({
               left: 0;
               width: 100%;
               height: 100vh;
+              height: 100dvh;
+              min-height: 100vh;
+              min-height: 100dvh;
               overflow-y: auto;
               overflow-x: hidden;
               -webkit-overflow-scrolling: touch;
+              overscroll-behavior: contain;
+              touch-action: pan-y;
               z-index: 3;
               display: flex;
               justify-content: center;
@@ -295,7 +302,7 @@ ecs.registerComponent({
               max-width: 900px;
               width: 100%;
               text-align: center;
-              padding: 120px 40px 100px;
+              padding: 120px 40px calc(140px + env(safe-area-inset-bottom));
               box-sizing: border-box;
             }
 
@@ -461,14 +468,14 @@ ecs.registerComponent({
             @media (max-width: 1200px) {
               .credits-content {
                 max-width: 700px;
-                padding: 110px 40px 90px;
+                padding: 110px 40px calc(120px + env(safe-area-inset-bottom));
               }
             }
 
             @media (max-width: 768px) {
               .credits-content {
                 max-width: 600px;
-                padding: 100px 30px 70px;
+                padding: 100px 30px calc(100px + env(safe-area-inset-bottom));
               }
 
               .section-title::before,
@@ -495,7 +502,7 @@ ecs.registerComponent({
             @media (max-width: 480px) {
               .credits-content {
                 max-width: 100%;
-                padding: 90px 24px 60px;
+                padding: 90px 24px calc(90px + env(safe-area-inset-bottom));
               }
 
               .credits-back-btn {
@@ -520,6 +527,7 @@ ecs.registerComponent({
         }
 
         document.body.insertAdjacentHTML('beforeend', creditsHTML)
+        document.body.style.overflow = 'hidden'
 
         // Scroll to top
         const creditsContainer = document.querySelector('.credits-scroll-container') as HTMLElement
@@ -543,10 +551,7 @@ ecs.registerComponent({
           setTimeout(() => creditsPage.remove(), 400)
         }
 
-        const creditsStyle = document.getElementById(styleId)
-        if (creditsStyle) {
-          setTimeout(() => creditsStyle.remove(), 450)
-        }
+        document.body.style.overflow = ''
 
         const {backSpaceName} = schemaAttribute.get(eid)
         setTimeout(() => world.spaces.loadSpace(backSpaceName), 350)
