@@ -1,5 +1,6 @@
 # LCCF XR - AR SuperCity
-LCCF XR is a web-based augmented reality (AR) application that delivers the AR SuperCity educational experience, an interactive AR exhibit designed to help users learn how supercomputers work. The experience runs directly in a mobile web browser and overlays interactive 3D models of supercomputer components onto real-world image targets.
+
+Leadership Class Computing Facility (LCCF) Extended Reality (XR) is a web-based augmented reality (AR) application that delivers the AR SuperCity educational experience, an interactive AR exhibit designed to help users learn how supercomputers work. The experience runs directly in a mobile web browser and overlays interactive 3D models of supercomputer components onto real world image targets.
 
 The project is built using WebXR technologies and the 8th Wall framework, enabling users to explore computing concepts through immersive interaction and visual analogies.
 
@@ -209,31 +210,41 @@ This directory can be hosted on any static web server.
 | Tyler Henry | Contributor | |
 | Dawn Hunter | Contributor | |
 
-## Project Overview
+## Project Structure
 
-- `src/`: Contains all your original project code and assets.
-    - Your scene graph is in `src/.expanse.json`. If you are on Mac and don't see this, press `Cmd + Shift + .` to show hidden files.
-    - References to asset bundles will need to be updated. Asset bundles are now plain folders. For example,
-      - GLTF bundles need to be updated to the `.gltf` file in the folder, i.e., if your model is at `assets/mymodel.gltf/`, update your code to reference `assets/mymodel.gltf/mymodel_file.gltf`.
-      - Custom `.font8` fonts need to be updated to the `.font8` file in the folder, i.e., if your font is at `assets/myfont.font8/`, update your code to reference `assets/myfont.font8/myfont_file.font8`.
-- `image-targets/`: Contains your project's image targets (if any).
-  - The image target with the `_luminance` suffix is the image target loaded by the engine. The others are used for various display purposes, but are exported for your convenience.
-  - To enable image targets, call this in `app.js` or `app.ts` file. (Note: `app.js` or `app.ts` may not be created by default; you will need to create this file yourself.) The autoload targets will have a `"loadAutomatically": true` property in their json file.
-```javascript
-const onxrloaded = () => {
-  XR8.XrController.configure({
-    imageTargetData: [
-      require('../image-targets/target1.json'),
-      require('../image-targets/target2.json'),
-    ],
-  })
-}
-window.XR8 ? onxrloaded() : window.addEventListener('xrloaded', onxrloaded)
-```
-- `config/`: Contains the necessary webpack configuration and typescript definitions to support project development.
-- `external/`: Contains dependencies used by your project, loaded in `index.html`.
-  - If you are not using the XR Engine, you can remove the xr.js script tag from `index.html` and delete the `external/xr/` folder to save bandwidth.
-  - You can also customize whether `face`, `slam`, or both, are loaded on the `data-preload-chunks` attribute.
+- `src/`
+  - Main application source code.
+  - `.expanse.json` defines the AR scene graph and component hierarchy.
+  - `index.html` entry point for the web application.
+  - `app.js` configures XR behavior (e.g., image target loading).
+  - `scripts/` custom ECS components and interaction logic.
+  - `assets/` 3D models, fonts, audio, and other runtime assets.
+  - `.dependencies/` internal dependency mappings used by the XR engine.
+
+- `image-targets/`
+  - Contains all image target JSON files used for AR tracking.
+  - These are **loaded manually** via `XR8.XrController.configure` in `app.js`.
+
+- `images/`
+  - Static images used for documentation and testing.
+
+- `external/`
+  - Contains external runtime dependencies:
+    - `runtime/` 8th Wall runtime
+    - `xr/` XR engine
+
+- `config/`
+  - Webpack and build configuration files.
+  - Includes loaders and TypeScript definitions.
+
+- `node_modules/`
+  - Installed npm dependencies.
+
+- Root files:
+  - `package.json` project dependencies and scripts
+  - `tsconfig.json` TypeScript configuration
+  - `.gitignore` git ignore rules
+  - `README.md` project documentation
 
 
 ## Target Images for Testing
